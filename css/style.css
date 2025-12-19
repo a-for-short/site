@@ -88,6 +88,7 @@ h3 {
 /* ========== Текст ========== */
 p {
     margin-bottom: 1.1em;
+    
 }
 
 p + p {
@@ -224,3 +225,37 @@ p,
 .quote .quote-author::before {
     content: "— ";
 }
+
+/* ========== Списки (добавлено) ========== */
+.article ul,
+.article ol {
+    max-width: 65ch;
+    margin: 1.1em 0;
+    padding-left: 2em;
+}
+
+.article li {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.article li:last-child {
+    margin-bottom: 0;
+}
+
+/* ========== Подпись статьи (добавлено) ========== */
+.article-signature {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: right;
+    max-width: 65ch;
+}
+
+/*
+.article-signature::before {
+    content: "— ";
+}*/
