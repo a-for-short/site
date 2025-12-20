@@ -30,7 +30,6 @@ body {
     color: var(--color-text-primary);
     line-height: 1.6;
 }
-
 /* ========== Ссылки (глобально) ========== */
 a {
     color: var(--color-link);
@@ -61,12 +60,12 @@ h1, h2, h3 {
 }
 
 h2 {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h3 {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -88,7 +87,7 @@ h3 {
 /* ========== Текст ========== */
 p {
     margin-bottom: 1.1em;
-    
+    text-align: justify;
 }
 
 p + p {
@@ -105,7 +104,7 @@ p + p {
 }
 
 .article p + p {
-    text-indent: 1.2em;
+    text-indent: 1.5em;
 }
 
 em {
@@ -127,7 +126,7 @@ strong {
     font-size: 0.9em;
     color: var(--color-text-muted);
     margin-bottom: 30px;
-    font-variant: small-caps;
+    /*font-variant: small-caps; Не уверен, что мне это нравится*/ 
     letter-spacing: 0.04em;
 }
 
@@ -202,11 +201,14 @@ strong {
     padding-left: 0.4em;
 }
 
+/*
 p,
 .quote p,
 .article p {
-    max-width: 65ch;
+    max-width: 80ch;
 }
+Портит layout imho
+*/
 
 .quote p:first-child {
     text-indent: 0.5em;
@@ -252,10 +254,11 @@ p,
     font-size: 0.9em;
     font-style: italic;
     text-align: right;
-    max-width: 65ch;
+    /*max-width: 80ch; Questionable*/
 }
 
 /*
 .article-signature::before {
     content: "— ";
+    Выглядит так себе
 }*/
