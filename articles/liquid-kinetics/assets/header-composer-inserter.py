@@ -30,7 +30,7 @@ header_string = f"""
 """
 
 
-folder_path = "."
+folder_path = "./typ"
 
 # Regular expression pattern to match the existing header
 header_pattern = re.compile(
