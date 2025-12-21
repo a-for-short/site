@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple typst inserter</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/png" href="../../favicon.png"/>
+
+</head>
+<body>
+
+<div class="container article">
+
+    <a class="back-button" href="../../articles.html">
+        ← Back to articles
+    </a>
+
+    <h1 class="article-title">Simple typst inserter</h1>
+    <div class="article-meta">Written on 2025-12-21</div>
+
+    <p class="lead">
+        <blockquote class="quote">
+            <p>header-composer-inserter? I just met her!</p>
+             <div class="quote-author">Unknown</div>
+        </blockquote>
+    </p>
+    
+    <h2>Background</h2>
+    <p>
+        Right after the yesterday's <a href="../webhook-in-docker/main.html">commemorate achievement</a> of launching a webhook I had to start studying for the oncoming colloquium. For those unfamiliar with what colloquim is: it's a superior form of knowledge control. Most probably learn about the same from 2-3 hours there as from the rest of the semester.
+    </p>
+    <p>
+        One of the problems posed for the colloquium was eye-opening for me. So much in fact that I wanted to make an article about it. But this would mean I'll have to be able to display equations. On the old website I used <a href="https://www.mathjax.org/">MathJax</a> to render LaTeX equation. But this has downsides, the most prominent one of which is <b>I don't want to type equations in LaTeX</b>. I would prefer <a href="https://typst.app/">typst</a>'s syntax 24/7 365 days in a year for my whole life. The other reason is that MathJax approach needs MathJax to render every time, which doesn't sound very reliable and not at all customizable.
+    </p>
+    <p>
+        So I had a concept that I successfully implemented and would like to share.
+    </p>
+    <h2>
+        Concept
+    </h2>
+    <p>
+        The idea is the following:
+        <ol>
+            <li>
+                you type equations in html like you normally would in typst
+            </li>
+            <li>
+                you run a script to transform the equation to a link to an svg generated from it
+            </li>
+        </ol>
+        But I immediately noticed a drawback: once you transformed the equation there is no way back. What if it was a long one and you had to make a tiny correction? So the final concept is:
+        <ol>
+            <li>
+                you type equations in comments in html with typst syntax
+            </li>
+            <li>
+                you run a script to insert a link to an svg generated from the equation just below it
+            </li>
+        </ol>
+        Then if you need to edit, you just do it inside the comment and run the script again.
+    </p>
+    <p>
+        So as a proof of concept I made some simple scripts and surprisingly they worked as wanted almost first try! Had to ask DeepSeek about regex, but that's about it.
+    </p>
+    <h2>
+        Showcasing
+    </h2>
+    <p>
+        For anyone interested I posted a code on my <a href="https://github.com/a-for-short/site/blob/main/articles/liquid-kinetics/eq-to-svg.py">github</a>. It's not refined and structured quite poorly for now, but it functions.
+    </p>
+    <p>
+        So as I am writing this article, say I need to insert an equation. Let's pick a long one.
+    </p>
+    <div class="code-block">
+        <div class="code-header">HTML</div>
+        <pre>
+        <code class="language-html">
+            &lt!--
+                $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
+            --&gt
+        </code>
+        </pre>
+    </div>
+    <p>
+        Then I go to eq-to-svg.py and just run it.
+        Ending up with this
+    </p>
+
+    <div class="code-block">
+        <div class="code-header">HTML</div>
+        <pre>
+        <code class="language-html">
+            &lt!--
+                $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
+            --&gt
+            
+            &ltdiv class="equation"&gt
+        	    &ltimg src="./assets/typ/born.svg" alt="ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)"&gt
+            &lt/div&gt
+
+        </code>
+        </pre>
+    </div>
+    
+    <p>
+        Now here is the result:
+    </p>
+    <p>
+        <!-- $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$<born-wrong> -->
+        <div class="equation">
+        	<img src="./assets/typ/born-wrong.svg" alt="ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)">
+        </div>
+    </p>
+    <p>
+        Oh wait! Nooo way. I forgot the minus before the 1/epsilon^0 term. No minus? No problem. Just add it and run the script again to gain the following.
+    </p>
+        <p>
+        <!-- $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon - 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$<born-right> -->
+        <div class="equation">
+        	<img src="./assets/typ/born-right.svg" alt="ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon - 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)">
+        </div>
+    </p>
+    <p>
+        Have you noticed the equation color is the same as the left border of the quote? That's because the header-composer-inserter.py (which makes and inserts a styling header into the .typ files) took the color variable from the website's css!
+    </p>
+    <p>
+        There are other cool details included like indent matching and you may have noticed the alt being composed on the way. So just as I said, it's quite customizable and independent. I'll try to make this setup more compact and optimized.
+    </p>
+    <p>
+        Oh and stay tuned for the kinetics article!
+    </p>
+
+    <div class="article-signature">
+        have fun<br>
+        a-for-short
+    </div>
+
+</div>
+</body>
+</html>
