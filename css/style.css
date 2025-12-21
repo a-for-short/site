@@ -452,6 +452,19 @@ p,
     }
 }
 
+/* Уравнения */
+
+.equation {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.equation image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Sorting indicators (for future JS implementation) 
 .article-list-header {
     display: flex;
