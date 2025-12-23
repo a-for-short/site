@@ -18,12 +18,12 @@
     <h1 class="article-title">Simple typst inserter</h1>
     <div class="article-meta">Written on 2025-12-21</div>
 
-    <p class="lead">
-        <blockquote class="quote">
-            <p>header-composer-inserter? I just met her!</p>
-             <div class="quote-author">Unknown</div>
-        </blockquote>
-    </p>
+
+    <blockquote class="quote">
+        <p>header-composer-inserter? I just met her!</p>
+            <div class="quote-author">Unknown</div>
+    </blockquote>
+
     
     <h2>Background</h2>
     <p>
@@ -73,13 +73,11 @@
     </p>
     <div class="code-block">
         <div class="code-header">HTML</div>
-        <pre>
         <code class="language-html">
-            &lt!--
-                $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
-            --&gt
+&lt!--
+    $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
+--&gt
         </code>
-        </pre>
     </div>
     <p>
         Then I go to eq-to-svg.py and just run it.
@@ -88,18 +86,17 @@
 
     <div class="code-block">
         <div class="code-header">HTML</div>
-        <pre>
+
         <code class="language-html">
-            &lt!--
-                $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
-            --&gt
-            
-            &ltdiv class="equation"&gt
-        	    &ltimg src="./assets/typ/born.svg" alt="ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)"&gt
-            &lt/div&gt
+&lt!--
+    $ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)$&lt born &gt
+--&gt
+
+&ltdiv class="equation"&gt
+    &ltimg src="./assets/typ/born.svg" alt="ln((k_1(epsilon))/(k_1(epsilon^0))) = e^2/(4 pi epsilon_0 2 k T)(1/epsilon 1/epsilon^0)(Z_A^2/r_A + Z_B^2/r_B - (Z_A + Z_B)^2/r^eq.not)"&gt
+&lt/div&gt
 
         </code>
-        </pre>
     </div>
     
     <p>
