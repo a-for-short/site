@@ -170,15 +170,15 @@ strong {
     position: relative;
 }
 
-.article p + p::before {
+/*.article p + p::before { Может это и прикольно, но надо доработать
     content: "";
     position: absolute;
     left: -14px;
     top: 0.2em;
     bottom: 0.2em;
-    width: 1px;
+    width: 5px;
     background: rgba(var(--color-white-rgb), 0.08);
-}
+}*/
 
 /* ========== Статьи ========== */
 .article-title {
