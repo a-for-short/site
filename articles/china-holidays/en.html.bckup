@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>China diaries</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/png" href="../../favicon.png"/>
+
+</head>
+<body>
+
+<div class="container article">
+
+    <a class="back-button" href="../../articles.html">
+        ← Back to articles
+    </a>
+
+    <h1 class="article-title">China diaries</h1>
+    <div class="article-meta">Written on 2025-12-28</div>
+
+    <p class="lead">
+        With the semester ending I find no joy in writing a promised article about kinetics, so thought I'd tell you something about my recent trip to China.
+    </p>
+    <p>
+        I had dreamt about visiting China for a long time before setting my foot there. Wouldn't brag about the preparation. It was <em>fundamental</em> though. My iternerary consisted of visiting Beijing and Xiamen. The second one may seem as a not-so-default pick, but actually I was attending a conference there. Maybe more on that later, but I don't promise anything.
+    </p>
+
+    <h2>Beijing</h2>
+    <p>
+        Someone with a basic planet Earth backgroung knows that China loves doing things at immense scales. Can now confirm. The highway from Beijing Da Xing airport to the center is about 10 lanes or so and takes about 40 minutes for about 45 kms. But you don't <em>feel</em> the speed, because all the vehicles are electric so no engine sounds whatsoever. Nowhere.
+    </p>
+    <p>
+        I took the picture below right after leaving the taxi. The atmosphere was simpl
+    </p>
+    <figure>
+        <img src="assets/hutong.jpg" alt="An empty hutong early in the morning">
+        <figcaption>
+            An empty Beijing hutong<br>
+        </figcaption>
+    </figure>
+
+    <p></p>
+
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <div class="article-signature">
+        keep rocking<br>
+        a-for-short
+    </div>
+
+</div>
+</body>
+</html>
