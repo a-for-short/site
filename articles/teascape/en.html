@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earl Grey</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/png" href="../../favicon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        cursor: pointer;
+        }
+        td, th {
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        }
+        tr:hover {
+        background: #f2f2f2;
+        }
+        #chart-wrapper {
+        max-width: 600px;
+        margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container article">
+
+    <a class="back-button" href="../../articles.html">
+        ← Back to articles
+    </a>
+
+    <h1 class="article-title">Earl Grey</h1>
+    <div class="article-meta">Written 2026-01-30</div>
+
+    <p class="lead">
+        Happy new year, everybody! As a student I have exams session the whole January. Now that's what I call holiday.
+    </p>
+    <p>
+        With that amount of sparetime I had to do a project. Having started numerous, I'll now tell you about a tea-related one.
+    </p>
+    <h2>Problem statement</h2>
+    <p>
+         <a href="https://en.wikipedia.org/wiki/Earl_Grey_tea">Wikipedia</a> contains interesting informaion about the Earl Grey blend. It states that the original Earl Grey was not flavoured assam tea but rather was a mix of
+        <ul>
+            <li>
+                assam
+            </li>
+            <li>
+                DianHong
+            </li>
+            <li>
+                Darjeeling
+            </li>
+            <li>
+                and even Lapsang tea.
+            </li>
+        </ul>
+    </p>
+    <p>
+        Of course I was not able to find an original recipe so I thought I should conduct an experiment to find out what the proportions should be for the blend to taste the best.
+    </p>
+    <h2>Experimental</h2>
+    <p>
+        All I had to do was randomize some percentages. I carefully weighed the ingredients and mixed the with bergamot oil (anout 6 drops per 25 g of tea). You can see the resulting mixes in a table below. The columns' and rows' names are clickable. Definetely try them out!
+    </p>
+    <table id="tea-table">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <div id="chart-wrapper">
+        <canvas id="radarChart"></canvas>
+    </div>
+    <script src="mixes_table_visual_en.js"></script>
+    
+    <p>
+        I tracked reviews with a google form.
+    </p>
+    <h2>Results</h2>
+    <p>
+        <b>The main observation:</b> there is a strong positive correlation between the amount of assam tea in blend and the total score, strong negative between the percentage of darjeeing and mark and not-so-clear with lapsang and dian hong.
+    </p>
+    <p>
+        For each mix I calculated the entropy. I defined it as a negative sum of mass percentage times  logarithm of mass persentage analogous to Claude Shannon's definition (see below). Unfortunately, turns out there is only weak negative correlation. 
+    </p>
+    <!--
+        $S = sum_i w_i log(w_i)$<entropy>
+    -->
+    <div class="equation">
+      <img src="assets/svg/entropy.svg" alt="S = sum_i w_i log(w_i)">
+    </div>
+    <p>
+        The final rating is as follows: 5>2>1>3>4. Haven't tested the 6th yet and not really planning to. Maybe later though.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        This is quite amusing as there is room for interpretation.
+    </p>
+    <p>
+        I think the assam-mark correlation is the strongest positive because of the sample of people.That is my family) This is quite limiting as a) they have similar taste  b) they drink a lot of store-bought Earl Grey. This made me think that while degustating they did not give a mark per se but rather a score of similarity to the industrial Earl Grey.
+    </p>
+    <p>
+        If you ask me, mix #5 turned out to be my favourite. It is the only one I found to incorporate darjeeling organically. 
+    <div class="article-signature">
+        peace!<br>
+        a-for-short
+    </div>
+
+</div>
+</body>
+</html>

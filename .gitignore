@@ -1,3 +1,8 @@
 ideas.txt
 equation-renderer/*
 articles/try-typst-html
+.venv
+articles/teascape/scripts/brew*
+articles/teascape/scripts/review.csv
+articles/teascape/scripts/__pycache__
+articles/teascape/scripts/*.py
