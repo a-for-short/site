@@ -10,7 +10,7 @@ let fields = [];
 // ----------------------------
 // LOAD CSV
 // ----------------------------
-Papa.parse("scripts/mixes.csv", {
+Papa.parse("scripts/mixes_en.csv", {
   download: true,
   header: true,
   dynamicTyping: true,
