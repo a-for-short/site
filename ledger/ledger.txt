@@ -1,0 +1,6 @@
+
+MINTED 24.333                [bought the printer]
+
+TREASURY -> Max 7            [10.02.2026]
+TREASURY -> Lexa 17.333      [10.02.2026]
+Lexa -> Rust 7               [10.02.2026]
