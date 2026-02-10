@@ -1,0 +1,101 @@
+/* Global scale */
+html {
+  font-size: 150%;
+}
+
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --text: #e6e8eb;
+  --muted: #9aa0a6;
+  --faint: #6b7280;
+  --accent: #7dd3fc;
+  --positive: #86efac;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #23262e;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.shares {
+  font-variant-numeric: tabular-nums;
+  color: var(--positive);
+}
+
+.treasury {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.summary {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Ledger history */
+
+.ledger-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+}
+
+.ledger-left {
+  white-space: nowrap;
+}
+
+.ledger-right {
+  color: var(--faint);
+  text-align: right;
+  white-space: nowrap;
+}
