@@ -1,0 +1,899 @@
+
+<!DOCTYPE HTML SYSTEM "http://gernot-katzers-spice-pages.com/html40-gk-ext.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Character Tables for Point Groups Cn, Cnv, Cnh, Dn, Dnh, Dnd, S2n etc.</TITLE>
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<LINK rel="shortcut icon" href="character_tables.png" type="image/png">
+<SCRIPT src="ptgroup.js" type="text/javascript"> </SCRIPT>
+<STYLE type="text/css">
+TABLE td:first-child {font-weight: bold}
+TABLE A {text-decoration:none}
+TD {padding-left:2px; padding-right:2px}
+OL LI {margin-top:0.5ex; margin-bottom:0.5ex}
+.alert {color:red}
+</STYLE>
+<LINK rel=StyleSheet href="tables.css" type="text/css" media=screen>
+</HEAD>
+<BODY lang="en" onLoad="make_sop()">
+
+<H1> Character Tables for Point Groups used in Chemistry </H1>
+
+<P>
+
+Character Tables are an important tool derived from Group Theory and are used in many parts of molecular chemistry, particularly in spectroscopy. On this page, you can find character tables for all remotely interesting discrete axial point groups, plus the groups for cubic and icosahedral symmetry.
+
+<OL>
+<LI> Some point groups have irreducible representations with complex characters. These have been eliminated by creating reducible representations with real-valued characters, as is common in chemistry (applies to point groups <NOBR>C<SUB><I>n</I></SUB></NOBR>, <NOBR>C<SUB><I>n</I>h</SUB></NOBR>, <NOBR>S<SUB>2<I>n</I></SUB></NOBR>, T, T<SUB>h</SUB>).
+
+<LI> All point groups up to 128-fold rotations are included. This is far more than anyone is likely ever to need. To access the character tables, use the list below or enter the name of the point group into the search field (needs JavaScript).
+
+<LI> Symmetry-adapted linear combinations of Rotations and Cartesian products up to sixth order (<I>i</I>&nbsp;functions) are listed. This is not fully implemented for icosahedral symmetry, though.
+
+<LI> Tables for the symmetry of multipoles, the direct multiplication of irreducible representations and the correlations to lower symmetry groups are provided. These are calculated inside your browser, so they might not be available on some old browsers.
+
+<LI> Moreover, some interactive features are available to those who have reasonably standard-obeying browsers. 
+
+<OL><LI>A form for decomposing reducible representations into irreducible ones, with particular emphasis on the common case of vibrational analysis.
+    <LI>A form for direct products involving an arbitrary number of factors
+    <LI>The multipole symmetry analysis can be extended up to arbitrary order, and (for axial groups) a detailled analysis of the different <I>m</I> values can be requested.
+</OL>
+
+<LI> Examples (both geometrical object and molecules) are gives for every point group if possible.
+</OL>
+
+
+<TABLE style="background: linear-gradient(70deg, #CEEA94,#D9EA94,#FEFFBB,#FEFFB8, white)">
+<TBODY>
+<TR><TD>C<SUB><I>n</I></SUB>
+<TD><A href="C1.html">C<SUB>1</SUB></A><TD><A href="C2.html">C<SUB>2</SUB></A><TD><A href="C3.html">C<SUB>3</SUB></A><TD><A href="C4.html">C<SUB>4</SUB></A><TD><A href="C5.html">C<SUB>5</SUB></A><TD><A href="C6.html">C<SUB>6</SUB></A><TD><A href="C7.html">C<SUB>7</SUB></A><TD><A href="C8.html">C<SUB>8</SUB></A><TD><A href="C9.html">C<SUB>9</SUB></A><TD><A href="C10.html">C<SUB>10</SUB></A><TD><A href="C11.html">C<SUB>11</SUB></A><TD><A href="C12.html">C<SUB>12</SUB></A><TD><A href="C13.html">C<SUB>13</SUB></A><TD><A href="C14.html">C<SUB>14</SUB></A><TD><A href="C15.html">C<SUB>15</SUB></A><TD><A href="C16.html">C<SUB>16</SUB></A><TD><A href="C17.html">C<SUB>17</SUB></A><TD><A href="C18.html">C<SUB>18</SUB></A><TD><A href="C19.html">C<SUB>19</SUB></A><TD><A href="C20.html">C<SUB>20</SUB></A><TD><A href="C21.html">C<SUB>21</SUB></A><TD><A href="C22.html">C<SUB>22</SUB></A><TD><A href="C23.html">C<SUB>23</SUB></A><TD><A href="C24.html">C<SUB>24</SUB></A><TD><A href="C25.html">C<SUB>25</SUB></A><TD><A href="C26.html">C<SUB>26</SUB></A><TD><A href="C27.html">C<SUB>27</SUB></A><TD><A href="C28.html">C<SUB>28</SUB></A><TD><A href="C29.html">C<SUB>29</SUB></A><TD><A href="C30.html">C<SUB>30</SUB></A><TD><A href="C31.html">C<SUB>31</SUB></A><TD><A href="C32.html">C<SUB>32</SUB></A>
+
+<TR><TD>C<SUB><I>n</I>v</SUB>
+<TD><TD><A href="C2v.html">C<SUB>2v</SUB></A><TD><A href="C3v.html">C<SUB>3v</SUB></A><TD><A href="C4v.html">C<SUB>4v</SUB></A><TD><A href="C5v.html">C<SUB>5v</SUB></A><TD><A href="C6v.html">C<SUB>6v</SUB></A><TD><A href="C7v.html">C<SUB>7v</SUB></A><TD><A href="C8v.html">C<SUB>8v</SUB></A><TD><A href="C9v.html">C<SUB>9v</SUB></A><TD><A href="C10v.html">C<SUB>10v</SUB></A><TD><A href="C11v.html">C<SUB>11v</SUB></A><TD><A href="C12v.html">C<SUB>12v</SUB></A><TD><A href="C13v.html">C<SUB>13v</SUB></A><TD><A href="C14v.html">C<SUB>14v</SUB></A><TD><A href="C15v.html">C<SUB>15v</SUB></A><TD><A href="C16v.html">C<SUB>16v</SUB></A><TD><A href="C17v.html">C<SUB>17v</SUB></A><TD><A href="C18v.html">C<SUB>18v</SUB></A><TD><A href="C19v.html">C<SUB>19v</SUB></A><TD><A href="C20v.html">C<SUB>20v</SUB></A><TD><A href="C21v.html">C<SUB>21v</SUB></A><TD><A href="C22v.html">C<SUB>22v</SUB></A><TD><A href="C23v.html">C<SUB>23v</SUB></A><TD><A href="C24v.html">C<SUB>24v</SUB></A><TD><A href="C25v.html">C<SUB>25v</SUB></A><TD><A href="C26v.html">C<SUB>26v</SUB></A><TD><A href="C27v.html">C<SUB>27v</SUB></A><TD><A href="C28v.html">C<SUB>28v</SUB></A><TD><A href="C29v.html">C<SUB>29v</SUB></A><TD><A href="C30v.html">C<SUB>30v</SUB></A><TD><A href="C31v.html">C<SUB>31v</SUB></A><TD><A href="C32v.html">C<SUB>32v</SUB></A>
+
+<TR><TD>C<SUB><I>n</I>h</SUB>
+<TD><A href="C1h.html">C<SUB>s</SUB></A><TD><A href="C2h.html">C<SUB>2h</SUB></A><TD><A href="C3h.html">C<SUB>3h</SUB></A><TD><A href="C4h.html">C<SUB>4h</SUB></A><TD><A href="C5h.html">C<SUB>5h</SUB></A><TD><A href="C6h.html">C<SUB>6h</SUB></A><TD><A href="C7h.html">C<SUB>7h</SUB></A><TD><A href="C8h.html">C<SUB>8h</SUB></A><TD><A href="C9h.html">C<SUB>9h</SUB></A><TD><A href="C10h.html">C<SUB>10h</SUB></A><TD><A href="C11h.html">C<SUB>11h</SUB></A><TD><A href="C12h.html">C<SUB>12h</SUB></A><TD><A href="C13h.html">C<SUB>13h</SUB></A><TD><A href="C14h.html">C<SUB>14h</SUB></A><TD><A href="C15h.html">C<SUB>15h</SUB></A><TD><A href="C16h.html">C<SUB>16h</SUB></A><TD><A href="C17h.html">C<SUB>17h</SUB></A><TD><A href="C18h.html">C<SUB>18h</SUB></A><TD><A href="C19h.html">C<SUB>19h</SUB></A><TD><A href="C20h.html">C<SUB>20h</SUB></A><TD><A href="C21h.html">C<SUB>21h</SUB></A><TD><A href="C22h.html">C<SUB>22h</SUB></A><TD><A href="C23h.html">C<SUB>23h</SUB></A><TD><A href="C24h.html">C<SUB>24h</SUB></A><TD><A href="C25h.html">C<SUB>25h</SUB></A><TD><A href="C26h.html">C<SUB>26h</SUB></A><TD><A href="C27h.html">C<SUB>27h</SUB></A><TD><A href="C28h.html">C<SUB>28h</SUB></A><TD><A href="C29h.html">C<SUB>29h</SUB></A><TD><A href="C30h.html">C<SUB>30h</SUB></A><TD><A href="C31h.html">C<SUB>31h</SUB></A><TD><A href="C32h.html">C<SUB>32h</SUB></A>
+
+<TR><TD>D<SUB><I>n</I></SUB>
+<TD><TD><A href="D2.html">D<SUB>2</SUB></A><TD><A href="D3.html">D<SUB>3</SUB></A><TD><A href="D4.html">D<SUB>4</SUB></A><TD><A href="D5.html">D<SUB>5</SUB></A><TD><A href="D6.html">D<SUB>6</SUB></A><TD><A href="D7.html">D<SUB>7</SUB></A><TD><A href="D8.html">D<SUB>8</SUB></A><TD><A href="D9.html">D<SUB>9</SUB></A><TD><A href="D10.html">D<SUB>10</SUB></A><TD><A href="D11.html">D<SUB>11</SUB></A><TD><A href="D12.html">D<SUB>12</SUB></A><TD><A href="D13.html">D<SUB>13</SUB></A><TD><A href="D14.html">D<SUB>14</SUB></A><TD><A href="D15.html">D<SUB>15</SUB></A><TD><A href="D16.html">D<SUB>16</SUB></A><TD><A href="D17.html">D<SUB>17</SUB></A><TD><A href="D18.html">D<SUB>18</SUB></A><TD><A href="D19.html">D<SUB>19</SUB></A><TD><A href="D20.html">D<SUB>20</SUB></A><TD><A href="D21.html">D<SUB>21</SUB></A><TD><A href="D22.html">D<SUB>22</SUB></A><TD><A href="D23.html">D<SUB>23</SUB></A><TD><A href="D24.html">D<SUB>24</SUB></A><TD><A href="D25.html">D<SUB>25</SUB></A><TD><A href="D26.html">D<SUB>26</SUB></A><TD><A href="D27.html">D<SUB>27</SUB></A><TD><A href="D28.html">D<SUB>28</SUB></A><TD><A href="D29.html">D<SUB>29</SUB></A><TD><A href="D30.html">D<SUB>30</SUB></A><TD><A href="D31.html">D<SUB>31</SUB></A><TD><A href="D32.html">D<SUB>32</SUB></A>
+
+<TR><TD>D<SUB><I>n</I>h</SUB>
+<TD><TD><A href="D2h.html">D<SUB>2h</SUB></A><TD><A href="D3h.html">D<SUB>3h</SUB></A><TD><A href="D4h.html">D<SUB>4h</SUB></A><TD><A href="D5h.html">D<SUB>5h</SUB></A><TD><A href="D6h.html">D<SUB>6h</SUB></A><TD><A href="D7h.html">D<SUB>7h</SUB></A><TD><A href="D8h.html">D<SUB>8h</SUB></A><TD><A href="D9h.html">D<SUB>9h</SUB></A><TD><A href="D10h.html">D<SUB>10h</SUB></A><TD><A href="D11h.html">D<SUB>11h</SUB></A><TD><A href="D12h.html">D<SUB>12h</SUB></A><TD><A href="D13h.html">D<SUB>13h</SUB></A><TD><A href="D14h.html">D<SUB>14h</SUB></A><TD><A href="D15h.html">D<SUB>15h</SUB></A><TD><A href="D16h.html">D<SUB>16h</SUB></A><TD><A href="D17h.html">D<SUB>17h</SUB></A><TD><A href="D18h.html">D<SUB>18h</SUB></A><TD><A href="D19h.html">D<SUB>19h</SUB></A><TD><A href="D20h.html">D<SUB>20h</SUB></A><TD><A href="D21h.html">D<SUB>21h</SUB></A><TD><A href="D22h.html">D<SUB>22h</SUB></A><TD><A href="D23h.html">D<SUB>23h</SUB></A><TD><A href="D24h.html">D<SUB>24h</SUB></A><TD><A href="D25h.html">D<SUB>25h</SUB></A><TD><A href="D26h.html">D<SUB>26h</SUB></A><TD><A href="D27h.html">D<SUB>27h</SUB></A><TD><A href="D28h.html">D<SUB>28h</SUB></A><TD><A href="D29h.html">D<SUB>29h</SUB></A><TD><A href="D30h.html">D<SUB>30h</SUB></A><TD><A href="D31h.html">D<SUB>31h</SUB></A><TD><A href="D32h.html">D<SUB>32h</SUB></A>
+
+<TR><TD>D<SUB><I>n</I>d</SUB>
+<TD><TD><A href="D2d.html">D<SUB>2d</SUB></A><TD><A href="D3d.html">D<SUB>3d</SUB></A><TD><A href="D4d.html">D<SUB>4d</SUB></A><TD><A href="D5d.html">D<SUB>5d</SUB></A><TD><A href="D6d.html">D<SUB>6d</SUB></A><TD><A href="D7d.html">D<SUB>7d</SUB></A><TD><A href="D8d.html">D<SUB>8d</SUB></A><TD><A href="D9d.html">D<SUB>9d</SUB></A><TD><A href="D10d.html">D<SUB>10d</SUB></A><TD><A href="D11d.html">D<SUB>11d</SUB></A><TD><A href="D12d.html">D<SUB>12d</SUB></A><TD><A href="D13d.html">D<SUB>13d</SUB></A><TD><A href="D14d.html">D<SUB>14d</SUB></A><TD><A href="D15d.html">D<SUB>15d</SUB></A><TD><A href="D16d.html">D<SUB>16d</SUB></A><TD><A href="D17d.html">D<SUB>17d</SUB></A><TD><A href="D18d.html">D<SUB>18d</SUB></A><TD><A href="D19d.html">D<SUB>19d</SUB></A><TD><A href="D20d.html">D<SUB>20d</SUB></A><TD><A href="D21d.html">D<SUB>21d</SUB></A><TD><A href="D22d.html">D<SUB>22d</SUB></A><TD><A href="D23d.html">D<SUB>23d</SUB></A><TD><A href="D24d.html">D<SUB>24d</SUB></A><TD><A href="D25d.html">D<SUB>25d</SUB></A><TD><A href="D26d.html">D<SUB>26d</SUB></A><TD><A href="D27d.html">D<SUB>27d</SUB></A><TD><A href="D28d.html">D<SUB>28d</SUB></A><TD><A href="D29d.html">D<SUB>29d</SUB></A><TD><A href="D30d.html">D<SUB>30d</SUB></A><TD><A href="D31d.html">D<SUB>31d</SUB></A><TD><A href="D32d.html">D<SUB>32d</SUB></A>
+
+<TR><TD>S<SUB><I>n</I></SUB>
+<TD><TD><A href="S2.html">C<SUB>i</SUB></A><TD><TD><A href="S4.html">S<SUB>4</SUB></A><TD><TD><A href="S6.html">S<SUB>6</SUB></A><TD><TD><A href="S8.html">S<SUB>8</SUB></A><TD><TD><A href="S10.html">S<SUB>10</SUB></A><TD><TD><A href="S12.html">S<SUB>12</SUB></A><TD><TD><A href="S14.html">S<SUB>14</SUB></A><TD><TD><A href="S16.html">S<SUB>16</SUB></A><TD><TD><A href="S18.html">S<SUB>18</SUB></A><TD><TD><A href="S20.html">S<SUB>20</SUB></A><TD><TD><A href="S22.html">S<SUB>22</SUB></A><TD><TD><A href="S24.html">S<SUB>24</SUB></A><TD><TD><A href="S26.html">S<SUB>26</SUB></A><TD><TD><A href="S28.html">S<SUB>28</SUB></A><TD><TD><A href="S30.html">S<SUB>30</SUB></A><TD><TD><A href="S32.html">S<SUB>32</SUB></A>
+
+
+<TR><TD colspan=4>
+isometric<TD><A href="T.html">T<SUB class=invisible>0</SUB></A><TD><A href="Td.html">T<SUB>d</SUB></A><TD><A href="Th.html">T<SUB>h</SUB></A><TD><TD><A href="O.html">O<SUB class=invisible>0</SUB></A><TD><A href="Oh.html">O<SUB>h</SUB></A><TD><TD><A href="I.html">I<SUB class=invisible>0</SUB></A><TD><A href="Ih.html">I<SUB>h</SUB></A>
+<TD style="text-align:left" colspan=15>&nbsp; &nbsp; <B>Schoenflies symbol:</B>&nbsp; 
+<FORM onSubmit="submit_form(); return false" style="display:inline" id=schoenflies><INPUT style="width:6em" id=symbol type=text></FORM>
+</TABLE>
+
+<HR style="margin-top:3em; margin-bottom:3em">
+
+<H2>Output Explained</H2>
+
+<P>
+The output is shown as a number of tables that usually behave intelligently on hovering; it is often possible to click elements on the edges of the table to highlight rows, columns or other elements permanently. Saving a page (together with styles and scripts, which are the same two files for all tables) creates a fully functional offline copy. 
+
+<P>
+Most output should be self-explaining. However, in the “Notes” section, several issues are mentioned that merit an explanation.
+
+<OL>
+<LI>The <I>order of the group</I> is the number of symmetry operations in the group. 
+<LI>The <I>order of a symmetry operation</I> is the minimum exponent converting that symmetry operation into the unit operation (or, alternately: All symmetry operations are roots of unity of some order). The <I>principal axis</I> is the symmetry element giving rise to the symmetry operation with the highest order.
+<LI>Some groups may be known by different names, although most of the alternate names will rarely occur in the more recent literature.
+<LI>The <I>generators</I> are those symmetry elements that generate, by successive multiplication, all symmetry operations of a group. For groups with more than one generator, the choice of generators becomes to some degree arbitrary; the character table as printed here reflects a particular, canonical choice. All point groups are genrated by two elements, with the exception of C<SUB><I>n</I></SUB> and S<SUB><I>n</I></SUB> (includes C<SUB>(2<I>n</I>+1)h</SUB>),  which have only one, and D<SUB>2<I>n</I>h</SUB>, which have three. For some odd-numbered groups (C<SUB><I>n</I>h</SUB>, D<SUB><I>n</I>h</SUB> and D<SUB><I>n</I>d</SUB>), the canonical choice employs redundant generators.
+<LI>Groups are <I>isomorphic</I> if their multiplication tables are identical up to permutation and labelling. The same will hold for the character tables of isomorphic groups.
+<LI>The order of the lowest (permanent) <I>multipole moment</I> of a group is the order of the lowest spherical harmonic that transforms trivially. It is 2 or 4 for axial groups,  8 or 16 for cubic groups and 64 for icosahedral groups. Groups that allow a permanent <I>dipole</I> moment are called “polar point groups”, and they can be defined by demanding that some points other than the origin must stay fixed under all symmetry operations (C<SUB><I>n</I></SUB>, C<SUB><I>n</I>v</SUB> and the special cases C<SUB>1h</SUB>≡C<SUB>s</SUB>, D<SUB>1</SUB>=C<SUB>2</SUB>, D<SUB>1h</SUB>=C<SUB>2v</SUB>).
+<LI>Abelian groups with a order of the principal axis greater than two have complex-charactered irreducible representations that are conventionally converted into real-charactered degenerate reducible representations (this also applies to T and T<SUB>h</SUB>, but to no other cubic group). This has to be borne in mind because it neccessitates a small modification in the projection formula to “reduce” reducible representations into irreducible ones.
+<LI>Some groups will display special properties which are often due to arithmetic peculiarities of the cosine function triggered by the order of the principal axis. 
+<OL><LI>In particular, some have integer characters which makes them compatible to periodic lattice symmetry. These are called “3D crystallo&shy;graphic point groups”, because they (and only they) satisfy the crystallographic restriction theorem in three dimensions. 
+<LI> However, every point group is crystallo&shy;graphic in a sufficiently high-dimensional space: <I>n</I>−1 dimensions are always enough, but only prime numbers go to this limit; for even <I>n</I>, the upper limit is <I>n</I>/2−1 dimensions, and for compound odd <I>n</I>, it is <I>n</I>−3. Excepting isometric groups, only even numbers of dimensions have to be considered, because if a linear group is crystallo&shy;graphic in 2<I>k</I>+1 dimensions, then it is also crystallo&shy;graphic in 2<I>k</I> dimensions. 
+<LI>Unrelated to this, some point groups have characters representable by integer numbers and (possibly nested) square roots; the corresponding polygons are then constructible in the classical sense (compass and ruler). All 3D or 4D crystallo&shy;graphic point groups are constructible, but the converse is not true, and the statement does not generalize to higher dimensions.
+<LI> Groups that are not constructible additionally need complex numbers and odd roots to write algebraic expressions for the characters.  Those which need only square and third roots are constructible by any method that allows angle trisection, like origami and neusis construction.
+<LI> Groups containing an C<SUB>4</SUB> or S<SUB>4</SUB> symmetry operation will have at least one direct product of E representations that decomposes into a direct sum of four <I>non</I>degenerate irreducible representations. For the same reason, these groups show a complication in lowering of symmetry: Symmetry alone does not in all cases determine the subsymmetry reached by  following a particular degenerated normal mode.
+<LI> Some non-Abelian point group have distinct classes of symmetry operations of the same type, <NOBR class=eg>e.&thinsp;g.</NOBR> &sigma;<SUB>v</SUB>  vs. &sigma;<SUB>d</SUB>. Usage of character tables presupposes that the user follows some conventions;  these conventions (“standard orientation”) are described in detail for all these groups (C<SUB>2<I>n</I>v</SUB>, D<SUB>2<I>n</I></SUB>, D<SUB>2<I>n</I>h</SUB>, D<SUB>2<I>n</I>d</SUB>).
+</OL>
+</OL>
+<P>
+
+The interactive features, in particular processing of form input, should also work without much explanation. Note the that form for the Reduction Formula accepts not only character values, but also directly the number of atoms stationary under the symmetry operation; just enter #<I>n</I> for <I>n</I> unmoved atoms.  See <A href="index.html#form">below</A> for more details on this.
+</OL>
+
+<H2>Molecular Examples</H2>
+
+<P>
+I have tried hard to find real molecules exemplifying the point groups (full support for <I>n</I>≤6, partial 7≤<I>n</I>≤10). While I was not successful for all point groups, I could find a lot more examples than I originally expected, for example, the “molecular wheels” with <A class=plaina href="D10h.html">D<SUB>10h</SUB></A> symmetry.
+
+<P>
+While some of the example molecules have been characterized by X-ray crystallography, some others are known only from theoretical studies, and some are just educated guesses on my part. Keep in mind that non-crystallograhic symmetries (with symmetry axes of order five, seven, eight, …) can never be confirmed by crystallography, and that small deviations from the idealized symmetry are common in crystals. Also, systems with internal rotations or other “floppy” degrees of freedom do not have a rigid structure, and assigning a point group to them involves some idealization.
+
+<P>
+The examples stem chiefly from inorganic (including coordination commpounds and clusters), metallorganic and organic chemistry; supermolecular chemistry and biochemistry have been mostly avoided.
+
+<H2>Browser Compatibility</H2>
+
+<P>
+Sad to say, but browser compatibility is still an issue in the middle of the second decade of the 21st century. 
+
+<P>
+The main, or rather only, culprit here is Microsoft. If you buy ($$$) a kind of operating system that comes with some version of Internet Explorer, then that browser has a fixed number of capabilities and bugs which behave totally invariant with respect to time, this is, they will persist unaltered till Judgement Day. Updates to later versions need extra work by the user, and are generally unavailable for some combinations of system parameters. Compare, if you download (free!) Firefox, Chrome, Opera or whatever you want, this will usually update itself automatically every few weeks, fixing existing bugs and teaching the browser more tricks that web authors can rely upon as “generally available”.
+
+<P>
+Now, it does not help that Microsofts rendering engine is also (a) the most buggy, (b) most idiosyncratic and (c) least capable, not to mention that (d) it is not available for testing to web authors who develop their pages on other operating systems than The-One-Which-Cannot-Be-Named.
+
+<P>
+So, while I  can be reasonably sure that these Character Tables perform well with Browsers based on Gecko (Firefox, Seamonkey), WebKit (Chrome, Safari) and Opera’s old proprietary Presto engine, I simply have no idea whether they work well on Internet Explorer (no, I will not install a gigabyte-heavy virtual machine that expires every few months).  Having performed painful wine workarounds, I do know, however, that Internet Explorer 7 and lower fail disastrously because they cannot recognize linebreaks, and that Internet Explorer 8 knows linebreaks but fails on something else long before the job is done.
+
+<H3>Technical Notes</H3>
+
+<P>
+The Character Tables you (hopefully) see on your screen are mostly produced <I>inside your browser</I>. The server serves a crude text file with superficial HTMLification that can be used  as a fallback. A long sequence of JavaScripts takes this file as input, creates an internal representation of the character table and associated information, calculates loads of derived data and then overwrites its input with the much more advanced tables you are likely to see here.
+
+<P>
+This proved the most convenient solution because I cannot run server-side scripts and do not want to upload scores of HTML files whenever a fix to the algorithm is made. Moreover, it has the additional benefit that the stuff also works offline. However, it does put some pressure on the visitor, whose hardware has to perform a lot of calculations in addition to all the rendering work (which is not trivial in itself, and the interactivity involves tons of event handlers and CSS transitions). This should not be much of a problem for PC users, as even my small laptop can calculate and render the tables for small and medium-sized groups is a few seconds. The situation might be difficult for smartphone users, but the I don’t see too much sense in trying to read extended tables on a display 7&thinsp;cm large.
+
+<P>
+I do provide some rudimentary fallbacks for browsers that don’t understand CSS gradients and box shadows, but input form validation is assumed to work with the CSS3 pseudo-classes. On machines that do not support those, users are responsible for what they type, as they will not get much feedback in case of errorneous input.
+
+<H2>Notational Conventions</H2>
+<P>
+Character tables found in various sources will usually agree on the naming of symmetry operations and irreducible representations, although they might list them in different orders. The sorting order shown in my tables is something I consider rational, but some readers might have different expectations. Give particular care to the arrangement of <NOBR class=minisop>S<SUB class=minisop><I>n</I></SUB><SUP class=minisop><I>k</I></SUP></NOBR> operations in groups C<SUB><I>n</I>h</SUB> and D<SUB><I>n</I>h</SUB> for even <I>n</I>.
+
+<P>
+In the literature, noninteger characters are handled in various ways and typically represented as cosine values or by use of the complex exponential function. I consider it more convenient to show them numerically and give the exact representation in an appendix. This is really the only option for the involved radical expressions as offered for some higher groups in addition to the cosine representation.
+
+<P>
+Irrational characters exist only in E races (and T races of icosahedral groups), and are always of the form <NOBR>2*cos(2&pi;<I>k</I>/<I>n</I>)</NOBR> (<I>n</I> being the order of the principal axis and <NOBR><I>k</I> &le; <I>n</I>/2</NOBR>). For <I>n</I> even, this means that any character value may appear with positive or negative sign, but for some odd groups (C<SUB><I>n</I></SUB>, C<SUB><I>n</I>v</SUB>, D<SUB><I>n</I></SUB>), there will be separate sets of positive and negative character values. This is reflected in the glosses: In the even cases, only positive numbers are listed, in the odd cases all numbers as they appear.
+
+<P>
+With respect to Cartesian products, authors are divided whether to show expressions relating to improper lower angular momenta in the tables. For example, one of the six possible Cartesian products of order two transforms as a scalar (<NOBR><I>x<SUP>2</SUP>+y<SUP>2</SUP></I></NOBR> for axial and <NOBR><I>x<SUP>2</SUP>+y<SUP>2</SUP>+z<SUP>2</SUP></I></NOBR> for isometric groups); it is doubtful whether such an entry is helpful in a character table, and I do not show it there. 
+
+<P>
+Most sources follow the typographical convention that the subscript letters v,h,d in the names of point groups are printed in <I>italics</I>; I consider that ill-chosen, as italics are reserved for variables. The difference becomes clear when expressions like C<SUB>2<I>n</I></SUB> and C<SUB>2v</SUB> are compared.
+
+<H2 id=xyz>Cartesian Products</H2>
+
+<P>
+The Cartesian products are trivariate polynomials (in <I>x</I>, <I>y</I> and <I>z</I>) adapted for a particular symmetry. If written as a simple sum, all terms have the same order <I>ℓ</I> (the angular momentum quantum number of the corresponding spherical harmonic). For example, <NOBR><I>xy</I>(<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR> equals <NOBR><I>x</I><SUP>3</SUP><I>y</I>−<I>xy</I><SUP>3</SUP></NOBR> and is of order <I>ℓ</I>=4 (it is a <I>g</I>&nbsp;function, actually <NOBR><I>g</I><SUB>4</SUB>−<I>g</I><SUB>-4</SUB></NOBR>).
+
+<P>
+Starting with order two, some Cartesian products have the symmetry of lower angular momenta. For example, <NOBR><I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+<I>z</I><SUP>2</SUP></NOBR> is of order two (apparently a <I>d</I>&nbsp;function), but transforms as order zero (<I>s</I>&nbsp;function). Similarly, <NOBR><I>xz</I><SUP>2</SUP>+<I>yz</I><SUP>2</SUP>+<I>z</I><SUP>3</SUP></NOBR> looks like an <I>f</I>&nbsp;function, but transforms as a <I>p</I>&nbsp;function. I have decided to exclude these “improper” Cartesian products from my character tables, although some literature actually shows them.
+
+<P>
+There are several possible choices for symmetry adapted Cartesian products. A natural choice would be atomic hydrogen orbitals (2<I>p</I>, 3<I>d</I>, 4<I>f</I> etc), which are directly derived from spherical harmonics (actually, these are the essentially the “regular solid harmonics”, a subset of the hydrogen functions where <NOBR><I>ℓ</I>=<I>n</I>−1</NOBR>). This has the big advantage that not only the “improper” Cartesian products are naturally excluded, but also the resulting terms are orthogonal to each other <I>and</I> to the “improper” ones (they are in an orthogonal subspace). However, it also has disadvantages, and so I have decided against it.
+
+<OL><LI>
+In axial symmetries, some of the hydrogen atomic orbitals are more complicated than necessitated by the symmetry (for example, <I>z</I><SUP>2</SUP> is sufficient, but the atomic orbital is <NOBR>2<I>z</I><SUP>2</SUP>−<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP></NOBR>). This occurs whenever <NOBR>|<I>m</I>|+1&lt;<I>ℓ</I></NOBR> and thus becomes really an issue for higher angular momenta.
+<P>
+Thus, I have decided to use simpler expressions that derive from the full atomic orbitals by ignoring all powers in <I>z</I> except the highest and cutting all terms <NOBR><I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP></NOBR>. This is a substantial simplification; for example, the function <NOBR><I>g</I><SUB>2</SUB>+<I>g</I><SUB>-2</SUB></NOBR>, in full <NOBR>(6<I>z</I><SUP>2</SUP>−<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)(<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR>, is represented as <NOBR><I>z</I><SUP>2</SUP>(<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR>; another example is <NOBR><I>i</I><SUB>2</SUB>−<I>i</I><SUB>-2</SUB></NOBR>, in full <NOBR><I>xy</I>(33<I>z</I><SUP>4</SUP>−17<I>z</I><SUP>2</SUP>+<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>)</NOBR> and in the abbreviated convention <I>xyz</I><SUP>4</SUP>. 
+
+<P>
+
+It is common to refer to atomic hydrogen orbitals by such “nicknames”; however, in the literature, such abbreviations are sometimes pushed further than axial symmetry allows: For example, the function <NOBR><I>g</I><SUB>3</SUB>+<I>g</I><SUB>-3</SUB></NOBR> is sometimes nicknamed <I>zy<SUP>3</SUP></I>; the correct term is <NOBR><I>yz</I>(3<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR>, and this cannot be further simplified without losing essential symmetry properties. In my tables, I give the simplest form that adheres strictly to axial symmetry.
+<P>
+This choice has consequences for the orthogonality relations: Functions for the same value of <I>m</I> are no longer guaranteed to be orthogonal (even and odd functions, of course, are always in orthogonal subspaces). Moreover, the orthogonality to the “improper” products is lost (there is a kind of “lower angular momentum contamination”).
+<P>
+For those point groups that have a principal axis of order one or two, the terms could be radically simplified, as any simple product is already symmetry-adapted. For consistency and easy correspondence to atomic orbitals, the products are nevertheless given in standard form. In the same vein, no simplification is employed in the case of degenerate pairs: For example, the <NOBR><I>f</I><SUB>3</SUB>±<I>f</I><SUB>-3</SUB></NOBR> functions, correctly <NOBR><I>x</I>(<I>x</I><SUP>2</SUP>−3<I>y</I><SUP>2</SUP>)</NOBR> and <NOBR><I>y</I>(3<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR>, could be simplified to <I>x<SUP>2</SUP><I>y</I> and <I>xy</I><SUP>2</SUP></I> whenever they are degenerate (<I>i.e.</I>, in all point groups where the order of the principal axis is larger than two but does not divide six: 4,5,7,8,&hellip;).
+<LI>
+For cubic point groups,  Cartesian products derived from spherical harmonics form a cumbersome base if <NOBR><I>ℓ</I>&gt;2</NOBR>, this is, <I>f</I>&nbsp;functions and higher. Therefore, I have built symmetry-adapted linear combinations of primitive products (<I>x<SUP>r</SUP>y<SUP>s</SUP>z<SUP>t</SUP></I>) from scratch, trying to keep them as simple as possible. By construction, they have no relation to spherical harmonics (and thus, angular momentum).
+<P>
+There are still some arbitrary choices in these products. These could have been reduced (but not eliminated completely) by forcing the products to be orthogonal to the “improper” ones, but this is hardly worth the trouble. For example, instead of <I>xyz</I><SUP>2</SUP>, the orthogonality constraint would have yielded <NOBR><I>xy</I>(2<I>z</I><SUP>2</SUP>−<I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP>)</NOBR>.
+<LI>
+I have not yet succeeded in deriving symmetry-adapted Cartesian products for icosahedral point groups, and I consider this a pretty irrational task.
+</OL>
+
+Note that <I>i</I>&nbsp;functions (<I>ℓ</I>=6) are a natural limit for Cartesian products. For higher angular momenta, symmetry-adapted Cartesian products do exist, but not all of them factorize inside the real numbers. This is related to the fact that many cosines <NOBR>cos(2&pi;/<I>m</I>)</NOBR> (<I>m</I>&ge;7) cannot be calculated from integers by the operations of addition, subtraction, multiplication, division and real square root extraction. While the terms for  <A href="C7.html" class=plaina><NOBR>cos(2&pi;/7)</NOBR></A>, <A href="C9.html" class=plaina><NOBR>cos(2&pi;/9)</NOBR></A>, <A href="C13.html" class=plaina><NOBR>cos(2&pi;/13)</NOBR></A> and <NOBR>cos(2&pi;/14)</NOBR> are comparatively manageable (complex expressions involving square and third roots), the one for  <NOBR>cos(2&pi;/11)</NOBR> is madly complicated, spanning many lines of text full of complex numbers, square and fifth roots.
+
+<H2 id=form>Form for Reduction of Reducible Representations</H2>
+
+<P>
+For the chemistry student, the most typical use of character tables is the vibrational analysis of molecules.  This leads to a reducible representation in the molecule’s point group that must be reduced, <I>i.e.</I>, projected onto the irreducible representations by using a scalar product looping over the symmetry operations. The result is a direct sum (basically a linear combination) of irreducible representations. Since you read this character table with a <I>computer</I>, it seems a reasonable idea to use that device also for doing the actual <I>computation</I>.
+
+<P>
+The reduction form  on each character table page expects characters for all symmetry classes, performs the projection and reports all nonzero coefficients. As input, either the characters or a hash mark (#) followed by the number of stationary atoms is accepted; the latter gets multiplied with the character of the Cartesian representation to yield the character used in the projection. Ill-formed input is indicated by the input box turning red. Calculation starts as soon as all input boxes contain valid input.
+
+<P>
+The projection must yield integer coefficients; if the result is noninteger, then an error message is produced (the most likely reason being wrong user input). In case of point groups containing noninteger characters, a roundoff threshold has been chosen that will usually be satisfied if all input characters are accurate to at least three digits right of the decimal point. In case of a “near miss”, it might be useful to relax the threshold to a value greater that the number reported in the error message, although this increases the risk that erroneous input might be accidentially accepted. Setting the threshold to one will accept any random input and produce meaningless output therefrom. Results that do not even have the right dimensionality are suppressed, but this simple check cannot catch every input error. 
+
+<P>
+A simpler form allows to reduce arbitrary <I>n</I>-ary direct products of irreducible representations into direct sums. This is conceptually simpler, because a projection failure cannot occur.
+
+<P>
+The implementation of the algorithm is solid in principle but rather <I>ad-hoc</I>ish in the details; always watch out for Bugs in Dark Corners. This said, the calculation seems to work reliably  with Firefox, Chrome, Safari&nbsp;4 and Opera&nbsp;12 (also Opera&nbsp;25). Those browsers which do not support HTML5 will fail on input validation, which is not a problem if the input is correct. The whole thing works only  rudimentarily with Internet Explorer&nbsp;8 and 9, and the output of these browsers is aesthetically crippled. Other browsers have not been tested. Because the code is implemented in JavaScript and takes all necessary information from the document itself, the forms should remain functional if you download and save the full page (including styles and scripts). 
+
+<P>
+For those interested in the nasty details, I mention that  Internet Explorer&nbsp;8 and 9 fail on <TT>innerHTML</TT> operations inside tables, do not support the the HTML5 style input validation using regular expressions in the <TT>pattern</TT> attribute triggering an <TT>:invalid</TT> pseudo-attribute, and have a tendency to mess up every table layout. <TT>onChange</TT> events are not fired when I expect them, but only after focus is shifted from the <TT>INPUT</TT> element, and <TT>onKeyPress</TT> appears to be dysfunctional. Also, storing some information as private attributes inside the DOM does not really work, as these attributes turn out to be write-only.
+
+<H2>Multiplication Table</H2>
+
+<P>
+A conventional multiplication table for binary products of irreducible is also offered. That table is calculated on the fly in your browser, which may take significant time (fourth order in the number of classes) for really large groups.
+
+<P>
+This table makes a distinction between <I>symmetric</I> and <I>antisymmetric</I> products for the multiplication of a degenerate irreducible representation by itself. In the context of orbitals and electronic states, the antisymmetric product corresponds to triplet states (antisymmetric spatial part of the wavefunction) and the symmetric to singlet states; in the context of vibrational combination bands, the antisymmetric product corresponds to nothing as vibrational wavefuntions must be symmetric.
+
+<P>
+The direct product of an irreducible representation <I>j</I> with another one <I>k</I> can be written as
+<IMG style="margin-left:5em;;display:block" width=202 height=41 alt="Direct Product of two different irreducible representations" src="direct_product_1.png">
+where the &chi;(<B>R</B></I><SUB><I>i</I></SUB>) is the character  of the symmetry operation <B>R</B></I><SUB><I>i</I></SUB> in the product representation. If the product is between a degenerate irreducible representation and itself (<I>j</I>=<I>k</I>), then the product can be split into a symmetric and an asymmetric part
+<IMG style="margin-top:5px;margin-left:5em;display:block" width=250 height=70 alt="Symmetric and antisymmetric direct products of two an irreducible representations with itself" src="direct_product_2.png">
+where <B>R</B><SUB class=align><I>i</I></SUB><SUP style="margin-left:-0.15em">2</SUP> is the square of <B>R</B><SUB><I>i</I></SUB> (and therefore, in the general case, a distinct symmetry operation). With the additional information which symmetry operation is the square of a given symmetry operation, the antisymmetric product becomes available from the character table. However, this is almost moot as in all axial groups the antisymmetric product of an E with itself is always <SPAN class=minisop>A<SUB>2</SUB> (drop the 2 if it does not apply, and add a prime or a <I>g</I> if necessary), and it is only in the isometric groups that this result becomes interesting.
+
+
+
+<H2>Subgroups</H2>
+
+<P>
+The analysis of subgroups is pretty challenging, because character tables (or at least parts thereof) are needed for all subgroups to determine the correlation of irreducible representations. Also, the question of standard orientation (which can usually be ignored) becomes rampant, especially in the cubic groups. Finally, that task may become a benchmark for your browser, because significant amounts of data are produced during the computation and have to be stored in voluminous data structures, not to speak of the rendereng of the large table produced.
+
+<P>
+By intention, the module will automatically produce all subgroups (both in standard orientation and in most non-standard orientation) for axial point groups; subgroups are counted as “distinct” if they draw their symmetry operations from different classes of the parent group. For cubic and icosahedral point groups, a hand-selected list consisting of all standard-oriented and off-standard-oriented point groups is evaluated. Characters (and thus, irreducible representations) in the reduced symmetry are evaluated by a lazy algorithms that uses just the generator elements (plus a few kludges). From this, a complete correlation table is produced.
+
+<P>
+
+A related feature is the determination of subgroups reached by distortion along symmetry-adapted coordinates (<NOBR class=eg>e.&thinsp;g.</NOBR>, normal coordinates). While this is well-defined for Abelian groups (including those with complex irreducible representations that are conventionally combined into “pseudo-degenerates”), it may run into ambinguity for some truly degenerate irreps. The results are displayed in the first column of the correlation table. 
+<OL class=plaina>
+<LI> An entry like <TT class=code>→ 2 C<SUB>3h</SUB></TT> means that both components of an E representation distort into equivalent C<SUB>3h</SUB> groups, <NOBR class=eg>i.&thinsp;e.</NOBR>, the symmetry operations of the daughter groups are paiwaise equivalent under the parent group’s class structure. This is the behaviour of all Abelian groups, for example <A href="C9h.html">C<SUB>9h</SUB></A>.
+<LI> If the two E components lower the symmetry to different subgroups, then this is written as <TT class=code>→ D<SUB>3</SUB> C<SUB>3v</SUB></TT>. The two subsymmetries are either isomorphic, or one contains the other (example: <A href="D9h.html">D<SUB>9h</SUB></A>).
+<LI> As a special case, <TT class=code>→ D<SUB>3</SUB> D<SUB>3</SUB></TT> indicates that the two components of the E distort into inequivalent subsymmetries of the same type,  <NOBR class=eg>i.&thinsp;e.</NOBR>, the symmetry operations of the D<SUB>3</SUB> daughter groups come from different classes of the parent group (example: <A href="D18.html">D<SUB>18</SUB></A>).
+<LI> The notation <TT class=code>→ [ 2&thinsp;D<SUB>3</SUB> ]</TT> marks the case that the parent group contains two distinct D<SUB>3</SUB> subgroups, and both components of the E distort into the same type of D<SUB>3</SUB>, yet the symmetry race of the coordinate alone does not decide into which (example: <A href="D12.html">D<SUB>12</SUB></A>). This behaviour is linked to the presence of 4<i>n</I>-fold axes.
+<LI> An even more confusing case can arise in D<SUB>2<I>n</I>d</SUB> groups, due to the presence of S<SUB>4<I>n</I></SUB>: A given E might lower the symmetry into one of two possible subsymmetries, which are always isomorphic. This is written as <TT class=code style="white-space:nowrap">→ [ 2&thinsp;D<SUB>3</SUB> | 2&thinsp;C<SUB>3v</SUB> ]</TT> and implies that the resulting subsymmetry is either D<SUB>3</SUB> for both components, or C<SUB>3v</SUB> for both components of the E (example: <A href="D6d.html">D<SUB>6d</SUB></A>).
+</OL>
+
+<P>
+Hovering over the subgroup symbols in the first column will highlight the entries for the respective subgroup in the same row. Note that the distortion analysis is not implemented for the icosahedral groups.
+
+<P>
+
+<H2>Download</H2>
+
+<P>
+The complete set of all character tables up to <NOBR><I>n</I>=128</NOBR> (in plain text format) can be downloaded as an <A href="character_tables.tar.xz">XZ-compressed tar file</A>. If you need other point groups, <A href="mailme:masala.wallah@gmail.com">drop me a note</A>.
+
+<P>
+Note that this is just a sparetime and fun project. There might be bugs of any magnitude; no warranty whatsoever is offered. If you find a mistake, please <A href="mailto:masala.wallah@gmail.com">let me know</A> so that I can correct it.
+
+<H2>Algorithm to Generate Character Tables</H2>
+
+<P>The character tables shown here were generated by a short Fortran program. Generation is done in steps, coarsely outlined by the following algorithm.
+<OL><LI>For <B><NOBR>C<SUB><I>n</I></SUB></NOBR></B>, generate a character table with a trivial A representation, an alternating B representation if <I>n</I> is even, and an appropriate number of E representations. The E<SUB>1</SUB> has characters equal to the double cosine of the respective rotation, <NOBR>2cos&phi;</NOBR>, the E<SUB>2</SUB> has <NOBR>2cos2&phi;</NOBR> etc.
+<LI> For <B>C<SUB><I>n</I>v</SUB></B> and <I>n</I> even, generate <NOBR>C<SUB><I>n</I></SUB></NOBR>, add each a new class for <NOBR>&sigma;<SUB>v</SUB></NOBR> and <NOBR>&sigma;<SUB>d</SUB></NOBR>, and double the rows for A and B (with positive or negative characters for the new classes); for <I>n</I> odd, add one <NOBR>&sigma;<SUB>v</SUB></NOBR> class and double the A representation. E representations take a zero character for the new classes.
+<LI> For <B>C<SUB><I>n</I>h</SUB></B> and <I>n</I> odd, generate <NOBR>C<SUB><I>n</I></SUB></NOBR>. Then, generate new classes by multiplying the existing ones with <NOBR>&sigma;<SUB>h</SUB></NOBR>, and double all irreducible representations, taking existing characters for the new classes and multiplying them by 1 or <NOBR>−1</NOBR>. 
+<LI> For C<SUB><I>n</I>h</SUB> and <I>n</I> even, do the same but use i as the generator. This procedure yields the new symmetry operations in an unintuitive order (related to the difference between mirror-reflexion and roto-inversion axes). The character tables shown on these pages have these entries resorted, which is not always done in the literature.
+<LI> <B>S<SUB>2<I>n</I></SUB></B> is identical to <NOBR>C<SUB>2<I>n</I></SUB></NOBR> except the labelling of the classes. However, this is the conventional approach for S<SUB>4<I>n</I></SUB> only; for S<SUB>4<I>n</I>+2</SUB>, the character table is built from C<SUB>2<I>n</I>+1</SUB> by adding a center of inversion similar to C<SUB>2<I>n</I>h</SUB>.
+<LI> For <B>D<SUB><I>n</I></SUB></B>, generate <NOBR>C<SUB><I>n</I></SUB></NOBR>. Then, add <NOBR>C<SUB>2</SUB></NOBR> rotations similar to the <NOBR>C<SUB><I>n</I>v</SUB></NOBR> case.
+<LI> For <B>D<SUB><I>n</I>h</SUB></B>, generate <NOBR>D<SUB><I>n</I></SUB></NOBR>. Then, proceed as in <NOBR>C<SUB><I>n</I>h</SUB></NOBR>.
+<LI> For <B>D<SUB><I>n</I>d</SUB></B> and odd <I>n</I>, generate <NOBR>D<SUB><I>n</I></SUB></NOBR>, then double the table by adding an additional center of inversion (as in <NOBR>C<SUB><I>n</I>h</SUB></NOBR>).  
+<LI> For D<SUB><I>n</I>d</SUB> and even <I>n</I>, the conventional form of the character table is arrived at by starting with <NOBR>S<SUB>2<I>n</I></SUB></NOBR>, then adding one <NOBR class=minisop>C<SUB class=minisop>2</SUB><SUP class=minisop>&prime;</SUP></NOBR> and one  <NOBR>&sigma;<SUB>d</SUB></NOBR> class, similar to <NOBR>C<SUB><I>n</I>v</SUB></NOBR>. This special treatment is necessary because while <NOBR>D<SUB>2<I>n</I></SUB></NOBR> has distinct <NOBR>C<SUB class=minisop>2</SUB><SUP class=minisop>&prime;</SUP></NOBR> and <NOBR>C<SUB class=minisop>2</SUB><SUP class=minisop>&Prime;</SUP></NOBR> classes, these collapse into one single <NOBR>C<SUB class=minisop>2</SUB><SUP class=minisop>&prime;</SUP></NOBR> in the <NOBR>D<SUB>2<I>n</I>d</SUB></NOBR> group.
+<LI> Similar procedures can be used to build T<SUB>d</SUB>, T<SUB>h</SUB> and O from T, O<SUB>h</SUB> from O and I<SUB>h</SUB> from I.
+</OL>
+<P>
+Labelling and sorting needs some care, because conventions differ for different point groups.
+<P>
+The transformation of rotations and Cartesian products can be arrived at easily for <NOBR>C<SUB><I>n</I></SUB></NOBR> and <NOBR>S<SUB>2<I>n</I></SUB></NOBR>: Both components of a  <NOBR>±<I>m</I></NOBR> pair (e.g., <NOBR>d<SUB>±2</SUB></NOBR> aka <NOBR><I>x</I><SUP>2</SUP>−<I>y</I><SUP>2</SUP></NOBR> and <I>xy</I>) will always belong to the same symmetry race; moreover, the characters for the combined representation of one  <NOBR>±<I>m</I></NOBR> pair are just <NOBR>2cos|<I>m</I>|&phi;</NOBR> (add a sign <NOBR>(−1)<SUP><I>ℓ</I>−|<I>m</I>|</SUP></NOBR> for S<SUB>2<I>n</I></SUB>, where <I>ℓ</I> is the order of the product or the angular momentum quantum number of the corresponding spherical harmonics). For  <NOBR><I>m</I>=0</NOBR>, the same formula applies without the prefactor 2; since cos(0)=1, this component always transforms trivially in <NOBR>C<SUB><I>n</I></SUB></NOBR>, while in <NOBR>S<SUB>2<I>n</I></SUB></NOBR> this is true only if <I>ℓ</I> is even. 
+
+<P>
+
+When the groups are subsequently augmented with additional symmetry operations, I chose to keep track of the various steps of irrep doublings, and move the basis functions to the positive or negative offspring row, depending on the behaviour of that basis function under the newly introduced symmetry element (I used a big table for that). This approach might appear unelegant, but has the advantage that neither complex arithmetics nor case distictions between one- and two-dimensional symmetry races are needed.
+
+
+<H2 id=roots>Real Radicals</H2>
+
+<P>
+All irrational character values have the form <NOBR>2*cos(2*<I>m</I>*&pi;/<I>n</I></NOBR>), where <NOBR><I>n</I></NOBR> is the order of the principal axis and <NOBR><I>m</I>&lt;<I>n</I></NOBR>. For some point groups (<I>n</I>=3,4,5,6,8,&#x200B;10,12,15,16,&#x200B;17,20,24,30,32,&#x200B;34,40,48,51,60,64,&#x200B;68,80,85,96,102,120,128,&#x200B;136,160,170,192,204,240,255,256,257,&hellip;), this can also be written with real radicals. 
+
+<P>
+I have managed to derive algebraic expressions for almost all cases where this is possible (starting with <NOBR><I>n</I>=85</NOBR>, some cosines are still missing). Possibly, some of the expressions given could be further simplified, but I am not motivated. For your pleasure, here is the full list in a format most programming languages (or bc) can directly understand. They can also be displayed in conventional form with graphic square roots if your browser allows (don’t expect typographic excellence, it’s HTML and not T<SPAN style="font-size:80%; margin-left:-0.2ex; vertical-align:-20%">E</SPAN>X).
+
+<P>
+<FORM id=rootform onSubmit="switch_to_graphic_display(); return false" ><INPUT id=rootbutton type=submit value="Switch list to graphic display"></FORM>
+
+<P>
+
+<!--
+:r !  cat cosines1.lis | sed -e '/cos([0-9]*[13579]\*pi/s/^/u/' -e '/cos(pi/s/^/u/' -e '/cos([0-9]*[02468]\*pi/s/^/g/' -e '/^g/s+cos([^)]*/\([0-9]*\))+<A href="D\1.html">&</A>+' -e '/^u/s+cos([^)]*/\([0-9]*\))+<A href="D\1d.html">&</A>+' -e 's/^[ug]//'
+-->
+
+<PRE id=raw>
+  0.01227153828571992608 = <A href="D256d.html">cos(127*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.01636173162648678164 = <A href="D192d.html">cos(95*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.02454122852291228803 = <A href="D128d.html">cos(63*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.03079505855617035387 = <A href="D51d.html">cos(25*pi/51)</A> = (-1-sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.03271908282177614206 = <A href="D96d.html">cos(47*pi/96)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(3)))))/2
+  0.03680722294135883232 = <A href="D256d.html">cos(125*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.03925981575906860902 = <A href="D80d.html">cos(39*pi/80)</A> = sqrt(4-sqrt(8+sqrt(2)+sqrt(10)+2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.04618345864573959195 = <A href="D68d.html">cos(33*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17)))))/4
+  0.04906767432741801425 = <A href="D64d.html">cos(31*pi/64)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))/2
+  0.05233595624294383272 = <A href="D60d.html">cos(29*pi/60)</A> = (sqrt(10)-sqrt(2)-sqrt(6)+sqrt(30)+2*(1-sqrt(3))*(sqrt(5+sqrt(5))))/16
+  0.06132073630220857778 = <A href="D256d.html">cos(123*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.06540312923014306682 = <A href="D48d.html">cos(23*pi/48)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(3))))/2
+  0.07356456359966742353 = <A href="D128d.html">cos(61*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.07845909572784494503 = <A href="D40d.html">cos(19*pi/40)</A> = sqrt(8-sqrt(2)-sqrt(10)-2*sqrt(5-sqrt(5)))/4
+  0.08172107413366822375 = <A href="D192d.html">cos(91*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.08579731234443989046 = <A href="D256d.html">cos(121*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.09226835946330199524 = <A href="D17.html">cos(8*pi/17)</A> = (-1+sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.09801714032956060199 = <A href="D32d.html">cos(15*pi/32)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2))))/2
+  0.10452846326765347140 = <A href="D15d.html">cos(7*pi/15)</A> = (sqrt(30-6*sqrt(5))-sqrt(5)-1)/8
+  0.11022220729388305881 = <A href="D256d.html">cos(119*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.11428696496684639812 = <A href="D192d.html">cos(89*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.11753739745783764411 = <A href="D80d.html">cos(37*pi/80)</A> = sqrt(4-sqrt(8-sqrt(2)+sqrt(10)+2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.12241067519921619850 = <A href="D128d.html">cos(59*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.13052619222005159155 = <A href="D24d.html">cos(11*pi/24)</A> = sqrt(2-sqrt(2+sqrt(3)))/2
+  0.13458070850712618632 = <A href="D256d.html">cos(117*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.13815635495188219823 = <A href="D68d.html">cos(31*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17)))))/4
+  0.14673047445536175166 = <A href="D64d.html">cos(29*pi/64)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))/2
+  0.15339165487868537265 = <A href="D51d.html">cos(23*pi/51)</A> = (-1+sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/32 - sqrt(6)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.15643446504023086901 = <A href="D20d.html">cos(9*pi/20)</A> = (sqrt(2)+sqrt(10)-2*(sqrt(5-sqrt(5))))/8
+  0.15885814333386144168 = <A href="D256d.html">cos(115*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.16289547339458873948 = <A href="D96d.html">cos(43*pi/96)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(3)))))/2
+  0.17096188876030122636 = <A href="D128d.html">cos(57*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.17901686127663268204 = <A href="D192d.html">cos(85*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.18303988795514095852 = <A href="D256d.html">cos(113*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.18374951781657033157 = <A href="D34d.html">cos(15*pi/34)</A> = sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/8
+  0.19509032201612826785 = <A href="D16d.html">cos(7*pi/16)</A> = sqrt(2-sqrt(2+sqrt(2)))/2
+  0.20711137619221854971 = <A href="D256d.html">cos(111*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.20791169081775933710 = <A href="D30d.html">cos(13*pi/30)</A> = (sqrt(3)-sqrt(15)+sqrt(10+2*sqrt(5)))/8
+  0.21111155235896516592 = <A href="D192d.html">cos(83*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.21393308320649743991 = <A href="D51.html">cos(22*pi/51)</A> = (1-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.21910124015686979723 = <A href="D128d.html">cos(55*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.22707626303437320759 = <A href="D96d.html">cos(41*pi/96)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(3)))))/2
+  0.22895054995013407691 = <A href="D68d.html">cos(29*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17)))))/4
+  0.23105810828067111964 = <A href="D256d.html">cos(109*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.23344536385590541177 = <A href="D40d.html">cos(17*pi/40)</A> = sqrt(8+sqrt(2)-sqrt(10)-2*sqrt(5+sqrt(5)))/4
+  0.24298017990326388995 = <A href="D64d.html">cos(27*pi/64)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))/2
+  0.25486565960451457155 = <A href="D256d.html">cos(107*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.25881904510252076235 = <A href="D12d.html">cos(5*pi/12)</A> = sqrt(2-sqrt(3))/2
+  0.26671275747489838633 = <A href="D128d.html">cos(53*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.27144044986507425334 = <A href="D80d.html">cos(33*pi/80)</A> = sqrt(4-sqrt(8+sqrt(2)-sqrt(10)+2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.27366299007208286354 = <A href="D17d.html">cos(7*pi/17)</A> = (1+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.27458861818493234148 = <A href="D192d.html">cos(79*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.27851968938505310521 = <A href="D256d.html">cos(105*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.29028467725446236764 = <A href="D32d.html">cos(13*pi/32)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2))))/2
+  0.30200594931922806700 = <A href="D256d.html">cos(103*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.30590302009655346276 = <A href="D192d.html">cos(77*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.30901699437494742410 = <A href="D5.html">cos(2*pi/5)</A> = (sqrt(5)-1)/4
+  0.31368174039889147666 = <A href="D128d.html">cos(51*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.31779141958190162617 = <A href="D68d.html">cos(27*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17)))))/4
+  0.32143946530316158070 = <A href="D48d.html">cos(19*pi/48)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(3))))/2
+  0.32531029216226293414 = <A href="D256d.html">cos(101*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.33235479947965966456 = <A href="D51.html">cos(20*pi/51)</A> = (1-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/32 - sqrt(6)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.33688985339222005069 = <A href="D64d.html">cos(25*pi/64)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))/2
+  0.34611705707749297647 = <A href="D80d.html">cos(31*pi/80)</A> = sqrt(4-sqrt(8+sqrt(2)+sqrt(10)-2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.34841868024943456842 = <A href="D256d.html">cos(99*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.35225004792123350653 = <A href="D96d.html">cos(37*pi/96)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(3)))))/2
+  0.35836794954530027348 = <A href="D60d.html">cos(23*pi/60)</A> = (sqrt(2)-sqrt(6)+sqrt(10)-sqrt(30)+2*(1+sqrt(3))*(sqrt(5-sqrt(5))))/16
+  0.35989503653498814878 = <A href="D128d.html">cos(49*pi/128)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.36124166618715294874 = <A href="D34d.html">cos(13*pi/34)</A> = sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/8
+  0.36751593659470356541 = <A href="D192d.html">cos(73*pi/192)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.37131719395183754341 = <A href="D256d.html">cos(97*pi/256)</A> = sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.38268343236508977173 = <A href="D8d.html">cos(3*pi/8)</A> = sqrt(2-sqrt(2))/2
+  0.38978587329267936908 = <A href="D51d.html">cos(19*pi/51)</A> = (-1-sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.39399204006104810860 = <A href="D256d.html">cos(95*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.39774847452701105205 = <A href="D192d.html">cos(71*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.40392100487189496264 = <A href="D68d.html">cos(25*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17)))))/4
+  0.40524131400498987091 = <A href="D128d.html">cos(47*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.40673664307580020775 = <A href="D30d.html">cos(11*pi/30)</A> = (sqrt(15)+sqrt(3)-sqrt(10-2*sqrt(5)))/8
+  0.41270702980439473705 = <A href="D96d.html">cos(35*pi/96)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(3)))))/2
+  0.41642956009763718256 = <A href="D256d.html">cos(93*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.41865973753742808668 = <A href="D80d.html">cos(29*pi/80)</A> = sqrt(4-sqrt(8-sqrt(2)-sqrt(10)+2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.42755509343028209432 = <A href="D64d.html">cos(23*pi/64)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))/2
+  0.43861623853852763765 = <A href="D256d.html">cos(91*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.44228869021900128200 = <A href="D48d.html">cos(17*pi/48)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(3))))/2
+  0.44573835577653826740 = <A href="D17.html">cos(6*pi/17)</A> = (-1-sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.44961132965460660005 = <A href="D128d.html">cos(45*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.45399049973954679156 = <A href="D20d.html">cos(7*pi/20)</A> = (sqrt(2)-sqrt(10)+2*sqrt(5+sqrt(5)))/8
+  0.45690387563042067656 = <A href="D192d.html">cos(67*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.46053871095824002363 = <A href="D256d.html">cos(89*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.47139673682599764856 = <A href="D32d.html">cos(11*pi/32)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2))))/2
+  0.48218377207912274852 = <A href="D256d.html">cos(87*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.48576339371634005627 = <A href="D192d.html">cos(65*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.48660447856685628729 = <A href="D68d.html">cos(23*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17)))))/4
+  0.48862124149695494742 = <A href="D80d.html">cos(27*pi/80)</A> = sqrt(4-sqrt(8-sqrt(2)+sqrt(10)-2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.49289819222978403687 = <A href="D128d.html">cos(43*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.50353838372571755869 = <A href="D256d.html">cos(85*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.51410274419322172659 = <A href="D64d.html">cos(21*pi/64)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))/2
+  0.52249856471594886499 = <A href="D40d.html">cos(13*pi/40)</A> = sqrt(8-sqrt(2)+sqrt(10)-2*sqrt(5+sqrt(5)))/4
+  0.52458968267846890622 = <A href="D256d.html">cos(83*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.52643216287735580024 = <A href="D34d.html">cos(11*pi/34)</A> = sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/8
+  0.52806785065036799587 = <A href="D96d.html">cos(31*pi/96)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(3)))))/2
+  0.53499761988709721066 = <A href="D128d.html">cos(41*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.54189158057475171615 = <A href="D192d.html">cos(61*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.54463903501502708222 = <A href="D60d.html">cos(19*pi/60)</A> = (sqrt(10)-sqrt(2)-sqrt(6)+sqrt(30)-2*(1-sqrt(3))*(sqrt(5+sqrt(5))))/16
+  0.54532498842204642231 = <A href="D256d.html">cos(81*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.55236497296050581076 = <A href="D51.html">cos(16*pi/51)</A> = (1+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.55557023301960222474 = <A href="D16d.html">cos(5*pi/16)</A> = sqrt(2-sqrt(2-sqrt(2)))/2
+  0.56513641442259188898 = <A href="D68d.html">cos(21*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17)))))/4
+  0.56573181078361319739 = <A href="D256d.html">cos(79*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.56910014587889823061 = <A href="D192d.html">cos(59*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.57580819141784530075 = <A href="D128d.html">cos(39*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.58247769686780214920 = <A href="D96d.html">cos(29*pi/96)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(3)))))/2
+  0.58579785745643886033 = <A href="D256d.html">cos(77*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.58778525229247312917 = <A href="D10d.html">cos(3*pi/10)</A> = (sqrt(10-2*sqrt(5)))/4
+  0.59569930449243334347 = <A href="D64d.html">cos(19*pi/64)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))/2
+  0.60263463637925638918 = <A href="D17d.html">cos(5*pi/17)</A> = (1+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.60551104140432551392 = <A href="D256d.html">cos(75*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.60876142900872063942 = <A href="D24d.html">cos(7*pi/24)</A> = sqrt(2-sqrt(2-sqrt(3)))/2
+  0.61523159058062684548 = <A href="D128d.html">cos(37*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.61909394930983398694 = <A href="D80d.html">cos(23*pi/80)</A> = sqrt(4-sqrt(8+sqrt(2)-sqrt(10)-2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.62166057337007740804 = <A href="D192d.html">cos(55*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.62485948814238637708 = <A href="D256d.html">cos(73*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.62932039104983745271 = <A href="D60d.html">cos(17*pi/60)</A> = (sqrt(2)+sqrt(6)+sqrt(10)+sqrt(30)+2*(1-sqrt(3))*(sqrt(5-sqrt(5))))/16
+  0.63439328416364549822 = <A href="D32d.html">cos(9*pi/32)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2))))/2
+  0.63884680565196131707 = <A href="D68d.html">cos(19*pi/68)</A> = sqrt(8-sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17)))))/4
+  0.64383154288979146507 = <A href="D256d.html">cos(71*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.64695615253485736540 = <A href="D192d.html">cos(53*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.64944804833018365573 = <A href="D40d.html">cos(11*pi/40)</A> = sqrt(8-sqrt(2)-sqrt(10)+2*sqrt(5-sqrt(5)))/4
+  0.65061830020424211372 = <A href="D51.html">cos(14*pi/51)</A> = (1-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.65317284295377676408 = <A href="D128d.html">cos(35*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.65934581510006886843 = <A href="D48d.html">cos(13*pi/48)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(3))))/2
+  0.66241577759017176111 = <A href="D256d.html">cos(69*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.66913060635885821383 = <A href="D15.html">cos(4*pi/15)</A> = (1-sqrt(5)+sqrt(30+6*sqrt(5)))/8
+  0.67155895484701840063 = <A href="D64d.html">cos(17*pi/64)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))/2
+  0.67369564364655721171 = <A href="D34d.html">cos(9*pi/34)</A> = sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/8
+  0.67880074553294174139 = <A href="D80d.html">cos(21*pi/80)</A> = sqrt(4-sqrt(8-sqrt(2)-sqrt(10)-2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.68060099779545305059 = <A href="D256d.html">cos(67*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.68359230202287128051 = <A href="D96d.html">cos(25*pi/96)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(3)))))/2
+  0.68954054473706692462 = <A href="D128d.html">cos(33*pi/128)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.69544263500961165112 = <A href="D192d.html">cos(49*pi/192)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.69613394596292660828 = <A href="D51d.html">cos(13*pi/51)</A> = (-1-sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.69837624940897285355 = <A href="D256d.html">cos(65*pi/256)</A> = sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.70710678118654752440 = <A href="D4d.html">cos(pi/4)</A> = sqrt(2)/2
+  0.71573082528381865413 = <A href="D256d.html">cos(63*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.71858161777969805720 = <A href="D192d.html">cos(47*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.72424708295146692094 = <A href="D128d.html">cos(31*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.72986407269783565735 = <A href="D96d.html">cos(23*pi/96)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(3)))))/2
+  0.73265427167241283462 = <A href="D256d.html">cos(61*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.73432250943568553564 = <A href="D80d.html">cos(19*pi/80)</A> = sqrt(4+sqrt(8-sqrt(2)-sqrt(10)-2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.73900891722065911592 = <A href="D17.html">cos(4*pi/17)</A> = (-1+sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.74095112535495909118 = <A href="D64d.html">cos(15*pi/64)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))/2
+  0.74314482547739423501 = <A href="D30d.html">cos(7*pi/30)</A> = (sqrt(15)-sqrt(3)+sqrt(10+2*sqrt(5)))/8
+  0.74913639452345932547 = <A href="D256d.html">cos(59*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.75183980747897739641 = <A href="D48d.html">cos(11*pi/48)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(3))))/2
+  0.75720884650648454758 = <A href="D128d.html">cos(29*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.76040596560003093817 = <A href="D40d.html">cos(9*pi/40)</A> = sqrt(8+sqrt(2)+sqrt(10)-2*sqrt(5-sqrt(5)))/4
+  0.76252720390638809637 = <A href="D192d.html">cos(43*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.76516726562245892589 = <A href="D256d.html">cos(57*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.76933397098287890812 = <A href="D68d.html">cos(15*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17)))))/4
+  0.77301045336273696081 = <A href="D32d.html">cos(7*pi/32)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2))))/2
+  0.77714596145697087998 = <A href="D60d.html">cos(13*pi/60)</A> = (sqrt(6)-sqrt(2)-sqrt(10)+sqrt(30)+2*(1+sqrt(3))*(sqrt(5-sqrt(5))))/16
+  0.77908057452567043192 = <A href="D51d.html">cos(11*pi/51)</A> = (-1+sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.78073722857209447830 = <A href="D256d.html">cos(55*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.78328674922865036540 = <A href="D192d.html">cos(41*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.78531693088074492747 = <A href="D80d.html">cos(17*pi/80)</A> = sqrt(4+sqrt(8+sqrt(2)-sqrt(10)-2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.78834642762660626201 = <A href="D128d.html">cos(27*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.79335334029123516458 = <A href="D24d.html">cos(5*pi/24)</A> = sqrt(2+sqrt(2-sqrt(3)))/2
+  0.79583690460888353626 = <A href="D256d.html">cos(53*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.79801722728023950333 = <A href="D34d.html">cos(7*pi/34)</A> = sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/8
+  0.80320753148064490981 = <A href="D64d.html">cos(13*pi/64)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))/2
+  0.80901699437494742410 = <A href="D5d.html">cos(pi/5)</A> = (sqrt(5)+1)/4
+  0.81045719825259479173 = <A href="D256d.html">cos(51*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.81284668459161521658 = <A href="D96d.html">cos(19*pi/96)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(3)))))/2
+  0.81619691235622169087 = <A href="D51.html">cos(10*pi/51)</A> = (1-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.81758481315158369650 = <A href="D128d.html">cos(25*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.82226821898977510784 = <A href="D192d.html">cos(37*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.82458930278502526447 = <A href="D256d.html">cos(49*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.82499747459830231554 = <A href="D68d.html">cos(13*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17)))))/4
+  0.83146961230254523708 = <A href="D16d.html">cos(3*pi/16)</A> = sqrt(2+sqrt(2-sqrt(2)))/2
+  0.83822470555483804319 = <A href="D256d.html">cos(47*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.83867056794542402964 = <A href="D60d.html">cos(11*pi/60)</A> = (sqrt(6)-sqrt(2)+sqrt(10)-sqrt(30)+2*(1+sqrt(3))*(sqrt(5+sqrt(5))))/16
+  0.84044840109443802102 = <A href="D192d.html">cos(35*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.84485356524970707326 = <A href="D128d.html">cos(23*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.84920218152657888765 = <A href="D96d.html">cos(17*pi/96)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(3)))))/2
+  0.85021713572961415213 = <A href="D17d.html">cos(3*pi/17)</A> = (1+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.85135519310526514226 = <A href="D256d.html">cos(45*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.85264016435409222152 = <A href="D40d.html">cos(7*pi/40)</A> = sqrt(8+sqrt(2)-sqrt(10)+2*sqrt(5+sqrt(5)))/4
+  0.85772861000027206990 = <A href="D64d.html">cos(11*pi/64)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))/2
+  0.86397285612158673792 = <A href="D256d.html">cos(43*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.86602540378443864676 = <A href="D6d.html">cos(pi/6)</A> = sqrt(3)/2
+  0.87008699110871141865 = <A href="D128d.html">cos(21*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.87249600707279711453 = <A href="D80d.html">cos(13*pi/80)</A> = sqrt(4+sqrt(8-sqrt(2)+sqrt(10)-2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.87362239064636953713 = <A href="D68d.html">cos(11*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17)))))/4
+  0.87409034162675885155 = <A href="D192d.html">cos(31*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.87607009419540660710 = <A href="D256d.html">cos(41*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.88101219428578450601 = <A href="D51.html">cos(8*pi/51)</A> = (1+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.88192126434835502971 = <A href="D32d.html">cos(5*pi/32)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2))))/2
+  0.88763962040285394776 = <A href="D256d.html">cos(39*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.88951607542185603527 = <A href="D192d.html">cos(29*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.89100652418836786236 = <A href="D20d.html">cos(3*pi/20)</A> = (sqrt(10)-sqrt(2)+2*sqrt(5+sqrt(5)))/8
+  0.89322430119551532034 = <A href="D128d.html">cos(19*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.89516329135506232207 = <A href="D34d.html">cos(5*pi/34)</A> = sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/8
+  0.89687274153268830389 = <A href="D48d.html">cos(7*pi/48)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(3))))/2
+  0.89867446569395384304 = <A href="D256d.html">cos(37*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.90398929312344333159 = <A href="D64d.html">cos(9*pi/64)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))/2
+  0.90814317382508129926 = <A href="D80d.html">cos(11*pi/80)</A> = sqrt(4+sqrt(8-sqrt(2)-sqrt(10)+2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.90846527181952368611 = <A href="D51d.html">cos(7*pi/51)</A> = (-1+sqrt(17)+sqrt(34-2*sqrt(17))-2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.90916798309052237656 = <A href="D256d.html">cos(35*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.91086382492117581857 = <A href="D96d.html">cos(13*pi/96)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(3)))))/2
+  0.91354545764260089550 = <A href="D15.html">cos(2*pi/15)</A> = (1+sqrt(5)+sqrt(30-6*sqrt(5)))/8
+  0.91420975570353065464 = <A href="D128d.html">cos(17*pi/128)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.91479386848802097000 = <A href="D68d.html">cos(9*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17)))))/4
+  0.91749449644749130792 = <A href="D192d.html">cos(25*pi/192)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.91911385169005774391 = <A href="D256d.html">cos(33*pi/256)</A> = sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.92387953251128675613 = <A href="D8d.html">cos(pi/8)</A> = sqrt(2+sqrt(2))/2
+  0.92850608047321556594 = <A href="D256d.html">cos(31*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.93001722368401211706 = <A href="D192d.html">cos(23*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.93247222940435580457 = <A href="D17.html">cos(2*pi/17)</A> = (-1+sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.93299279883473888771 = <A href="D128d.html">cos(15*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.93358042649720174899 = <A href="D60d.html">cos(7*pi/60)</A> = (sqrt(2)+sqrt(6)+sqrt(10)+sqrt(30)-2*(1-sqrt(3))*(sqrt(5-sqrt(5))))/16
+  0.93590592675732570029 = <A href="D96d.html">cos(11*pi/96)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(3)))))/2
+  0.93733901191257492320 = <A href="D256d.html">cos(29*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.93819133592248413445 = <A href="D80d.html">cos(9*pi/80)</A> = sqrt(4+sqrt(8+sqrt(2)+sqrt(10)-2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.94154406518302077841 = <A href="D64d.html">cos(7*pi/64)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))/2
+  0.94560732538052132573 = <A href="D256d.html">cos(27*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.94693012949510566426 = <A href="D48d.html">cos(5*pi/48)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(3))))/2
+  0.94816064759096585893 = <A href="D68d.html">cos(7*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17)))))/4
+  0.94952818059303666720 = <A href="D128d.html">cos(13*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.95105651629515357212 = <A href="D10d.html">cos(pi/10)</A> = (sqrt(10+2*sqrt(5)))/4
+  0.95206267771392425710 = <A href="D192d.html">cos(19*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.95294200042715655583 = <A href="D51d.html">cos(5*pi/51)</A> = (-1+sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/32 + sqrt(6)*sqrt(17-sqrt(17)-sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)-sqrt(34-2*sqrt(17))-2*sqrt(34+2*sqrt(17))))/16
+  0.95330604035419383692 = <A href="D256d.html">cos(25*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.95694033573220886494 = <A href="D32d.html">cos(3*pi/32)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2))))/2
+  0.96043051941556581120 = <A href="D256d.html">cos(23*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.96156179768296194714 = <A href="D192d.html">cos(17*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.96182564317281907041 = <A href="D34d.html">cos(3*pi/34)</A> = sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/8
+  0.96245523645364728763 = <A href="D80d.html">cos(7*pi/80)</A> = sqrt(4+sqrt(8+sqrt(2)-sqrt(10)+2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.96377606579543986669 = <A href="D128d.html">cos(11*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.96592582628906828675 = <A href="D12d.html">cos(pi/12)</A> = sqrt(2+sqrt(3))/2
+  0.96697647104485210909 = <A href="D256d.html">cos(21*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.96979693603500947182 = <A href="D51.html">cos(4*pi/51)</A> = (1+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.97003125319454399260 = <A href="D64d.html">cos(5*pi/64)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))/2
+  0.97236992039767660183 = <A href="D40d.html">cos(3*pi/40)</A> = sqrt(8-sqrt(2)+sqrt(10)+2*sqrt(5+sqrt(5)))/4
+  0.97293995220556014547 = <A href="D256d.html">cos(19*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.97343805436069282581 = <A href="D68d.html">cos(5*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17)))))/4
+  0.97387697927733364815 = <A href="D96d.html">cos(7*pi/96)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(3)))))/2
+  0.97570213003852854446 = <A href="D128d.html">cos(9*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.97746197494357186339 = <A href="D192d.html">cos(13*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.97814760073380563793 = <A href="D15d.html">cos(pi/15)</A> = (sqrt(5)-1+sqrt(30+6*sqrt(5)))/8
+  0.97831737071962763311 = <A href="D256d.html">cos(17*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.98078528040323044913 = <A href="D16d.html">cos(pi/16)</A> = sqrt(2+sqrt(2+sqrt(2)))/2
+  0.98297309968390177828 = <A href="D17d.html">cos(pi/17)</A> = (1-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/16
+  0.98310548743121632718 = <A href="D256d.html">cos(15*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2+sqrt(2)))))))/2
+  0.98384600592707741609 = <A href="D192d.html">cos(11*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(3))))))/2
+  0.98527764238894124477 = <A href="D128d.html">cos(7*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2))))))/2
+  0.98664333208487900475 = <A href="D96d.html">cos(5*pi/96)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(3)))))/2
+  0.98730141815785838240 = <A href="D256d.html">cos(13*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.98768834059513772619 = <A href="D20d.html">cos(pi/20)</A> = (sqrt(2)+sqrt(10)+2*(sqrt(5-sqrt(5))))/8
+  0.98917650996478097345 = <A href="D64d.html">cos(3*pi/64)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))/2
+  0.99041043087520515835 = <A href="D68d.html">cos(3*pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17)))))/4
+  0.99090263542778002511 = <A href="D256d.html">cos(11*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.99144486137381041114 = <A href="D24d.html">cos(pi/24)</A> = sqrt(2+sqrt(2+sqrt(3)))/2
+  0.99242050967193575826 = <A href="D51.html">cos(2*pi/51)</A> = (1+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/16
+  0.99247953459870999816 = <A href="D128d.html">cos(5*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2))))))/2
+  0.99306845695492629564 = <A href="D80d.html">cos(3*pi/80)</A> = sqrt(4+sqrt(8-sqrt(2)+sqrt(10)+2*sqrt(5+sqrt(5))))/2/sqrt(2)
+  0.99344777901944439551 = <A href="D192d.html">cos(7*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(3))))))/2
+  0.99390697000235604155 = <A href="D256d.html">cos(9*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.99452189536827333692 = <A href="D30d.html">cos(pi/30)</A> = (sqrt(15)+sqrt(3)+sqrt(10-2*sqrt(5)))/8
+  0.99518472667219688624 = <A href="D32d.html">cos(pi/32)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2))))/2
+  0.99573417629503452187 = <A href="D34d.html">cos(pi/34)</A> = sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17))))/8
+  0.99631261218277801263 = <A href="D256d.html">cos(7*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2+sqrt(2)))))))/2
+  0.99665523930918032493 = <A href="D192d.html">cos(5*pi/192)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(3))))))/2
+  0.99691733373312797620 = <A href="D40d.html">cos(pi/40)</A> = sqrt(8+sqrt(2)+sqrt(10)+2*sqrt(5-sqrt(5)))/4
+  0.99729045667869021614 = <A href="D128d.html">cos(3*pi/128)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2))))))/2
+  0.99785892323860350674 = <A href="D48d.html">cos(pi/48)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(3))))/2
+  0.99810332873704407816 = <A href="D51d.html">cos(pi/51)</A> = (-1-sqrt(17)+sqrt(34+2*sqrt(17))+2*sqrt(17-3*sqrt(17)-sqrt(34+2*sqrt(17))+2*sqrt(34-2*sqrt(17))))/32 + sqrt(6)*sqrt(17+sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(17-3*sqrt(17)+sqrt(34+2*sqrt(17))-2*sqrt(34-2*sqrt(17))))/16
+  0.99811811290014920713 = <A href="D256d.html">cos(5*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2-sqrt(2)))))))/2
+  0.99862953475457387378 = <A href="D60d.html">cos(pi/60)</A> = (sqrt(2)-sqrt(6)-sqrt(10)+sqrt(30)+2*(1+sqrt(3))*(sqrt(5+sqrt(5))))/16
+  0.99879545620517239271 = <A href="D64d.html">cos(pi/64)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))/2
+  0.99893297480237244441 = <A href="D68d.html">cos(pi/68)</A> = sqrt(8+sqrt(2)*sqrt(17-sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(17+3*sqrt(17)+sqrt(34-2*sqrt(17))+2*sqrt(34+2*sqrt(17)))))/4
+  0.99922903624072293474 = <A href="D80d.html">cos(pi/80)</A> = sqrt(4+sqrt(8+sqrt(2)+sqrt(10)+2*sqrt(5-sqrt(5))))/2/sqrt(2)
+  0.99932238458834950090 = <A href="D256d.html">cos(3*pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2-sqrt(2)))))))/2
+  0.99946458747636564443 = <A href="D96d.html">cos(pi/96)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(3)))))/2
+  0.99969881869620422012 = <A href="D128d.html">cos(pi/128)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2))))))/2
+  0.99986613790956178286 = <A href="D192d.html">cos(pi/192)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(3))))))/2
+  0.99992470183914454092 = <A href="D256d.html">cos(pi/256)</A> = sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2)))))))/2
+</PRE>
+
+
+<!--
+:r !  cat cosines2.lis | sed -e '/cos([0-9]*[13579]\*&pi;/s/^/u/' -e '/cos(&pi;/s/^/u/' -e '/cos([0-9]*[02468]\*&pi;/s/^/g/' -e '/^g/s+cos([^)]*/\([0-9]*\))+<A href="D\1.html">&</A>+' -e '/^u/s+cos([^)]*/\([0-9]*\))+<A href="D\1d.html">&</A>+' -e 's/^[ug]//'
+-->
+
+<PRE style="display:none" id=graphic>
+  0.01227153828571992608 = <A href="D256d.html">cos(127*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.01636173162648678164 = <A href="D192d.html">cos(95*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.02454122852291228803 = <A href="D128d.html">cos(63*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.03079505855617035387 = <A href="D51d.html">cos(25*&pi;/51)</A> = (−1−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.03271908282177614206 = <A href="D96d.html">cos(47*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.03680722294135883232 = <A href="D256d.html">cos(125*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.03925981575906860902 = <A href="D80d.html">cos(39*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.04618345864573959195 = <A href="D68d.html">cos(33*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.04906767432741801425 = <A href="D64d.html">cos(31*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.05233595624294383272 = <A href="D60d.html">cos(29*&pi;/60)</A> = (&radic;<SPAN class=over>10</SPAN>−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>6</SPAN>+&radic;<SPAN class=over>30</SPAN>+2*(1−&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.06132073630220857778 = <A href="D256d.html">cos(123*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.06540312923014306682 = <A href="D48d.html">cos(23*&pi;/48)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.07356456359966742353 = <A href="D128d.html">cos(61*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.07845909572784494503 = <A href="D40d.html">cos(19*&pi;/40)</A> = &radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.08172107413366822375 = <A href="D192d.html">cos(91*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.08579731234443989046 = <A href="D256d.html">cos(121*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.09226835946330199524 = <A href="D17.html">cos(8*&pi;/17)</A> = (−1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.09801714032956060199 = <A href="D32d.html">cos(15*&pi;/32)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.10452846326765347140 = <A href="D15d.html">cos(7*&pi;/15)</A> = (&radic;<SPAN class=over1>30−6*&radic;<SPAN class=over>5</SPAN></SPAN>−&radic;<SPAN class=over>5</SPAN>−1)/8
+  0.11022220729388305881 = <A href="D256d.html">cos(119*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.11428696496684639812 = <A href="D192d.html">cos(89*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.11753739745783764411 = <A href="D80d.html">cos(37*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.12241067519921619850 = <A href="D128d.html">cos(59*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.13052619222005159155 = <A href="D24d.html">cos(11*&pi;/24)</A> = &radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN>/2
+  0.13458070850712618632 = <A href="D256d.html">cos(117*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.13815635495188219823 = <A href="D68d.html">cos(31*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.14673047445536175166 = <A href="D64d.html">cos(29*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.15339165487868537265 = <A href="D51d.html">cos(23*&pi;/51)</A> = (−1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 − &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.15643446504023086901 = <A href="D20d.html">cos(9*&pi;/20)</A> = (&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/8
+  0.15885814333386144168 = <A href="D256d.html">cos(115*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.16289547339458873948 = <A href="D96d.html">cos(43*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.17096188876030122636 = <A href="D128d.html">cos(57*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.17901686127663268204 = <A href="D192d.html">cos(85*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.18303988795514095852 = <A href="D256d.html">cos(113*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.18374951781657033157 = <A href="D34d.html">cos(15*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.19509032201612826785 = <A href="D16d.html">cos(7*&pi;/16)</A> = &radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN>/2
+  0.20711137619221854971 = <A href="D256d.html">cos(111*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.20791169081775933710 = <A href="D30d.html">cos(13*&pi;/30)</A> = (&radic;<SPAN class=over>3</SPAN>−&radic;<SPAN class=over>15</SPAN>+&radic;<SPAN class=over1>10+2*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.21111155235896516592 = <A href="D192d.html">cos(83*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.21393308320649743991 = <A href="D51.html">cos(22*&pi;/51)</A> = (1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.21910124015686979723 = <A href="D128d.html">cos(55*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.22707626303437320759 = <A href="D96d.html">cos(41*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.22895054995013407691 = <A href="D68d.html">cos(29*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.23105810828067111964 = <A href="D256d.html">cos(109*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.23344536385590541177 = <A href="D40d.html">cos(17*&pi;/40)</A> = &radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.24298017990326388995 = <A href="D64d.html">cos(27*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.25486565960451457155 = <A href="D256d.html">cos(107*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.25881904510252076235 = <A href="D12d.html">cos(5*&pi;/12)</A> = &radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN>/2
+  0.26671275747489838633 = <A href="D128d.html">cos(53*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.27144044986507425334 = <A href="D80d.html">cos(33*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.27366299007208286354 = <A href="D17d.html">cos(7*&pi;/17)</A> = (1+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.27458861818493234148 = <A href="D192d.html">cos(79*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.27851968938505310521 = <A href="D256d.html">cos(105*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.29028467725446236764 = <A href="D32d.html">cos(13*&pi;/32)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.30200594931922806700 = <A href="D256d.html">cos(103*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.30590302009655346276 = <A href="D192d.html">cos(77*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.30901699437494742410 = <A href="D5.html">cos(2*&pi;/5)</A> = (&radic;<SPAN class=over>5</SPAN>−1)/4
+  0.31368174039889147666 = <A href="D128d.html">cos(51*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.31779141958190162617 = <A href="D68d.html">cos(27*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.32143946530316158070 = <A href="D48d.html">cos(19*&pi;/48)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.32531029216226293414 = <A href="D256d.html">cos(101*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.33235479947965966456 = <A href="D51.html">cos(20*&pi;/51)</A> = (1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 − &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.33688985339222005069 = <A href="D64d.html">cos(25*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.34611705707749297647 = <A href="D80d.html">cos(31*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.34841868024943456842 = <A href="D256d.html">cos(99*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.35225004792123350653 = <A href="D96d.html">cos(37*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.35836794954530027348 = <A href="D60d.html">cos(23*&pi;/60)</A> = (&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>6</SPAN>+&radic;<SPAN class=over>10</SPAN>−&radic;<SPAN class=over>30</SPAN>+2*(1+&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.35989503653498814878 = <A href="D128d.html">cos(49*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.36124166618715294874 = <A href="D34d.html">cos(13*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.36751593659470356541 = <A href="D192d.html">cos(73*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.37131719395183754341 = <A href="D256d.html">cos(97*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.38268343236508977173 = <A href="D8d.html">cos(3*&pi;/8)</A> = &radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN>/2
+  0.38978587329267936908 = <A href="D51d.html">cos(19*&pi;/51)</A> = (−1−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.39399204006104810860 = <A href="D256d.html">cos(95*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.39774847452701105205 = <A href="D192d.html">cos(71*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.40392100487189496264 = <A href="D68d.html">cos(25*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.40524131400498987091 = <A href="D128d.html">cos(47*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.40673664307580020775 = <A href="D30d.html">cos(11*&pi;/30)</A> = (&radic;<SPAN class=over>15</SPAN>+&radic;<SPAN class=over>3</SPAN>−&radic;<SPAN class=over1>10−2*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.41270702980439473705 = <A href="D96d.html">cos(35*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.41642956009763718256 = <A href="D256d.html">cos(93*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.41865973753742808668 = <A href="D80d.html">cos(29*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.42755509343028209432 = <A href="D64d.html">cos(23*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.43861623853852763765 = <A href="D256d.html">cos(91*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.44228869021900128200 = <A href="D48d.html">cos(17*&pi;/48)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.44573835577653826740 = <A href="D17.html">cos(6*&pi;/17)</A> = (−1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.44961132965460660005 = <A href="D128d.html">cos(45*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.45399049973954679156 = <A href="D20d.html">cos(7*&pi;/20)</A> = (&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.45690387563042067656 = <A href="D192d.html">cos(67*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.46053871095824002363 = <A href="D256d.html">cos(89*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.47139673682599764856 = <A href="D32d.html">cos(11*&pi;/32)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.48218377207912274852 = <A href="D256d.html">cos(87*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.48576339371634005627 = <A href="D192d.html">cos(65*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.48660447856685628729 = <A href="D68d.html">cos(23*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.48862124149695494742 = <A href="D80d.html">cos(27*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.49289819222978403687 = <A href="D128d.html">cos(43*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.50353838372571755869 = <A href="D256d.html">cos(85*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.51410274419322172659 = <A href="D64d.html">cos(21*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.52249856471594886499 = <A href="D40d.html">cos(13*&pi;/40)</A> = &radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.52458968267846890622 = <A href="D256d.html">cos(83*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.52643216287735580024 = <A href="D34d.html">cos(11*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.52806785065036799587 = <A href="D96d.html">cos(31*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.53499761988709721066 = <A href="D128d.html">cos(41*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.54189158057475171615 = <A href="D192d.html">cos(61*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.54463903501502708222 = <A href="D60d.html">cos(19*&pi;/60)</A> = (&radic;<SPAN class=over>10</SPAN>−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>6</SPAN>+&radic;<SPAN class=over>30</SPAN>−2*(1−&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.54532498842204642231 = <A href="D256d.html">cos(81*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.55236497296050581076 = <A href="D51.html">cos(16*&pi;/51)</A> = (1+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.55557023301960222474 = <A href="D16d.html">cos(5*&pi;/16)</A> = &radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN>/2
+  0.56513641442259188898 = <A href="D68d.html">cos(21*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.56573181078361319739 = <A href="D256d.html">cos(79*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.56910014587889823061 = <A href="D192d.html">cos(59*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.57580819141784530075 = <A href="D128d.html">cos(39*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.58247769686780214920 = <A href="D96d.html">cos(29*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.58579785745643886033 = <A href="D256d.html">cos(77*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.58778525229247312917 = <A href="D10d.html">cos(3*&pi;/10)</A> = (&radic;<SPAN class=over1>10−2*&radic;<SPAN class=over>5</SPAN></SPAN>)/4
+  0.59569930449243334347 = <A href="D64d.html">cos(19*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.60263463637925638918 = <A href="D17d.html">cos(5*&pi;/17)</A> = (1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.60551104140432551392 = <A href="D256d.html">cos(75*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.60876142900872063942 = <A href="D24d.html">cos(7*&pi;/24)</A> = &radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN>/2
+  0.61523159058062684548 = <A href="D128d.html">cos(37*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.61909394930983398694 = <A href="D80d.html">cos(23*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.62166057337007740804 = <A href="D192d.html">cos(55*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.62485948814238637708 = <A href="D256d.html">cos(73*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.62932039104983745271 = <A href="D60d.html">cos(17*&pi;/60)</A> = (&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>6</SPAN>+&radic;<SPAN class=over>10</SPAN>+&radic;<SPAN class=over>30</SPAN>+2*(1−&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.63439328416364549822 = <A href="D32d.html">cos(9*&pi;/32)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.63884680565196131707 = <A href="D68d.html">cos(19*&pi;/68)</A> = &radic;<SPAN class=over4>8−&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.64383154288979146507 = <A href="D256d.html">cos(71*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.64695615253485736540 = <A href="D192d.html">cos(53*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.64944804833018365573 = <A href="D40d.html">cos(11*&pi;/40)</A> = &radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.65061830020424211372 = <A href="D51.html">cos(14*&pi;/51)</A> = (1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.65317284295377676408 = <A href="D128d.html">cos(35*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.65934581510006886843 = <A href="D48d.html">cos(13*&pi;/48)</A> = &radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.66241577759017176111 = <A href="D256d.html">cos(69*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.66913060635885821383 = <A href="D15.html">cos(4*&pi;/15)</A> = (1−&radic;<SPAN class=over>5</SPAN>+&radic;<SPAN class=over1>30+6*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.67155895484701840063 = <A href="D64d.html">cos(17*&pi;/64)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.67369564364655721171 = <A href="D34d.html">cos(9*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.67880074553294174139 = <A href="D80d.html">cos(21*&pi;/80)</A> = &radic;<SPAN class=over3>4−&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.68060099779545305059 = <A href="D256d.html">cos(67*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.68359230202287128051 = <A href="D96d.html">cos(25*&pi;/96)</A> = &radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.68954054473706692462 = <A href="D128d.html">cos(33*&pi;/128)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.69544263500961165112 = <A href="D192d.html">cos(49*&pi;/192)</A> = &radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.69613394596292660828 = <A href="D51d.html">cos(13*&pi;/51)</A> = (−1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.69837624940897285355 = <A href="D256d.html">cos(65*&pi;/256)</A> = &radic;<SPAN class=over6>2−&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.70710678118654752440 = <A href="D4d.html">cos(&pi;/4)</A> = &radic;<SPAN class=over>2</SPAN>/2
+  0.71573082528381865413 = <A href="D256d.html">cos(63*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.71858161777969805720 = <A href="D192d.html">cos(47*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.72424708295146692094 = <A href="D128d.html">cos(31*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.72986407269783565735 = <A href="D96d.html">cos(23*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.73265427167241283462 = <A href="D256d.html">cos(61*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.73432250943568553564 = <A href="D80d.html">cos(19*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.73900891722065911592 = <A href="D17.html">cos(4*&pi;/17)</A> = (−1+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.74095112535495909118 = <A href="D64d.html">cos(15*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.74314482547739423501 = <A href="D30d.html">cos(7*&pi;/30)</A> = (&radic;<SPAN class=over>15</SPAN>−&radic;<SPAN class=over>3</SPAN>+&radic;<SPAN class=over1>10+2*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.74913639452345932547 = <A href="D256d.html">cos(59*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.75183980747897739641 = <A href="D48d.html">cos(11*&pi;/48)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.75720884650648454758 = <A href="D128d.html">cos(29*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.76040596560003093817 = <A href="D40d.html">cos(9*&pi;/40)</A> = &radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.76252720390638809637 = <A href="D192d.html">cos(43*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.76516726562245892589 = <A href="D256d.html">cos(57*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.76933397098287890812 = <A href="D68d.html">cos(15*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.77301045336273696081 = <A href="D32d.html">cos(7*&pi;/32)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.77714596145697087998 = <A href="D60d.html">cos(13*&pi;/60)</A> = (&radic;<SPAN class=over>6</SPAN>−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+&radic;<SPAN class=over>30</SPAN>+2*(1+&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.77908057452567043192 = <A href="D51d.html">cos(11*&pi;/51)</A> = (−1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.78073722857209447830 = <A href="D256d.html">cos(55*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.78328674922865036540 = <A href="D192d.html">cos(41*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.78531693088074492747 = <A href="D80d.html">cos(17*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.78834642762660626201 = <A href="D128d.html">cos(27*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.79335334029123516458 = <A href="D24d.html">cos(5*&pi;/24)</A> = &radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN>/2
+  0.79583690460888353626 = <A href="D256d.html">cos(53*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.79801722728023950333 = <A href="D34d.html">cos(7*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.80320753148064490981 = <A href="D64d.html">cos(13*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.80901699437494742410 = <A href="D5d.html">cos(&pi;/5)</A> = (&radic;<SPAN class=over>5</SPAN>+1)/4
+  0.81045719825259479173 = <A href="D256d.html">cos(51*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.81284668459161521658 = <A href="D96d.html">cos(19*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.81619691235622169087 = <A href="D51.html">cos(10*&pi;/51)</A> = (1−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.81758481315158369650 = <A href="D128d.html">cos(25*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.82226821898977510784 = <A href="D192d.html">cos(37*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.82458930278502526447 = <A href="D256d.html">cos(49*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.82499747459830231554 = <A href="D68d.html">cos(13*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.83146961230254523708 = <A href="D16d.html">cos(3*&pi;/16)</A> = &radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN>/2
+  0.83822470555483804319 = <A href="D256d.html">cos(47*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.83867056794542402964 = <A href="D60d.html">cos(11*&pi;/60)</A> = (&radic;<SPAN class=over>6</SPAN>−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−&radic;<SPAN class=over>30</SPAN>+2*(1+&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.84044840109443802102 = <A href="D192d.html">cos(35*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.84485356524970707326 = <A href="D128d.html">cos(23*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.84920218152657888765 = <A href="D96d.html">cos(17*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.85021713572961415213 = <A href="D17d.html">cos(3*&pi;/17)</A> = (1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.85135519310526514226 = <A href="D256d.html">cos(45*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.85264016435409222152 = <A href="D40d.html">cos(7*&pi;/40)</A> = &radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.85772861000027206990 = <A href="D64d.html">cos(11*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.86397285612158673792 = <A href="D256d.html">cos(43*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.86602540378443864676 = <A href="D6d.html">cos(&pi;/6)</A> = &radic;<SPAN class=over>3</SPAN>/2
+  0.87008699110871141865 = <A href="D128d.html">cos(21*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.87249600707279711453 = <A href="D80d.html">cos(13*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.87362239064636953713 = <A href="D68d.html">cos(11*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.87409034162675885155 = <A href="D192d.html">cos(31*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.87607009419540660710 = <A href="D256d.html">cos(41*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.88101219428578450601 = <A href="D51.html">cos(8*&pi;/51)</A> = (1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.88192126434835502971 = <A href="D32d.html">cos(5*&pi;/32)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.88763962040285394776 = <A href="D256d.html">cos(39*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.88951607542185603527 = <A href="D192d.html">cos(29*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.89100652418836786236 = <A href="D20d.html">cos(3*&pi;/20)</A> = (&radic;<SPAN class=over>10</SPAN>−&radic;<SPAN class=over>2</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.89322430119551532034 = <A href="D128d.html">cos(19*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.89516329135506232207 = <A href="D34d.html">cos(5*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.89687274153268830389 = <A href="D48d.html">cos(7*&pi;/48)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.89867446569395384304 = <A href="D256d.html">cos(37*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.90398929312344333159 = <A href="D64d.html">cos(9*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.90814317382508129926 = <A href="D80d.html">cos(11*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.90846527181952368611 = <A href="D51d.html">cos(7*&pi;/51)</A> = (−1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.90916798309052237656 = <A href="D256d.html">cos(35*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.91086382492117581857 = <A href="D96d.html">cos(13*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.91354545764260089550 = <A href="D15.html">cos(2*&pi;/15)</A> = (1+&radic;<SPAN class=over>5</SPAN>+&radic;<SPAN class=over1>30−6*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.91420975570353065464 = <A href="D128d.html">cos(17*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.91479386848802097000 = <A href="D68d.html">cos(9*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.91749449644749130792 = <A href="D192d.html">cos(25*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.91911385169005774391 = <A href="D256d.html">cos(33*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2−&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.92387953251128675613 = <A href="D8d.html">cos(&pi;/8)</A> = &radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN>/2
+  0.92850608047321556594 = <A href="D256d.html">cos(31*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.93001722368401211706 = <A href="D192d.html">cos(23*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.93247222940435580457 = <A href="D17.html">cos(2*&pi;/17)</A> = (−1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.93299279883473888771 = <A href="D128d.html">cos(15*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.93358042649720174899 = <A href="D60d.html">cos(7*&pi;/60)</A> = (&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>6</SPAN>+&radic;<SPAN class=over>10</SPAN>+&radic;<SPAN class=over>30</SPAN>−2*(1−&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.93590592675732570029 = <A href="D96d.html">cos(11*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.93733901191257492320 = <A href="D256d.html">cos(29*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.93819133592248413445 = <A href="D80d.html">cos(9*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>−2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.94154406518302077841 = <A href="D64d.html">cos(7*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.94560732538052132573 = <A href="D256d.html">cos(27*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.94693012949510566426 = <A href="D48d.html">cos(5*&pi;/48)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.94816064759096585893 = <A href="D68d.html">cos(7*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.94952818059303666720 = <A href="D128d.html">cos(13*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.95105651629515357212 = <A href="D10d.html">cos(&pi;/10)</A> = (&radic;<SPAN class=over1>10+2*&radic;<SPAN class=over>5</SPAN></SPAN>)/4
+  0.95206267771392425710 = <A href="D192d.html">cos(19*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.95294200042715655583 = <A href="D51d.html">cos(5*&pi;/51)</A> = (−1+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.95330604035419383692 = <A href="D256d.html">cos(25*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.95694033573220886494 = <A href="D32d.html">cos(3*&pi;/32)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.96043051941556581120 = <A href="D256d.html">cos(23*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.96156179768296194714 = <A href="D192d.html">cos(17*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.96182564317281907041 = <A href="D34d.html">cos(3*&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.96245523645364728763 = <A href="D80d.html">cos(7*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.96377606579543986669 = <A href="D128d.html">cos(11*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.96592582628906828675 = <A href="D12d.html">cos(&pi;/12)</A> = &radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN>/2
+  0.96697647104485210909 = <A href="D256d.html">cos(21*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.96979693603500947182 = <A href="D51.html">cos(4*&pi;/51)</A> = (1+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.97003125319454399260 = <A href="D64d.html">cos(5*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.97236992039767660183 = <A href="D40d.html">cos(3*&pi;/40)</A> = &radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.97293995220556014547 = <A href="D256d.html">cos(19*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.97343805436069282581 = <A href="D68d.html">cos(5*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.97387697927733364815 = <A href="D96d.html">cos(7*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.97570213003852854446 = <A href="D128d.html">cos(9*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.97746197494357186339 = <A href="D192d.html">cos(13*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.97814760073380563793 = <A href="D15d.html">cos(&pi;/15)</A> = (&radic;<SPAN class=over>5</SPAN>−1+&radic;<SPAN class=over1>30+6*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.97831737071962763311 = <A href="D256d.html">cos(17*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2−&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98078528040323044913 = <A href="D16d.html">cos(&pi;/16)</A> = &radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN>/2
+  0.98297309968390177828 = <A href="D17d.html">cos(&pi;/17)</A> = (1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/16
+  0.98310548743121632718 = <A href="D256d.html">cos(15*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98384600592707741609 = <A href="D192d.html">cos(11*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98527764238894124477 = <A href="D128d.html">cos(7*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98664333208487900475 = <A href="D96d.html">cos(5*&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98730141815785838240 = <A href="D256d.html">cos(13*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.98768834059513772619 = <A href="D20d.html">cos(&pi;/20)</A> = (&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*(&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN>))/8
+  0.98917650996478097345 = <A href="D64d.html">cos(3*&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99041043087520515835 = <A href="D68d.html">cos(3*&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.99090263542778002511 = <A href="D256d.html">cos(11*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99144486137381041114 = <A href="D24d.html">cos(&pi;/24)</A> = &radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN>/2
+  0.99242050967193575826 = <A href="D51.html">cos(2*&pi;/51)</A> = (1+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.99247953459870999816 = <A href="D128d.html">cos(5*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99306845695492629564 = <A href="D80d.html">cos(3*&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8−&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.99344777901944439551 = <A href="D192d.html">cos(7*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99390697000235604155 = <A href="D256d.html">cos(9*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2−&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99452189536827333692 = <A href="D30d.html">cos(&pi;/30)</A> = (&radic;<SPAN class=over>15</SPAN>+&radic;<SPAN class=over>3</SPAN>+&radic;<SPAN class=over1>10−2*&radic;<SPAN class=over>5</SPAN></SPAN>)/8
+  0.99518472667219688624 = <A href="D32d.html">cos(&pi;/32)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN>/2
+  0.99573417629503452187 = <A href="D34d.html">cos(&pi;/34)</A> = &radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/8
+  0.99631261218277801263 = <A href="D256d.html">cos(7*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99665523930918032493 = <A href="D192d.html">cos(5*&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99691733373312797620 = <A href="D40d.html">cos(&pi;/40)</A> = &radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN>/4
+  0.99729045667869021614 = <A href="D128d.html">cos(3*&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99785892323860350674 = <A href="D48d.html">cos(&pi;/48)</A> = &radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN>/2
+  0.99810332873704407816 = <A href="D51d.html">cos(&pi;/51)</A> = (−1−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>−&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN>)/32 + &radic;<SPAN class=over>6</SPAN>*&radic;<SPAN class=over3>17+&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over2>17−3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN>−2*&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN>/16
+  0.99811811290014920713 = <A href="D256d.html">cos(5*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2−&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99862953475457387378 = <A href="D60d.html">cos(&pi;/60)</A> = (&radic;<SPAN class=over>2</SPAN>−&radic;<SPAN class=over>6</SPAN>−&radic;<SPAN class=over>10</SPAN>+&radic;<SPAN class=over>30</SPAN>+2*(1+&radic;<SPAN class=over>3</SPAN>)*(&radic;<SPAN class=over1>5+&radic;<SPAN class=over>5</SPAN></SPAN>))/16
+  0.99879545620517239271 = <A href="D64d.html">cos(&pi;/64)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99893297480237244441 = <A href="D68d.html">cos(&pi;/68)</A> = &radic;<SPAN class=over4>8+&radic;<SPAN class=over>2</SPAN>*&radic;<SPAN class=over3>17−&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over2>17+3*&radic;<SPAN class=over>17</SPAN>+&radic;<SPAN class=over1>34−2*&radic;<SPAN class=over>17</SPAN></SPAN>+2*&radic;<SPAN class=over1>34+2*&radic;<SPAN class=over>17</SPAN></SPAN></SPAN></SPAN></SPAN>/4
+  0.99922903624072293474 = <A href="D80d.html">cos(&pi;/80)</A> = &radic;<SPAN class=over3>4+&radic;<SPAN class=over2>8+&radic;<SPAN class=over>2</SPAN>+&radic;<SPAN class=over>10</SPAN>+2*&radic;<SPAN class=over1>5−&radic;<SPAN class=over>5</SPAN></SPAN></SPAN></SPAN>/2/&radic;<SPAN class=over>2</SPAN>
+  0.99932238458834950090 = <A href="D256d.html">cos(3*&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2−&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99946458747636564443 = <A href="D96d.html">cos(&pi;/96)</A> = &radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99969881869620422012 = <A href="D128d.html">cos(&pi;/128)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99986613790956178286 = <A href="D192d.html">cos(&pi;/192)</A> = &radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>3</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+  0.99992470183914454092 = <A href="D256d.html">cos(&pi;/256)</A> = &radic;<SPAN class=over6>2+&radic;<SPAN class=over5>2+&radic;<SPAN class=over4>2+&radic;<SPAN class=over3>2+&radic;<SPAN class=over2>2+&radic;<SPAN class=over1>2+&radic;<SPAN class=over>2</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>/2
+</PRE>
+
+<P>
+The numerical values given in this table are rounded to 20 decimal places. They have been carefully calculated with bc to ensure that their numerical error is smaller than 5·10⁻²¹. Thus, the numerical values given here are far more accurate than those printed in the Character Tables, which are calculated by a Fortran floating point library and printed to 12 decimal places, with an error less than approximately 5·10⁻¹³.
+
+<P>
+In deriving that list, the famous identity <NOBR>cos(2&phi;)=2&thinsp;cos<SUP>2</SUP>(&phi;)−1</NOBR> is most helpful for cases with even denominators. For prime denominators, de Moivre’s formula <NOBR><SPAN style="font-size:130%">(</SPAN>cos(2&pi;/<I>n</I>) + i*sin(2&pi;/<I>n</I>)<SPAN style="font-size:130%">)</SPAN><SUP><I>n</I></SUP>&nbsp;=&nbsp;1</NOBR> can be used (read: The <I>n</I>-th power of an <I>n</I>-th root of unity is one). Other cases are accessible by using the standard addition theorem <NOBR>cos<SPAN style="font-size:130%">(</SPAN>2&pi;(<I>n</I>+<I>m</I>)/(<I>n</I>*<I>m</I>)<SPAN style="font-size:130%">)</SPAN> = cos(2&pi;/<I>n</I>)*cos(2&pi;/<I>m</I>) − sin(2&pi;/<I>n</I>)*sin(2&pi;/<I>m</I>)</NOBR>. As usual, the worst part is the simplification of the resulting radical expression. Note that cosine values for angles with a given denominator differ only in the signs of the various terms and need not to be derived afresh.
+
+<HR>
+<P>This page was written by <A href="mailto:masala.wallah@gmail.com">Gernot Katzer</A>
+<P>See here for my <A href="http://gernot-katzers-spice-pages.com/index.html">Home Page</A>
+
+</BODY>
+</HTML>
+

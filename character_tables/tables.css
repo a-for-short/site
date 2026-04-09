@@ -1,0 +1,974 @@
+TABLE A {text-decoration:none}
+DIV.foot A {white-space:nowrap}
+A:link:hover {color:red}
+A:link:active {color:red; background:yellow}
+A:visited:hover {color:red}
+A:visited:active {color:red; background:yellow}
+TD {padding-left:2px; padding-right:2px}
+SPAN.prod:hover {background-color:red}
+SPAN.deg:hover {background-color: #FBB}
+OL LI {margin-top:0.7ex; margin-bottom:0.7ex}
+SUB {font-size: 90%; vertical-align: -25%}
+SUP {font-size: 90%; vertical-align: 25%}
+SPAN.sop SUB {vertical-align: -50%}
+SUB + SUP {vertical-align: 45%}
+SUP.rootexp {vertical-align: 45%; margin-right:-0.4ex; margin-left:0.4ex}
+SUB.frac {font-size:80%}
+SUP.frac {font-size:80%}
+SPAN.red {color:red}
+NOBR {white-space:nowrap}
+HR {margin-top:4ex}
+xSPAN.over {text-decoration: overline;}
+SPAN.over {border-top:1px black solid;padding-top:0px;}
+SPAN.over1 {border-top:1px black solid;padding-top:1px}
+SPAN.over2 {border-top:1px black solid;padding-top:2px}
+SPAN.over3 {border-top:1px black solid;padding-top:3px}
+SPAN.over4 {border-top:1px black solid;padding-top:4px}
+SPAN.over5 {border-top:1px black solid;padding-top:5px}
+SPAN.over6 {border-top:1px black solid;padding-top:6px}
+SPAN.over7 {border-top:1px black solid;padding-top:7px}
+SPAN.over8 {border-top:1px black solid;padding-top:8px}
+SPAN.over9 {border-top:1px black solid;padding-top:9px}
+PRE {line-height:160%}
+PRE > B:first-child {display:inline-block}
+SPAN.sop {display:inline-block}
+SPAN.sop SPAN {vertical-align:10%; font-size:120%}
+SPAN.sop SUB {display:inline-block; width:0}
+SPAN.irred {display:inline-block; white-space:nowrap}
+SPAN.irred SUB {display:inline-block; width:0}
+SPAN.irred SUP {font-size:120%;vertical-align:05%}
+SPAN.class {display:inline-block}
+SUB.minisop {display:inline-block;width:0}
+SUP.minisop {vertical-align:20%;font-size:100%;background:none;;display:inline-block;width:1ex;text-align:center}
+SPAN.kernthis {margin-left: -0.2ex; background:rgba(255,255,0,0.0)}
+SPAN.kkernthis {margin-left: -0.3ex; background:rgba(255,0,0,0.0)}
+
+BODY {padding-bottom:2ex; margin-bottom:2ex}
+
+.overbar {text-decoration:overline}
+
+TABLE.navigtab {float:left; margin-right:4ex; margin-bottom:5ex; border-collapse:collapse;}
+TABLE.navigtab TD {min-width:2ex; min-height:1ex; text-align:center; background-color:white}
+TABLE.navigtab A {padding: 0 1ex }
+TABLE.navigtab TR:first-child TD:first-child+TD {border: 2px black solid; background-color:transparent}
+TABLE.navigtab TR:first-child+TR TD:first-child+TD {border: 2px black solid; background-color:transparent}
+TABLE.navigtab TR:first-child+TR+TR TD {border: 2px black solid; background-color:transparent}
+TABLE.navigtab TR:first-child+TR+TR+TR TD:first-child+TD {border: 2px black solid; background-color:transparent}
+TABLE.navigtab TR:first-child+TR+TR+TR+TR TD:first-child+TD {border: 2px black solid; background-color:transparent}
+
+TABLE#navigtab {float:none; margin-right:0px; margin-bottom:0px; border-top:2px white solid; border-bottom: 2px white solid; }
+
+TABLE.navig_iso {float:left; margin-right:4ex; margin-bottom:2ex; border-collapse:collapse }
+TABLE.navig_iso TD {min-width:2ex; min-height:1ex; text-align:center}
+TABLE.navig_iso A {padding: 0 1.5ex }
+TABLE.navig_iso TR:first-child TD {border: 2px black solid;}
+TABLE.navig_iso TR:first-child+TR TD {border: 2px black solid;}
+TABLE.navig_iso TR:first-child+TR+TR TD:first-child {border: 2px black solid;}
+TABLE.navig_iso TR:first-child+TR+TR TD:first-child+TD {background:white}
+
+TABLE#navig_iso {float:none; margin-right:0px; margin-bottom:0px; border:2px white solid; border-bottom: 2px white solid; }
+
+DIV#navigdiv {background:  rgb(255, 255, 30)}
+DIV#navigdiv {background: linear-gradient(to bottom left,  rgb(255, 255, 15) , rgb(255, 255, 15) , rgb(143, 252, 149), rgb(115, 137, 253), rgb(115, 137, 253))}
+DIV#navigdiv {float:left;margin-right:4ex; margin-bottom:5ex;}
+
+
+.plaina A, A.plaina {text-decoration: none}
+TABLE.navigtab FORM {border:1px black none; height:0;}
+FORM INPUT {border-left:2px #333 solid; border-top:2px #333 solid; border-bottom:1px #777 solid; border-right:1px #777 solid; border-radius:4px; outline:none;margin-top:3px}
+FORM INPUT {-webkit-border-radius:4px}
+FORM INPUT {-moz-border-radius:4px}
+FORM INPUT:hover {border-color:orange}
+FORM INPUT:focus {border-color:orange;background-color:#FFC}
+FORM INPUT:invalid {border-color:red; box-shadow: 0px 0px 8px red; border-collapse: separate}
+FORM INPUT.invalid {border-color:red; box-shadow: 0px 0px 8px red; border-collapse: separate}
+
+TABLE.navigtab TD.containsform {border:1px red none; vertical-align:top}
+DIV.foot {width:auto}
+
+OL {list-style-type: lower-greek}
+OL OL {list-style-type: lower-roman}
+OL OL {list-style-type: hebrew}
+
+A:link, A:visited {transition: color 0.25s linear 0s; -webkit-transition: color 0.25s linear 0s}
+SPAN[title], I[title]  {transition: all 0.25s linear 0s; -webkit-transition: all 0.25s linear 0s}
+SPAN[title], I[title], SPAN.deg, SPAN.prod  {transition: background 0.25s linear 0s; -webkit-transition: background 0.25s linear 0s}
+SPAN.deg  {transition: background 0.35s linear 0s; -webkit-transition: background 0.35s linear 0s}
+
+xSPAN.hover:hover {background: #EEF}
+
+PRE#raw, PRE#graphic {line-height:4ex}
+SPAN.obs {color:#888}
+PRE {font-family: monospace}
+
+P.labelp {padding:0 !important; margin:0 !important; margin-left:2em !important; text-indent:-2em !important}
+
+#reduceform TABLE {border-collapse:collapse ;background:#DDE3FF; border: #DDE3FF 0.5em solid; border-bottom-width: 1em}
+x#reduceform TABLE TD {border: 1px black solid !important}
+#reduceform TABLE TD.extra {background:red !important}
+#reduceform TABLE TBODY TD.status SPAN {font-weight: bold}
+#reduceform TABLE THEAD TD SPAN.sop {min-width:2em}
+#reduceform TABLE INPUT[disabled] {border-color:black}
+P.first {font-weight:bold}
+#reduceform P.expl {font-size: 80%}
+#reduceform TABLE THEAD TD {text-align:center}
+#reduceform TABLE TD SPAN.sop {display:inline}
+x#reduceform TABLE TD SPAN.sop * {display:inline}
+#reduceform TABLE TD SPAN.class {display:inline}
+#reduceform TABLE TD SPAN {display:inline}
+#reduceform TABLE TD.status {padding-left: 1em}
+#reduceform TABLE TD.status SPAN.irred {width:auto !important}
+#reduceform TABLE TR INPUT {font: inherit; background-color: #FFF ; color:#000 }
+#reduceform TABLE TR INPUT:focus {background-color: #FFC ; color:#000 }
+#reduceform TABLE TR.disabled INPUT {background-color: #EEE !important; color:#000 !important}
+#reduceform TABLE TR.disabled INPUT {font-weight:bold; text-align:center}
+#reduceform TABLE TBODY TD SUB.alone {display:inline}
+#reduceform TABLE TBODY TR {vertical-align:top}
+#reduceform TABLE THEAD TR {vertical-align:bottom}
+#reduceform TABLE THEAD TD {padding-bottom:1em}
+#reduceform TABLE TBODY TR.charrow TD {vertical-align: baseline }
+#reduceform TABLE THEAD *.invisible {color:red;visibility:hidden}
+#reduceform TABLE THEAD TR {font-size: 90%}
+#reduceform TABLE TBODY TD {padding-top:0.7em}
+#reduceform TABLE TBODY INPUT.invalid {border-color:red; box-shadow: 0px 0px 8px red; background-color: #FAA; border-collapse: separate}
+#reduceform TABLE TBODY INPUT:invalid {border-color:red; box-shadow: 0px 0px 8px red; border-collapse: separate}
+#reduceform TABLE THEAD TD {text-transform: none !important}
+#reduceform TABLE THEAD TD.status {text-align:left}
+*.invisible {visibility:hidden}
+
+#reduceform TABLE THEAD TD#corner SPAN#grpcontain {font-size:90%; position:relative; top:-0.25em; left:-0.2em}
+#reduceform TABLE THEAD TD#corner SPAN {display:inline}
+#reduceform TABLE THEAD TD#showhide {padding-left:15px;white-space:nowrap}
+
+#reduceform TABLE TR.charrow TD.irr {text-align:left; cursor:pointer; xposition:relative; xtop:-0.15em}
+#reduceform TABLE.chartabshown COL {xx-webkit-transition: all 0.25s linear 0s; transition: background-color 0.25s linear 0s;} /* bug */
+#reduceform TABLE.noanimation COL {-webkit-transition: none; transition: none;}
+#reduceform TABLE TR.charrow TD {padding:0 !important}
+#reduceform TABLE TR.charrow TD.irr {padding-right:0.5em !important}
+#reduceform TABLE TR.charrow TD:first-child {padding-left:0.5em !important; padding-top:2px !important}
+#reduceform TABLE TD.close {font-size: 70%; text-align:right; padding-right:5px;padding-top:3ex; xborder:1px solid black}
+#reduceform TABLE TD.close A:hover {color:red; cursor:pointer}
+#reduceform TABLE TR.charrow  TD {-webkit-transition: background-color 0.25s linear 0s; transition: background-color 0.25s linear 0s;}
+#reduceform TABLE TR.charrow:hover TD, #reduceform TABLE TR.charrow.hover TD  {background:#BCC8FF }
+#reduceform TABLE TR.charrow.hoover TD  {-webkit-animation: reduceani 0.6s; animation: reduceani 0.6s}
+#reduceform TABLE TR.charrow.nohighlight TD  {background: none }
+#reduceform TABLE TR.charrow.hover.nohighlight TD  {background: #BCC8FF }
+#reduceform TABLE TR.charrow TD.extra, #reduceform TABLE TR.charrow TD.transempty  {-webkit-animation: none !important; animation:none !important; background:none !important }
+#reduceform TABLE.chartabshown COL.hover { background: #BCC8FF;}
+#reduceform TABLE.chartabshown COL.hoover {background: #BCC8FF}
+#reduceform TABLE.chartabshown COL.hooover {-webkit-animation: reduceani 0.6s; animation: reduceani 0.6s} /* bug */
+#reduceform TABLE TR.charrow TD.irr SPAN {display:inline !important}
+#reduceform TABLE TR.charrow TD.trans {width: auto; white-space:nowrap}
+#reduceform TABLE THEAD TD.status A {position:relative; top:-.7em}
+#reduceform TABLE.chartabshown THEAD TD.sopcell  {cursor:pointer}
+#reduceform.chrome TABLE THEAD TD.sopcell  {cursor:initial}
+#reduceform TABLE THEAD + TBODY TR.charrow {display:none}
+#reduceform TABLE.chartabshown TBODY TR.charrow {display:table-row}
+#reduceform TABLE TBODY TR.charrow TD:first-child {text-align:left}
+#reduceform TABLE TBODY TR.charrow TD {text-align:center; padding-left:1em; padding-right: 1em;}
+#reduceform TABLE TBODY TR.charrow TD SPAN.signplus {visibility:hidden}
+#reduceform TABLE TBODY TR.charrow TD SPAN.int SPAN.decpoint {visibility:hidden; display:none}
+#reduceform TABLE TBODY TR.charrow TD SPAN.int SPAN.post {visibility:hidden; display:none}
+#reduceform TABLE TBODY TR.charrow TD.trans {padding-left:1em !important; padding-right:0.5em !important; text-align:left}
+#reduceform TABLE TBODY TR TD.forminput {text-align:center}
+#reduceform TABLE TBODY TR TD.forminput INPUT {text-align:left; padding-left:0.1ex}
+
+#reduceform TABLE TBODY TR.charrow TD.charfloat + TD.charfloat SPAN SPAN.sign {padding-left:0.8ex}
+
+#reduceform TABLE THEAD TD#showhide > SPAN {display:none}
+
+#reduceform TABLE TBODY                  TD.showir LABEL SPAN            {transition: box-shadow 0.3s linear, background-color 0.3s linear}
+#reduceform TABLE TBODY                  TD.status SPAN.result > *       {transition: box-shadow 0.3s linear, background-color 0.3s linear}
+#reduceform TABLE TBODY                  TD.status SPAN.result .raman    {background:none; box-shadow: 0px 0px 0px 0px rgba(255,255,128,0)}
+#reduceform TABLE TBODY                  TD.status SPAN.result .ir       {background:none; box-shadow: 0px 0px 0px 0px rgba(255,255,255,0)}
+#reduceform TABLE TBODY.showraman        TD.status SPAN.result .raman    {background:#FFFF80; box-shadow: 0px 0px 0.5ex 0.4ex #FFFF80}
+#reduceform TABLE TBODY.showir           TD.status SPAN.result .ir       {background:white; box-shadow: 0px 0px 0.5ex 0.4ex white}
+#reduceform TABLE TBODY.showir.showraman TD.status SPAN.result .ir.raman {background:#FFFF80 ; box-shadow: 0px 0px 0.5ex 0.4ex white, inset 0px 0px 1ex 0.5ex white}
+#reduceform TABLE TBODY TD.showir {line-height:0; padding:0; white-space:nowrap; position:relative; top:-0.35em; padding-left:15px; font-size:80%}
+#reduceform TABLE.chartabshown TBODY TD.showir {position: static}
+#reduceform TABLE TBODY TD.showir SPAN.showir LABEL INPUT+SPAN {padding:0.2ex}
+#reduceform TABLE TBODY TD.showir SPAN.showir LABEL INPUT:checked+SPAN {font-weight:normal !important; box-shadow: 0px 0px 0.4ex 0.3ex #FFFF80, inset 0px 0px 0.5ex 0.2ex #FFFF80}
+#reduceform TABLE TBODY TD.showir SPAN.showir LABEL+LABEL INPUT:checked+SPAN {box-shadow: 0px 0px 0.4ex 0.3ex white, inset 0px 0px 0.5ex 0.2ex white}
+
+/* No box-shadow available */
+#reduceform TABLE TBODY.showir.showraman TD.status SPAN.result .ir.raman {background:#FFFFC0}
+BODY.ie11 #reduceform TABLE TBODY.showir.showraman TD.status SPAN.result .ir.raman {background:#FFFF40 ; box-shadow: 0px 0px 0.5ex 0.4ex white, inset 0px 0px 1ex 0.5ex white}
+@supports (box-shadow: 0px 0px 0.5ex 0.4ex white, inset 0px 0px 1ex 0.5ex white)
+  { 
+    #reduceform TABLE TBODY.showir.showraman TD.status SPAN.result .ir.raman {background:#FFFF40 ; box-shadow: 0px 0px 0.5ex 0.4ex white, inset 0px 0px 1ex 0.5ex white} 
+  }
+
+
+#productform INPUT.invalid {border-color:red; box-shadow: 0px 0px 8px red; background-color: #FAA; border-collapse: separate}
+#productform INPUT:invalid {border-color:red; box-shadow: 0px 0px 8px red; border-collapse: separate}
+#productform TABLE#products {background: #DED0F2; border:0; border-collapse:collapse}
+#productform TABLE#products {border: 1ex #DED0F2 solid !important}
+#productform TABLE#products TD {border: 1px transparent dotted}
+#productform TABLE#products THEAD TD {text-align:center}
+#productform TABLE#products THEAD TR {vertical-align:bottom}
+#productform TABLE#products THEAD *.invisible {color:red;visibility:hidden}
+#productform TABLE#products THEAD TR {font-size: 90%}
+#productform TABLE#products THEAD TD {text-transform: none !important}
+#productform TABLE#products THEAD TD.status {text-align:left}
+#productform TABLE#products THEAD TD#corner SPAN#grpcontain {font-size:90%; position:relative; top:-0.25em; left:-0.2em}
+#productform TABLE#products THEAD TD.psop {white-space:nowrap; padding-right:.5em}
+#productform TABLE#products THEAD TD.psop > SPAN {width:auto !important}
+#productform TABLE#products THEAD TD#showhide {white-space:nowrap}
+#productform TABLE#products THEAD TD.status A {position:relative; top:-.7em}
+#productform TABLE#products THEAD TD.sum, #productform TABLE#products THEAD TD.prod  {text-align:left; vertical-align:middle; font-weight: bold; font-size:110%}
+#productform TABLE#products.nopow THEAD TD.sum, #productform TABLE#products.nopow THEAD TD.prod  {vertical-align:top}
+#productform TABLE#products TBODY TR {vertical-align:baseline}
+#productform TABLE#products TBODY TD.sum, #productform TABLE#products TBODY TD.prod  {text-align:left; font-weight: bold; padding-right:0.5em; padding-bottom:0.3em; padding-top:0.2em; background:none}
+#productform TABLE#products TBODY TD.char {text-align:right}
+#productform TABLE#products TBODY TD.char.float+TD.char.float {padding-left:0.3em}
+#productform TABLE#products TBODY TD.char.floatint > SPAN.int {padding-right:1.3em}
+#productform TABLE#products TBODY TD.char.int > SPAN.int {padding-right:1em}
+#productform TABLE#products TBODY TD.sum + TD.char.int > SPAN.int {padding-right:0.7em}
+#productform TABLE#products TBODY TD.char.float > SPAN.float {padding-right:0.5em}
+#productform TABLE#products TBODY TD.char SPAN.signplus {visibility:hidden}
+#productform TABLE#products TBODY TD.char SPAN.int SPAN.decpoint {visibility:hidden; display:none}
+#productform TABLE#products TBODY TD.char SPAN.int SPAN.post {visibility:hidden; display:none}
+#productform TABLE#products TBODY TD.sum  {font-weight:bold}
+#productform TABLE#products TBODY TD.eq  {font-weight:bold;padding-right:8px}
+#productform TABLE#products THEAD TD.psop  {padding: 0 1.5em 0.5ex 0.5em}
+#productform TABLE#products THEAD TD.psop.short  {padding-right:0.5em}
+.noprime TABLE SPAN.irred {width: auto !important; xbackground:red}
+.noprime TABLE SPAN.irred SUB {width: auto !important; xbackground:yellow !important}
+#productform TABLE TBODY TR  {transition: background 0.25s linear 0s, border 0.25s linear 0s;}
+#productform TABLE TBODY TR  {-webkit-transition: background 0.25s linear 0s, border 0.25s linear 0s;}
+#productform TABLE#products TBODY TR.flicker {animation: prodformflickani 1s; -webkit-animation: prodformflickani 1s}
+#productform TABLE#products TBODY TR.flicker TD.colstyle {background-color: #C9A2FF}
+#productform TABLE#products TBODY TR TD SPAN.brack {font-size:140%; font-weight:normal; padding-left:0.1em; xpadding-right:0.2em}
+#productform TABLE#products TBODY TR TD SPAN.brack:first-child {padding-left:0;  padding-right:0.1em}
+#productform TABLE#products TBODY TR TD:first-child+TD SPAN.brack + SUP {font-size:80%; vertical-align:70%; padding-left:2px}
+#productform TABLE#products TBODY TR TD:first-child+TD SUP.lexp {padding-left:2px; padding-right:2px;font-size:80%; vertical-align:55%}
+#productform TABLE#products TBODY TR TD:first-child+TD SPAN.line {font-size: 80%; font-variant: small-caps; border: 1px dotted grey; padding:1px; white-space:nowrap}
+#mult_inp {margin-left:2em; width:90%; margin-bottom: 0.5em}
+
+#productform TABLE#products TBODY TR TD.num {position:relative; font-size:80%; font-family: monospace; padding-right:1.5em; padding-left:0.5em; cursor:pointer; text-align: right; z-index:0}
+#productform TABLE#products TBODY TR TD.num DIV.grad {transition: opacity 0.2s linear; height:100%; width:100%; top:0; left:0; position:absolute; opacity:0; 
+                                                      background:linear-gradient(to right, #AD7EEF,#AD7EEF, rgba(173, 126, 239, 0));z-index:-1}
+#productform TABLE#products THEAD+TBODY TR:hover {background:#C9A2FF; border: 1px dashed black}
+#productform TABLE#products TBODY TR.unhighlight:hover {background:none; border:none}
+#productform TABLE#products TBODY TR.hiighlight {background:#C9A2FF; animation: prodformani 0.6s !important; -webkit-animation: prodformani 0.6s !important; }
+#productform TABLE#products TBODY TR.hiighlight TD.num DIV.grad {opacity:1; transition: opacity 0.6s cubic-bezier(0.77, 0.24, 0.75, 0.49)}
+#productform TABLE#products TBODY TR:hover TD.num DIV.grad { transition: opacity 0.6s cubic-bezier(0.77, 0.24, 0.75, 0.49); opacity:1}
+#productform TABLE#products TBODY TR.unhighlight:hover TD.num DIV.grad {opacity:0; transition: opacity 0.2s linear}
+#productform TABLE#products COL {background: none; transition: all 0.5s linear; border: 1px  transparent}
+#productform TABLE#products COL.highlight {background:#C9A2FF; border: 1px dashed black}
+#productform TABLE#products COL.hiighlight {background:#C9A2FF}
+#productform TABLE#products COL.hiighliight {animation: prodformani 0.6s !important; -webkit-animation: prodformani 0.6s !important; }
+#productform TABLE#products THEAD TD.psop.highlight {background: #AD7EEF; border-top: 1px dashed black}
+#productform TABLE#products THEAD TD.psop {cursor:pointer; transition: background 0.5s linear; border-top: 1px dashed #DED0F2}
+#productform TABLE#products THEAD TD {border-bottom: 2px black solid}
+#productform TABLE#products TBODY TR.space TD {height: 0.5ex}
+#productform TABLE#products TBODY TR.space:hover {background:none; border:none}
+#productform P#productform_control {margin-left:3em; margin-bottom:0;margin-top:0}
+#productform P#productform_control + P {margin-left:3em; margin-top:0}
+#productform P#productform_control LABEL {background:red; box-shadow: red 0px 0px 8px 2px;
+                                          transition: background-color 4s cubic-bezier(0.69, -0.19, 1, 1), box-shadow 4s cubic-bezier(0.69, -0.19, 1, 1)}
+#productform #products_container {display:inline-block}
+
+#productform TABLE#product_table {display:none; background: #EFD0F2; border:0; border-collapse:collapse}
+#productform TABLE#product_table COL {transition: all 0.25s linear 0s}
+#productform TABLE#product_table COL {-webkit-transition: all 0.25s linear 0s}
+#productform TABLE#product_table COL.cg {background:none; }
+#productform TABLE#product_table COL.cg.highlight {background:#E7B7EC; border-left: 1px dashed black;  border-right: 1px dashed black}
+#productform TABLE#product_table COL.hiighlight {background:#E7B7EC}
+#productform TABLE#product_table COL.hiighliight {animation: prodtabani 0.6s !important; -webkit-animation: prodtabani 0.6s !important; }
+#productform TABLE#product_table TBODY TR.hiighlight {background:#E7B7EC; }
+#productform TABLE#product_table TBODY TR.hiighliight {animation: prodtabani 0.6s; -webkit-animation: prodtabani 0.6s}
+#productform TABLE#product_table TBODY TR TD.irrep {cursor:pointer}
+#productform TABLE#product_table TD {padding:0.5ex 1ex; min-width:2em; outline: 0px solid #DDD}
+#productform TABLE#product_table TD.p {text-align:center}
+#productform TABLE#product_table THEAD TD {text-align:center; padding-bottom: 0.7ex; cursor:pointer}
+#productform TABLE#product_table TFOOT TD {text-align:center; padding-top: 0.7ex; cursor:pointer}
+#productform TABLE#product_table THEAD TD:first-child, #productform TABLE#product_table THEAD TD:last-child, #productform TABLE#product_table TFOOT TD:first-child, #productform TABLE#product_table TFOOT TD:last-child {cursor: initial}
+#productform TABLE#product_table TD.p, #productform TABLE#product_table TD.p SPAN {font-weight: normal !important}
+#productform TABLE#product_table TD.p, #productform TABLE#product_table TD.irrep, #productform TABLE#product_table TD.irrep.highlight  {transition: background 0.25s linear 0s, border .25s linear 0s, box-shadow .5s linear 0s, outline .25s linear 0s}
+#productform TABLE#product_table TD.p:hover, #productform TABLE#product_table TD.irrep.highlight  {background:#E78FF0}
+#productform TABLE#product_table TBODY TR.unhighlight, #productform TABLE#product_table TBODY TR.unhighlight TD {border: 1px white dotted ; background:none }
+#productform TABLE#product_table TBODY TR.unhighlight:hover, #productform TABLE#product_table TBODY TR.unhighlight:hover TD {background:none }
+FORM#productform TABLE#product_table TBODY TR TD.p:hover  {background:#E567F2}
+#productform TABLE#product_table TD.p:hover {outline: 3px solid black; border: hidden !important}
+#productform TABLE#product_table TBODY TR:hover TD.irrep  {background:#E78FF0}
+#productform TABLE#product_table TBODY TR.unhighlight:hover TD.irrep  {background: none}
+#productform TABLE#product_table TBODY TR TD.p  {border: 1px dotted white;  }
+
+#productform TABLE#product_table TD.p {position:relative}
+#productform TABLE#product_table TD.p.dipole.showdipole  > * {background-color:white}
+#productform TABLE#product_table TD.p.raman.showraman > *  {background-color: #FFFF80}
+#productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole > *  {background-color: #FFFFD0}
+#productform TABLE#product_table TD.p  DIV.grad {z-index: 0; top:0;left:0; width:100%; height:100%; position:absolute; transition: opacity 0.5s linear; opacity:0; border: 0px black solid}
+#productform TABLE#product_table TD.p  DIV.grad + SPAN {z-index:+1; position:relative}
+#productform TABLE#product_table TD.p:hover   {z-index:+2;}
+
+@supports (background: radial-gradient(white,white, rgba(255,255,255,0.5), #E567F2, #E567F2, #E567F2))
+   {
+        #productform TABLE#product_table TD.p.dipole.showdipole  {outline:none; border:1px dotted white; }
+        #productform TABLE#product_table TD.p.dipole.showdipole:hover  {outline:3px solid black; border:1px dotted white; }
+        #productform TABLE#product_table TD.p.raman.showraman  {outline:none; border:1px dotted white; }
+        #productform TABLE#product_table TD.p.raman.showraman:hover  {outline:3px solid black; border:1px dotted white; }
+        #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole  {outline:none; border:1px dotted white; }
+        #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole:hover  {outline:3px solid black; border:1px dotted white; }
+
+        #productform TABLE#product_table TD.p.dipole              > DIV.dipole {background: radial-gradient(white,white, rgba(255,255,255,0.5), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0))}
+        #productform TABLE#product_table TD.p.dipole:hover        > DIV.dipole {background: radial-gradient(white,white, rgba(255,255,255,0.5), #E567F2, #E567F2)}
+        #productform TABLE#product_table TD.p.raman               > DIV.raman {background: radial-gradient(rgba(255,255,128,1),rgba(255,255,128,1), rgba(255,255,128,0.5), rgba(255,255,128,0), rgba(255,255,128,0), rgba(255,255,255,0))}
+        #productform TABLE#product_table TD.p.raman:hover         > DIV.raman {background: radial-gradient(rgba(255,255,128,1),rgba(255,255,128,1), rgba(255,255,128,0.5), #E567F2, #E567F2)}
+        #productform TABLE#product_table TD.p.raman.dipole        > DIV.both {background: radial-gradient(white, white, #FFFFD0, rgba(255,255,64,0.5), rgba(255,255,64,0), rgba(255,255,64,0), rgba(255,255,64,0), rgba(255,255,64,0))}
+        #productform TABLE#product_table TD.p.raman.dipole:hover  > DIV.both {background: radial-gradient(white, white,rgba(255,255,200,1) , rgba(255,255,64,0.5), #E567F2, #E567F2, #E567F2)}
+        HTML BODY #productform TABLE#product_table TD.p.dipole.showdipole  > * {background-color:transparent}
+        HTML BODY #productform TABLE#product_table TD.p.raman.showraman > *  {background-color: transparent}
+        HTML BODY #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole > *  {background-color: transparent}
+   }
+
+BODY.ie11 #productform TABLE#product_table TD.p.dipole.showdipole  {outline:none; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.dipole.showdipole:hover  {outline:3px solid black; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.raman.showraman  {outline:none; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.raman.showraman:hover  {outline:3px solid black; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole  {outline:none; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole:hover  {outline:3px solid black; border:1px dotted white; }
+BODY.ie11 #productform TABLE#product_table TD.p.dipole             > DIV.dipole  {background: radial-gradient(1.5em 1em, white,white, rgba(255,255,255,0))}
+BODY.ie11 #productform TABLE#product_table TD.p.dipole:hover       > DIV.dipole {background: radial-gradient(1.5em 1em, white,white, #E567F2)}
+BODY.ie11 #productform TABLE#product_table TD.p.raman              > DIV.raman { background: radial-gradient(1.5em 1em, #FFFF80,#FFFF80, rgba(255,255,255,0))}
+BODY.ie11 #productform TABLE#product_table TD.p.raman:hover        > DIV.raman {background: radial-gradient(1.5em 1em, #FFFF80,#FFFF80, #E567F2)}
+BODY.ie11 #productform TABLE#product_table TD.p.dipole.raman       > DIV.both {background: radial-gradient(1.5em 1em, #FFFF00,#FFFF60,#FFFF80,#FFFFA0,#ffffff, rgba(255,255,255,0.8), rgba(255,255,255,0.5),rgba(255,255,255,0.3),rgba(255,255,255,0.0))}
+BODY.ie11 #productform TABLE#product_table TD.p.dipole.raman:hover > DIV.both {background: radial-gradient(1.5em 1em, #FFFF00,#FFFF60,#FFFF80,#FFFFA0,#FFFFFF, rgba(255,255,255,0.8), rgb(249,189,255), #E567F2,#E567F2)}
+HTML BODY.ie11 #productform TABLE#product_table TD.p.dipole.showdipole  > * {background-color:transparent}
+HTML BODY.ie11 #productform TABLE#product_table TD.p.raman.showraman > *  {background-color: transparent}
+HTML BODY.ie11 #productform TABLE#product_table TD.p.raman.dipole.showraman.showdipole > *  {background-color: transparent}
+
+#productform TABLE#product_table TD.p.dipole             > DIV.dipole  {background: radial-gradient(1.5em 1em, white,white, rgba(255,255,255,0))}
+#productform TABLE#product_table TD.p.dipole:hover       > DIV.dipole {background: radial-gradient(1.5em 1em, white,white, transparent)}
+#productform TABLE#product_table TD.p.raman              > DIV.raman { background: radial-gradient(1.5em 1em, #FFFF80,#FFFF80, rgba(255,255,255,0))}
+#productform TABLE#product_table TD.p.raman:hover        > DIV.raman {background: radial-gradient(1.5em 1em, #FFFF80,#FFFF80, transparent)}
+#productform TABLE#product_table TD.p.dipole.raman       > DIV.both {background: radial-gradient(1.5em 1em, #FFFF00,#FFFF60,#FFFF80,#FFFFA0,#ffffff, rgba(255,255,255,0.8), rgba(255,255,255,0.5),rgba(255,255,255,0.3),rgba(255,255,255,0.0))}
+#productform TABLE#product_table TD.p.dipole.raman:hover > DIV.both {background: radial-gradient(1.5em 1em, #FFFF00,#FFFF60,#FFFF80,#FFFFA0,#FFFFFF, rgba(255,255,255,0.8), rgb(249,189,255), transparent,transparent)}
+
+#productform TABLE#product_table TD.p.dipole.showdipole > DIV.dipole {opacity:1}
+#productform TABLE#product_table TD.p.dipole.showdipole > DIV.raman {opacity:0}
+#productform TABLE#product_table TD.p.dipole.showdipole > DIV.both {opacity:0}
+
+#productform TABLE#product_table TD.p.raman.showraman > DIV.dipole {opacity:0}
+#productform TABLE#product_table TD.p.raman.showraman > DIV.raman {opacity:1}
+#productform TABLE#product_table TD.p.raman.showraman > DIV.both {opacity:0}
+
+#productform TABLE#product_table TD.p.dipole.raman.showdipole > DIV.dipole {opacity:1}
+#productform TABLE#product_table TD.p.dipole.raman.showdipole > DIV.raman {opacity:0}
+#productform TABLE#product_table TD.p.dipole.raman.showdipole > DIV.both {opacity:0}
+
+#productform TABLE#product_table TD.p.dipole.raman.showraman > DIV.dipole {opacity:0}
+#productform TABLE#product_table TD.p.dipole.raman.showraman > DIV.raman {opacity:1}
+#productform TABLE#product_table TD.p.dipole.raman.showraman > DIV.both {opacity:0}
+
+#productform TABLE#product_table TD.p.dipole.raman.showdipole.showraman > DIV.dipole {opacity:0}
+#productform TABLE#product_table TD.p.dipole.raman.showdipole.showraman > DIV.raman {opacity:0}
+#productform TABLE#product_table TD.p.dipole.raman.showdipole.showraman > DIV.both {opacity:1}
+
+#productform TABLE#product_table TD.p.diag  {background: #EFBFF4; border-style:solid}
+@supports (box-shadow: inset  0px 0px 3px 2px #C108D7)
+   {
+       #productform TABLE#product_table TD.p.diag  {background: none; border-style:dotted}
+       #productform TABLE#product_table TD.p.diag:hover  {box-shadow: inset  0px 0px 3px 2px #670C6F;  }
+       #productform TABLE#product_table TD.p.diag  {box-shadow: inset  0px 0px 5px 4px #E567F2;  }
+       dunno #productform TABLE#product_table TD.p  {transition: all .25s linear, box-shadow .5s linear, font-size 0s}
+   }
+
+#productform TABLE#product_table TBODY TR.unhighlight TD.diag {background:#EFBFF4 !important}
+BODY.ie11 #productform TABLE#product_table TD.p.diag  {background: none; border-style:dotted}
+BODY.ie11 #productform TABLE#product_table TD.p.diag:hover  {box-shadow: inset  0px 0px 3px 2px #670C6F;  }
+BODY.ie11 #productform TABLE#product_table TD.p.diag  {box-shadow: inset  0px 0px 5px 4px #E567F2;  }
+BODY.ie11 #productform TABLE#product_table TD.p  {transition: all .25s linear, box-shadow .5s linear, font-size 0s}
+xxBODY.ie11 H1 {color:red}
+
+#productform #product_table_wrap TABLE#product_table TBODY TR:hover {background-color: #E7B7EC}
+#productform #product_table_wrap TABLE#product_table TBODY TR.unhighlight:hover {background-color: transparent}
+#productform #product_table_wrap TABLE#product_table TBODY TR:hover TD  {border-top: 1px dashed black ;  border-bottom: 1px dashed black}
+#productform TABLE#product_table TBODY TR.unhighlight TD  {border-top: 1px dotted white;  border-bottom: 1px dotted white}
+#productform TABLE#product_table THEAD   {border-bottom: 2px black solid}
+#productform TABLE#product_table TFOOT   {border-top: 2px black solid}
+#productform TABLE#product_table TBODY TR.spacer:first-child TD  {padding-top: 0.4em; border-bottom:none !important}
+#productform TABLE#product_table TBODY TR.spacer:last-child TD  {padding-bottom: 0.4em;border-top:none !important}
+#productform TABLE#product_table TBODY TR.spacer  {background:none !important; border-top:none !important; border-bottom:none !important}
+#productform TABLE#product_table TD:first-child   {border-right: 2px black solid !important}
+#productform #product_table_wrap TABLE#product_table TBODY TD:first-child+TD   {border-left: 2px black solid !important}
+#productform #product_table_wrap TABLE#product_table TBODY TD.last   {border-right: 2px black solid !important}
+#productform TABLE#product_table TD:last-child   {border-left: 2px black solid !important; padding-right: 0; padding-left:0.5em}
+#productform TABLE TD.corner {background:white !important; border:1px white solid}
+
+
+#productform DIV#product_control {padding-left: 3em; padding-top:1em}
+
+BODY.leftsticked .stickleft {width:100%}
+BODY.leftsticked #irrational {width: initial}
+#scroll_control_div {position:static; float:right; width:10em; padding: 0 8px; margin-top:-8px; border: 2px solid black; border-radius: 15px; background-color: #F2EAE1; transition: background-color 1s}
+#scroll_control_div:hover {background-color:#FF9F38}
+BODY.leftsticked #scroll_control_div.stickleft:hover {background-color: #F44}
+BODY.leftsticked #scroll_control_div.stickleft {background-color: #FC5B8E}
+#scroll_control_div P {margin:0; padding:0; padding-left: 1.5em; text-indent: -1.5em; font-size:10pt}
+BODY.leftsticked TABLE TD {white-space:nowrap}
+BODY.leftsticked TABLE#rottrans TD {white-space:normal}
+
+x * {border:black 1px solid !important}
+
+#noteslist {padding-top:1em; padding-bottom:1em; background-image: linear-gradient(-150deg, #bbb, #c5c5c5, #d8d8d8, #e3e3e3,#eee,#eee); background-color:#ccc; font-family: sans-serif}
+#noteslist {padding-right:1.5em}
+#noteslist LI {margin-top:1em; margin-bottom:1em}
+#noteslist LI P, P.hyphens {-moz-hyphens: auto; -webkit-hyphens:auto; -ms-hyphens: auto; hyphens:auto: padding:0; margin:0}
+#noteslist LI P .mhyp, P.hyphens .mhyp {-moz-hyphens: manual; -webkit-hyphens:manual; -ms-hyphens: manual; hyphens:manual; }
+#noteslist.showmhyp P .mhyp {color:#33A105}
+#noteslist.showmhyp P NOBR {color: #894915}
+#noteslist.showmhyp P NOBR.eg {color: inherit}
+#noteslist LI.showmhyp P+P::before {content: "\2022"; position:absolute; margin-left:-0.7em }
+#noteslist LI P {margin-top:0.5em; text-indent:0}
+#noteslist LI P:first-child {margin:0; text-indent:0}
+NOBR.eg {font-style: italic}
+#complexref, #projectref {color:black; text-decoration:underline}
+#complexref:hover , #projectref:hover {color:red; text-decoration:underline}
+
+#glance {float:right; margin-left:2em; margin-top:1em;border-collapse:collapse; margin-right:-1em; border: 2px black solid; background-color:#e8e8e8; background-image: linear-gradient(-150deg, #e8e8e8, #F3F3F3)}
+#glance TBODY:hover TR:hover TD.blank {background-color:transparent }
+#glance THEAD * {font-weight: bold; }
+xxx#glance THEAD {border:1px solid black}
+#glance THEAD TH[colspan] {border-bottom: 1px black solid}
+#glance TD.blank {width:5px}
+#glance TD.blank+TH {padding-left:5px}
+#glance TD:last-child {border-right:2px black solid}
+#glance TD SPAN, #glance TH SPAN {transition: background-color 0.5s}
+#glance TD SPAN[title]:hover, #glance TH SPAN[title]:hover {background-color: rgba(248,225,182,0.69); transition: background-color 2s; cursor:help}
+#glance TD.value {padding-right:5px}
+#glance TBODY TD, #glance TBODY TH {vertical-align: baseline}
+#glance TBODY TR.space TD {height:10px}
+#glance TBODY TH {font-weight:normal}
+#glance TBODY TR.space:hover TD {background-color:transparent}
+#glance THEAD TR TH {padding-top:7px; padding-bottom:5px; text-align:center}
+#glance TFOOT TR TD {padding-top:7px; padding-bottom:5px; text-align:center}
+#glance TBODY TR TH {text-align:left}
+#glance TBODY TR TD.ori {text-align:right;padding-right:1em}
+#glance TBODY TR:hover TD, #glance TBODY TR:hover TH {background: rgb(250,250,250)}
+#noteslist #glance THEAD+TBODY+TBODY TR:hover TD, #noteslist #glance THEAD+TBODY+TBODY TR:hover TH {background: rgb(255,255,255)}
+#noteslist #glance THEAD+TBODY+TBODY:hover TR:hover TD.blank {background-color:transparent }
+#glance TBODY TR TD, #glance TBODY TR TH {white-space:nowrap; transition: background-color 0.2s linear}
+#glance_col {width:0}
+#glance_col+TD {min-width:auto}
+#glance TFOOT+TBODY+TBODY:hover TR:first-child TD:first-child+TH {background: rgb(250,250,250)}
+
+
+TABLE#rottrans {border-collapse:collapse}
+TABLE#rottrans TD, TABLE#rottrans TH {padding:0.5em 0.5em; padding-bottom:0.1em; border:1px black solid; vertical-align: baseline; background: #FcFFCF}
+TABLE#rottrans SPAN.obs {color:#555}
+TABLE#rottrans SPAN.obs:before {content: ' '; white-space: normal }
+TABLE#rottrans TD DIV > SPAN.prod {margin-left: 0.8em; white-space: nowrap}
+TABLE#rottrans TD DIV > SPAN.deg {margin-left: 0.8em; white-space: nowrap}
+TABLE#rottrans TD DIV > SPAN.deg > SPAN.prod + SPAN.prod {margin-left: 0.5em; white-space: nowrap}
+TABLE#rottrans TH:first-child {vertical-align:top;font-size:120%; padding-right:0.5em; padding-top:.5em}
+TABLE#rottrans TD:last-child {padding-left:-0em; line-height:150%; font-size:100%; xfont-family: monospace}
+TABLE#rottrans TD:last-child SPAN.deg:hover, TABLE#rottrans TD:last-child SPAN.deg.hover, TABLE#rottrans TD:last-child SPAN.deg.hver {background: #FFC077; box-shadow: 0px 0px 5px 1px #F80; border-collapse: separate}
+TABLE#rottrans TD:last-child SPAN.deg.hoover {background: #FFC077; box-shadow: 0px 0px 10px 5px #FFC077; border-collapse: separate}
+TABLE#rottrans TD:last-child SPAN.prod:hover, TABLE#rottrans TD:last-child SPAN.deg.hover SPAN.prod, TABLE#rottrans TD:last-child SPAN.prod.hover, TABLE#rottrans TD:last-child SPAN.prod.hver {background: #FA7F75; }
+TABLE#rottrans TD:last-child SPAN.deg.hoover SPAN.prod, TABLE#rottrans TD:last-child SPAN.prod.hoover {background: #F76D3B;; box-shadow: 0px 0px 5px 2px #F76D3B; }
+TABLE#rottrans TD:last-child SPAN {transition: all 0.25s linear 0s}
+
+TABLE#rottrans DIV.lcontainer.hover DIV.zero {border-color:black;background: #FFF}
+TABLE#rottrans DIV.lcontainer.hover {box-shadow: 0px 0px 3px black}
+TABLE#rottrans DIV.lcontainer.clicked {box-shadow: 0px 0px 3px 0px black}
+TABLE#rottrans DIV.lcontainer.clicked.hover {box-shadow: 0px 0px 3px 1px black}
+TABLE#rottrans DIV.bx {white-space: nowrap; margin-left: 0.7em; margin-bottom:0.6em;height: 0.8em}
+TABLE#rottrans TBODY DIV.bx {margin-bottom:0.8em}
+TABLE#rottrans DIV.bx > DIV.lcontainer {margin:0; display: inline-block; line-height:1px; padding:0; transition: all 0.25s linear 0s}
+TABLE#rottrans DIV.bx > DIV.lcontainer:first-child {margin-right:1em}
+TABLE#rottrans DIV.bx > DIV > DIV {border:1px black solid; margin:0; display: inline-block; height:1em; padding:0}
+TABLE#rottrans TFOOT DIV.bx > DIV , TABLE#rottrans THEAD DIV.bx > DIV {display:inline-block;border-radius: 7px; background-color: #F4F4F8; border: 1px solid gray}
+TABLE#rottrans DIV.bx > DIV > DIV {background-color: #F4F4F8; border-color: gray; }
+TABLE#rottrans DIV.bx > DIV > DIV:hover {background-color: #FFFFFF; border-color: black; }
+TABLE#rottrans THEAD DIV.bx > DIV:hover, TABLE#rottrans TFOOT DIV.bx > DIV:hover  {background-color: #FFFFFF; border-color: black; }
+TABLE#rottrans THEAD DIV.bx > DIV:hover, TABLE#rottrans TFOOT DIV.bx > DIV:hover {cursor: pointer}
+TABLE#rottrans THEAD DIV.bx > DIV:active, TABLE#rottrans TFOOT DIV.bx > DIV:active {box-shadow: 0px 0px 15px red !important ; background-color:yellow; border-color:red; color:red; border-collapse: separate}
+TABLE#rottrans THEAD DIV.bx > DIV.clicked, TABLE#rottrans TFOOT DIV.bx > DIV.clicked {box-shadow: inset 0px 0px 2px 2px black }
+TABLE#rottrans THEAD DIV.bx  DIV.R, TABLE#rottrans TFOOT DIV.bx  DIV.R {margin-right: 1em}
+TABLE#rottrans TBODY DIV.bx > DIV > DIV:hover {border-color: black; }
+TABLE#rottrans TBODY DIV.bx > DIV > DIV {border-color: gray; }
+TABLE#rottrans DIV.bx > DIV.sep {display:inline-block;width:0.5em;background-color: transparent; border:none}
+TABLE#rottrans DIV.bx > DIV > DIV.q {background: yellow; border-color:black; position:relative}
+TABLE#rottrans DIV.bx > DIV > DIV.q, TABLE#rottrans DIV.bx > DIV > DIV.zero {transition: all 0.25s linear 0s}
+TABLE#rottrans DIV.bx > DIV > DIV.q.T, TABLE#rottrans DIV.bx > DIV > DIV.q.TT, TABLE#rottrans DIV.bx > DIV > DIV.q.TTT {cursor:pointer}
+TABLE#rottrans TBODY.ico DIV.bx > DIV > DIV.q, TABLE#rottrans DIV.bx > DIV > DIV.q.hoover {cursor:inherit !important}
+TABLE#rottrans DIV.bx > DIV > DIV.q.unhighlight {box-shadow:none !important; xbackground:yellow !important}
+TABLE#rottrans DIV.bx > DIV > DIV.q:hover, TABLE#rottrans DIV.bx > DIV > DIV.q.hover {z-index:10; background: #FA7F75; border-collapse: separate}
+TABLE#rottrans DIV.bx > DIV > DIV.q.hoover, TABLE#rottrans DIV.bx > DIV > DIV.q.clicked {z-index:10; box-shadow: 0px 0px 10px 2px red; background: #F76D3B; border-collapse: separate}
+TABLE#rottrans DIV.bx > DIV > DIV.q.clicked, xTABLE#rottrans DIV.bx > DIV > DIV.q.unhighlight {animation: rottransani 0.6s; -webkit-animation: rottransani 0.6s}
+TABLE#rottrans DIV.bx > DIV > DIV.q.clicked.hoover {animation: none.5s; -webkit-animation: none}
+TABLE#rottrans DIV.bx DIV SPAN {font-size:80%; font-weight:bold;}
+TABLE#rottrans THEAD DIV.bx DIV {text-align:center; height: 1.7em; vertical-align:top; font-family:sans-serif}
+TABLE#rottrans TFOOT DIV.bx DIV {text-align:center; height: 1.7em; vertical-align:bottom; font-family:sans-serif}
+TABLE#rottrans TD.symmetrybox {background: #FcFFCF; border:1px black solid; height: 2.2em; padding-top:0.55em; padding-bottom:0.25em }
+TABLE#rottrans TFOOT TD, TABLE#rottrans THEAD TD {border:0; background:transparent}
+xTABLE#rottrans TBODY TR:hover > * {background-color: #FFF4AB; transition: background 0.25s linear 0s}
+TABLE#rottrans TBODY TH:first-child:hover, TABLE#rottrans TBODY TH:first-child:hover+ TD, TABLE#rottrans TBODY TH:first-child:hover+TD+TD {background-color: #FFF4AB} 
+TABLE#rottrans TBODY TR TD, TABLE#rottrans TBODY TR TH {transition: background 0.25s linear 0s}
+TABLE#rottrans TBODY TR.unhover TD, TABLE#rottrans TBODY TR.unhover TH {background-color: transparent !important}
+TABLE#rottrans TBODY TR.hoover TD, TABLE#rottrans TBODY TR.hoover TH {background-color: #FFF4AB; animation: rottransani2 0.6s; -webkit-animation: rottransani2 0.6s}
+TABLE#rottrans TBODY TH:first-child {cursor:pointer}
+TABLE#rottrans TBODY {background: #FcFFCF;}
+
+
+DIV#bx_control {margin-top:1em; padding-left:4em}
+
+TABLE#multitab {border-collapse:collapse; padding:0.5em 0.5em; border:0px black solid; vertical-align: baseline; background: #FFF0DD}
+TABLE#multitab {border: 10px #FFF0DD solid; background: #FFF0DD}
+TABLE#multitab TD {padding: 0.2em 0.5em}
+TABLE#multitab TR {transition: background 0.4s linear 0s; -webkit-transition: background 0.4s linear 0s}
+TABLE#multitab TR.detail {transition: background 0.6s linear 0s; -webkit-transition: background 0.6s linear 0s}
+TABLE#multitab TR.detail:last-child TD {padding-bottom: 1ex}
+TABLE#multitab TH#multipole_name {cursor:pointer}
+TABLE#multitab TD, TABLE#multitab TH {padding: 0.2em 0.5em}
+TABLE#multitab THEAD TH {padding-bottom:0.5em; padding-top:0.6em;vertical-align:bottom; font-weight:bold; text-align:left; border-bottom: 2px black solid}
+TABLE#multitab TBODY TR {vertical-align:baseline}
+TABLE#multitab TBODY TD.yes {font-weight:bold}
+TABLE#multitab TBODY TD:last-child {padding-left:1em}
+TABLE#multitab TBODY TH:first-child+TD+TD {text-align:right}
+TABLE#multitab TBODY TH:first-child+TD+TD+TD+TD {font-weight:bold}
+TABLE#multitab TBODY TH:first-child {font-weight:bold; padding-right:0.4ex; text-align:left; padding-left:1.8ex}
+TABLE#multitab THEAD TH:first-child {padding-right:0.8em; border-right: 2px black solid}
+TABLE#multitab TBODY TR > :first-child + TD {padding-right:0.8em; padding-left:0; border-right: 2px black solid}
+TABLE#multitab THEAD TH:first-child + TH {padding-left:0.8em;}
+TABLE#multitab TBODY TH:first-child + TD+TD {padding-left:0.8em;}
+TABLE#multitab TFOOT TR:first-child TD {padding-top:1.5em; text-align:right}
+TABLE#multitab TBODY TR.detail {display:none}
+TABLE#multitab TBODY.showdetails TR.detail {display:table-row}
+TABLE#multitab TBODY:hover   TR.l            , TABLE#multitab TBODY.hoover   TR.l            {background-color: #FBD8AC}   /* = rgba(251,216,172,1) */
+TABLE#multitab TBODY:hover   TR.detail       , TABLE#multitab TBODY.hoover   TR.detail       {background-color: rgba(251,216,172,0.5)}
+TABLE#multitab TBODY:hover   TR.detail:hover , TABLE#multitab TBODY.hoover   TR.detail:hover {background-color: rgba(251,216,172,1)}
+TABLE#multitab TR.detail {background-color:transparent}
+TABLE#multitab .showdetails TR.detail {background-color:transparent}
+TABLE#multitab .showdetails TR.detail SPAN.container {transition: color 0.4s linear}
+TABLE#multitab .showdetails TR.detail:hover SPAN.container {color:black}
+
+@supports (-webkit-user-select: text) {TABLE#multitab TBODY.showdetails {background-attachment:fixed}}   /* Webkit Bug 34392, not really solved */
+TABLE#multitab TBODY.showdetails:hover, TABLE#multitab TBODY.showdetails.hoover       {background-image: linear-gradient(to bottom, rgba(251,216,172,0.70),rgba(251,216,172,0.60), rgba(251,216,172,0.40), rgba(251,216,172,0.10),   rgba(251,216,172,0))}
+TABLE#multitab TBODY.showdetails:hover, TABLE#multitab TBODY.showdetails.hoover       {dbg-background-image: linear-gradient(to bottom, black, transparent)}
+TABLE#multitab TBODY.showdetails   TR.l {transition: all 1s cubic-bezier(0, 0.85, 0.44, 0.89)}
+TABLE#multitab TBODY.showdetails   TR.l {transition: all 0.5s linear}
+TABLE#multitab TBODY:hover   TR.detail       , TABLE#multitab TBODY.hoover   TR.detail       {background-color: rgba(251,216,172,0.35)}
+
+xx TABLE#multitab TBODY.showdetails:hover {animation: gradani0 0.5s, gradani1 0.4s, gradani2 0.3s, gradani3 0.2s, gradani4 0.1s, gradani5 0s;}
+xx * TABLE#multitab TBODY.showdetails.hooover {animation: gradani0 5s, gradani1 4s, gradani2 3s, gradani3 2s, gradani4 1s}
+xx * TABLE#multitab TBODY.showdetails.unhover {animation: gradani0 0.5s, gradani1 0.4s, gradani2 0.3s, gradani3 0.2s, gradani4 0.1s}
+TABLE#multitab TBODY.showdetails.unhover {-webkit-animation: none; animation: none}
+TABLE#multitab TBODY.showdetails.hoover:hover {-webkit-animation: none; animation: none}
+
+@keyframes gradani0 {50% {top:0}}
+@keyframes gradani1 {50% {top:0}}
+@keyframes gradani2 {50% {top:0}}
+@keyframes gradani3 {50% {top:0}}
+@keyframes gradani4 {50% {top:0}}
+@keyframes gradani5 {50% {top:0}}
+
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad5 {background-image: none}
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad4 {background-image: linear-gradient(rgba(251,216,172,0.10),rgba(251,216,172,0.08), rgba(251,216,172,0.05), rgba(251,216,172,0.02), rgba(251,216,172,0))}
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad3 {background-image: linear-gradient(rgba(251,216,172,0.20),rgba(251,216,172,0.15), rgba(251,216,172,0.10), rgba(251,216,172,0.04), rgba(251,216,172,0))}
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad2 {background-image: linear-gradient(rgba(251,216,172,0.40),rgba(251,216,172,0.30), rgba(251,216,172,0.20), rgba(251,216,172,0.06), rgba(251,216,172,0))}
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad1 {background-image: linear-gradient(rgba(251,216,172,0.60),rgba(251,216,172,0.50), rgba(251,216,172,0.30), rgba(251,216,172,0.08), rgba(251,216,172,0))}
+DIV#multipolediv TABLE#multitab TBODY.showdetails.grad0 {background-image: linear-gradient(rgba(251,216,172,0.70),rgba(251,216,172,0.60), rgba(251,216,172,0.40), rgba(251,216,172,0.10), rgba(251,216,172,0))}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad5 {background-image: linear-gradient(to bottom, purple, red)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad4 {background-image: linear-gradient(to bottom, red, orange)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad3 {background-image: linear-gradient(to bottom, orange, yellow)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad2 {background-image: linear-gradient(to bottom, yellow, lime)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad1 {background-image: linear-gradient(to bottom, lime, cyan)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad0 {background-image: linear-gradient(to bottom, cyan, blue)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad5 {background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), transparent)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad4 {background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad3 {background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad2 {background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad1 {background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent)}
+dbg-DIV#multipolediv TABLE#multitab TBODY.showdetails.grad0 {background-image: linear-gradient(to bottom, rgba(0,0,0,1.0), transparent)}
+
+TABLE#multitab TBODY.hoover  TR.l {animation: multitabani 0.6s; -webkit-animation: multitabani 0.6s}
+HTML BODY TABLE#multitab TBODY.unhover:hover TR.detail {background-color: transparent}
+HTML BODY TABLE#multitab TBODY.unhover TR.detail {background-color: transparent}
+HTML BODY TABLE#multitab TBODY.unhover, HTML BODY TABLE#multitab TBODY.unhover:hover {background-image:none}
+HTML BODY TABLE#multitab TBODY.l0 {background-image:none}
+HTML BODY TABLE#multitab TBODY.unhover TR.l {background-color: transparent}
+HTML BODY TABLE#multitab TBODY.unhover.showdetails TR.l {background-color: #FBD8AC}
+TABLE#multitab TBODY TR.detail TD:first-child, TABLE#multitab TBODY TR.detail TD:first-child+TD {background: #FFF0DD !important; cursor:text}
+TABLE#multitab TBODY TR:first-child TH:first-child, TABLE#multitab TBODY TR TH:first-child+TD {cursor:pointer}
+TABLE#multitab.nomultinames TBODY TR > :first-child + TD + TD {padding-right: 1em}
+TABLE#multitab.nomultinames TBODY TR > :first-child + TD + TD + TD {display:none}
+TABLE#multitab.nomultinames THEAD TH#multipole_name {text-align:right}
+xxxx TABLE#multitab TBODY TR:first-child TD {padding-top:0.4em; background:none !important}
+
+
+TABLE#multitab TBODY SPAN.detaillink {cursor:pointer;}
+TABLE#multitab TBODY SPAN.detaillink:hover {color:red}
+TABLE#multitab TBODY SPAN.detaillink:active {background:yellow}
+TABLE#multitab TBODY TR.detail TD {cursor:text; color: #555}
+TABLE#multitab TBODY TR.detail:hover TD {background:none}
+TABLE#multitab TBODY TR.detail TD.m SPAN.m {display:inline-block; text-align:right; width: 1em;margin-bottom:-0.8ex; font-weight:normal;white-space:nowrap; margin-right:1em}
+TABLE#multitab TBODY TR.detail TD.m SPAN.m SPAN {display:inline-block; float:right;}
+TABLE#multitab TBODY TR.detail SPAN.mcomp {font-weight:normal}
+TABLE#multitab TBODY TR.detail SPAN.m2 {border: 1px none black; font-weight:normal; width: auto; display:inline-block; white-space:nowrap; text-align:left}
+TABLE#multitab TBODY TR.detail SPAN.containirred {display: inline-block; margin-right:1.0em; margin-left: 0.25em; }
+TABLE#multitab TBODY TR.detail SPAN.containirred2 {display: inline-block; margin-left: 0.25em; }
+TABLE#multitab TBODY.flexible SPAN.containirred2, TABLE#multitab TBODY.flexible SPAN.m2 {width: auto !important}
+
+TABLE#multitab SPAN.irred {width: auto !important; height: auto !important}
+
+
+DIV#multipolediv {border:none}
+
+#chartabdiv TABLE {border-collapse:collapse; background: #DFD ;border: 10px #DFD solid}
+#chartabdiv TABLE TBODY TR+TR+TR:hover TD, #chartabdiv TABLE TBODY TR.hoover TD { background: #BFB}
+#chartabdiv TABLE TBODY TR+TR+TR:hover TH, #chartabdiv TABLE TBODY TR.hoover TH { background: #BFB}
+#chartabdiv TABLE TBODY TR.unhover TD, #chartabdiv TABLE TBODY TR.unhover TH { background: inherit !important}
+HTML BODY DIV#chartabdiv TABLE COL.hoover {animation: chartabani 0.6s; -webkit-animation: chartabani 0.6s }
+xHTML BODY DIV#chartabdiv TABLE COL.tran {animation: none; -webkit-animation: none}
+HTML BODY #chartabdiv TABLE TR.hoover TD, HTML BODY #chartabdiv TABLE TR.hoover TH {animation: chartabani 0.6s; -webkit-animation: chartabani 0.6s }
+#chartabdiv TABLE TBODY  TD, #chartabdiv TABLE TBODY TH {vertical-align: baseline ; xborder: 0px black solid}
+#chartabdiv TABLE  TD.irr {text-align:left; xposition:relative; xtop:-0.15em}
+#chartabdiv DIV#grpcontainer {position:relative}
+#chartabdiv TABLE  TD:first-child, #chartabdiv TABLE  TH:first-child {padding-left:0.5em !important; padding-top:2px !important}
+#chartabdiv TABLE   TD, #chartabdiv TABLE   TH {transition: all 0.25s linear 0s;}
+#chartabdiv TABLE   TD.space {transition: background-color 0.25s linear 0s;}
+#chartabdiv TABLE   TD, #chartabdiv TABLE   TH {-webkit-transition: all 0.25s linear 0s;}
+#chartabdiv TABLE  TD.irr SPAN {display:inline !important}
+#chartabdiv TABLE  TH.trans {width: auto; white-space:nowrap}
+#chartabdiv TABLE TBODY  TH:first-child {text-align:left}
+#chartabdiv TABLE TBODY  TD {text-align:center; padding-left:0.1em; padding-right: 0.1em; padding-top:0.1em; padding-bottom:0.1em}
+#chartabdiv TABLE TBODY  TD SPAN.signplus {visibility:hidden}
+#chartabdiv TABLE TBODY  TD SPAN.int SPAN.decpoint {visibility:hidden; display:none}
+#chartabdiv TABLE TBODY  TD SPAN.int SPAN.post {visibility:hidden; display:none}
+#chartabdiv TABLE TBODY  TD.trans {padding-left:1em !important; padding-right:0.5em !important; text-align:left}
+x#chartabdiv TABLE TBODY  TD.charfloat + TD.charfloat {padding-left:0.5em !important}
+xSPAN.float {border: 1px solid black}
+#chartabdiv TABLE  TD.charint {min-width: 2em}
+#chartabdiv TABLE  TBODY.cryst TD.charint {min-width: 3em}
+#chartabdiv TABLE THEAD TR TH:first-child {font-size:140%; font-weight:bold}
+#chartabdiv TABLE THEAD TR TH:first-child SPAN#grporder {position:absolute; bottom:1px; right:2px; font-size:50% }
+#chartabdiv TABLE THEAD TR TH {padding:.5em}
+#chartabdiv TABLE THEAD TR TH.sopcell {vertical-align:baseline; text-align:center; white-space:nowrap}
+#chartabdiv TABLE THEAD TR TH.sopcell *.invisible {color:red;display:none}
+#chartabdiv TABLE THEAD TR TH.sopcell > SPAN {width:auto !important}
+#chartabdiv TABLE THEAD TR TH.tran {padding:0.5em;text-align:center}
+#chartabdiv TABLE THEAD TR TH.tran SPAN.transpan {vertical-align:middle; white-space:nowrap; background: #F8F8F8; display:inline-block; min-width:100% ; text-align:center; border: 1px solid gray; border-radius:5px}
+#chartabdiv TABLE TBODY TR TD.tran {font-family: monospace}
+#chartabdiv TABLE THEAD TR TH.equiv {font-weight:bold; font-size:90%}
+#chartabdiv TABLE TBODY TR TD.equiv {font-weight:bold; text-align:left; padding-left:2em;}
+#chartabdiv TABLE TBODY TR TD.equiv SUP {margin-left:-0.2em; vertical-align:10%}
+#chartabdiv TABLE COL.equiv {border-left: 2px black solid}
+#chartabdiv TABLE TBODY TR :first-child+TD {border-right: 2px black solid}
+#chartabdiv TABLE#chartab TBODY TR.pseudoborder TD {height:2px; background:black; padding:0 !important }
+#chartabdiv TABLE#chartab TBODY TR.spacer TD {padding-top:0.5em}
+#chartabdiv TABLE THEAD TR:first-child TH:first-child {position:relative}
+#chartabdiv TABLE THEAD TH:first-child {border-right: 2px black solid}
+#chartabdiv TABLE THEAD TD, #chartabdiv TABLE THEAD TH {xborder-bottom: 2px black solid}
+#chartabdiv TABLE TBODY TD.tran {padding-left:0.3em; padding-right:0.3em !important}
+#chartabdiv TABLE TBODY TD.alert {color:red}
+#chartabdiv TABLE TBODY SPAN.prod[title] {cursor:help}
+#chartabdiv TABLE TBODY TD SPAN.prod {transition: all 0.7s}
+#chartabdiv TABLE TBODY TD SPAN.prod:hover {background-color:transparent; box-shadow: 0px 0px 10px 0px transparent; color:black; border-collapse: separate}
+#chartabdiv TABLE TBODY TD SPAN.prod:hover {background-color:green; box-shadow: 0px 0px 12px 3px green; color:white; border-collapse: separate}
+#chartabdiv TABLE COL {transition: all 0.25s linear 0s;}
+#chartabdiv TABLE COL {-webkit-transition: all 0.25s linear 0s;}
+#chartabdiv TABLE COL.hover, #chartabdiv TABLE COL.hoover {background:#BFB}
+#chartabdiv TABLE COL.real {padding:1em}
+#chartabdiv TABLE COL.tran, #chartabdiv TABLE xCOL.sop {border-left: solid 4px transparent}
+#chartabdiv TABLE COL.tran.hover+COL.tran.hover {border-left: solid 4px #DFD }
+#chartabdiv TABLE COL.tran.hoover+COL.tran.hover {border-left: solid 4px #DFD }
+#chartabdiv TABLE COL.tran.hoover+COL.tran.hoover {border-left: solid 4px #DFD }
+#chartabdiv TABLE COL.tran.hover+COL.tran.hoover {border-left: solid 4px #DFD }
+#chartabdiv TABLE THEAD TR TH.tran  {font-weight:normal}
+#chartabdiv TABLE THEAD TR TH.tran SPAN.transpan:hover {background:white; border-color:black; cursor:pointer}
+#chartabdiv TABLE THEAD TR TH.tran SPAN.transpan:active {color:red; background-color:yellow; box-shadow: 0px 0px 10px red; border-color:red; border-collapse: separate}
+#chartabdiv TABLE TD.distort, #chartabdiv TABLE TD.distorthead {padding:0; white-space:nowrap; text-align:left; }
+#chartabdiv TABLE TD.distort SPAN.sgrp {font-size:70%}
+#chartabdiv TABLE TBODY.showdistort TD.distort  {padding-left:0.5em}
+#chartabdiv TABLE.showdistort TBODY TD.distort SPAN {display:inline}
+#chartabdiv TABLE TBODY TD.distort SPAN {display:none}
+#chartabdiv TABLE.showdistort TD.space {width:0; padding-left:0}
+#chartabdiv TABLE TD.space {width:0.1em}
+
+#chartabdiv TABLE#irrational TBODY TR:hover TD { background: #BFB}
+#chartabdiv TABLE#irrational TBODY * {border-left:0px black solid !important; border-right:0px black solid !important}
+#chartabdiv TABLE#irrational TD {border:0px black solid !important}
+#chartabdiv TABLE#irrational TR:first-child TH:first-child {font-weight:bold; background:transparent !important}
+#chartabdiv TABLE#irrational TR.nohighlight TD {background:none !important}
+#chartabdiv TABLE#irrational * {text-align:left !important}
+#chartabdiv TABLE#irrational TH:first-child+TD {text-align:right !important}
+#chartabdiv TABLE#irrational TD+TD {white-space:nowrap}
+#chartabdiv TABLE#irrational TD:first-child {text-align:right !important}
+#chartabdiv TABLE#irrational TD:first-child+TD  {text-align:right !important}
+#chartabdiv TABLE#irrational TD  {padding-top:0.5em; padding-bottom:0.5em}
+#chartabdiv TABLE#irrational TD.eq  {padding-left:0.4em; padding-right:0.4em}
+
+#subgroupdiv TABLE  {background: #FFDBEA; border-collapse:collapse; border:0px solid black; xborder: 1em solid #FFDBEA }
+#subgroupdiv TABLE  * {transition: background 0.4s linear, box-shadow 0.4s linear, outline 0.4s linear, border 0.4s linear, color 0.4s linear ; -webkit-transition: background 0.4s linear, box-shadow 0.4s linear, outline 0.4s linear, border 0.4s linear, color 0.4s linear}
+#subgroupdiv TABLE  TD {border: 1px white dotted; outline: 0px black solid}
+#subgroupdiv TABLE THEAD TD:first-child {font-size: 120%; padding-left:0; padding-right:0.75em; border:none; border-right: 2px solid black; text-align:left}
+#subgroupdiv TABLE TFOOT TD:first-child {text-align:left; border:none; border-right: 2px solid black}
+#subgroupdiv TABLE TBODY TD:first-child {padding-left:0.75em; border:none; cursor:pointer; border-right: 2px solid}
+#subgroupdiv TABLE THEAD TD:first-child, #subgroupdiv TABLE TFOOT TD:first-child {padding-left:0.5em; padding-right: 0.5em}
+#subgroupdiv TABLE THEAD TD+TD, #subgroupdiv TABLE TFOOT TD+TD {padding:0 0.5em; text-align:center; border:none; cursor:pointer}
+#subgroupdiv TABLE THEAD TR:last-child TD {padding-bottom: 10px}
+#subgroupdiv TABLE TFOOT TR:first-child TD+TD {padding-top:0.5em}
+#subgroupdiv TABLE THEAD TR.generators {white-space:nowrap; font-size:70%}
+#subgroupdiv TABLE TFOOT SPAN.ori {display:block; margin:0 -1em; margin-bottom: 0.3em; font-size:70%}
+#subgroupdiv TABLE TFOOT A.extragroup {opacity: 1}
+#subgroupdiv TABLE TD.noncanonical > * {opacity: 0.6}
+#subgroupdiv TABLE THEAD TD.noncanonical.highlight > * {opacity: 0.9}
+#subgroupdiv TABLE TFOOT TD.noncanonical.highlight > * {opacity: 0.9}
+#subgroupdiv TABLE TD.noncanonical > :not(A) {color:#005500}
+#subgroupdiv TABLE THEAD TR.generators TD {padding:0 0.3em 0.5em}
+#subgroupdiv TABLE TFOOT TD {padding-top:0.5em;padding-bottom:1em; vertical-align:top}
+#subgroupdiv TABLE THEAD TD, #subgroupdiv TABLE TFOOT TD {font-weight:bold}
+#subgroupdiv TABLE TBODY TD+TD {height:2em; text-align:center; }
+#subgroupdiv TABLE TBODY TD {vertical-align:middle; padding-left: 0.4em; padding-right: 0.4em}
+#subgroupdiv TABLE TBODY TR:hover {background: #FBCADE}
+#subgroupdiv TABLE TBODY TD+TD:hover {outline:3px solid black; z-index:5; border:hidden; background: #FF9DC6 }
+#subgroupdiv TABLE TBODY TR:hover TD:first-child {background: #FFB7D5}
+#subgroupdiv TABLE THEAD TR:last-child {border-bottom:2px black solid}
+#subgroupdiv TABLE TFOOT TR {border-top:2px black solid}
+#subgroupdiv TABLE THEAD TD {border-top:none !important}
+#subgroupdiv TABLE#subgrouptable TBODY TD:first-child+TD {border-left:2px black solid}
+#subgroupdiv TABLE TBODY TD SUP.prime {font-size:100%; vertical-align: 10%}
+#subgroupdiv TABLE TBODY TD SUB+SUP.prime {margin-left:-0.3em; margin-right:0.1em; vertical-align:15%}
+#subgroupdiv TABLE TBODY TD SUB+SUP.prime.d {margin-left:-0.4em; margin-right:0.0em}
+#subgroupdiv TABLE TBODY TD SUB.dig2+SUP.prime {margin-left:-0.7em; margin-right:0.1em; vertical-align:15%}
+#subgroupdiv TABLE TBODY TD SUB.dig2+SUP.prime.d {margin-left:-0.8em; margin-right:0.0em}
+#subgroupdiv TABLE TBODY TD SUP.prime.a {margin-left:-0.1em; margin-right:0.1em}
+#subgroupdiv TABLE TR.spacer TD {border:none; height:0.5em}
+#subgroupdiv TABLE TR.spacer:hover {background:none !important; outline:none; border: inherit}
+#subgroupdiv TABLE TR.spacer:hover TD {background:none !important; outline:none; border: inherit}
+#subgroupdiv TABLE TR.spacer TD:first-child {border-right: 2px solid black}
+#subgroupdiv DIV.borderdiv {background:#FFDBEA; padding:1em; display:table-cell}
+#subgroupdiv TABLE TD.dummy {display:none; }
+
+#subgroupdiv TABLE  COL.cg.highlight {background:#FBCADE; border: 1px dashed black; }
+#subgroupdiv TABLE  COL.hiighlight {background:#FBCADE}
+#subgroupdiv TABLE  COL.hiighliight {animation: subgroupani 0.6s !important; -webkit-animation: subgroupani 0.6s !important; }
+HTML BODY DIV#subgroupdiv TABLE.noani  COL {animation: none !important; -webkit-animation: none !important; transition: none !important }
+#subgroupdiv TABLE  COLGROUP.cubic {border-right: 1px black solid}
+#subgroupdiv TABLE  COLGROUP.tetragonal {border-right: 1px black solid; border-left: 1px black solid}
+#subgroupdiv TABLE  COLGROUP.trigonal {border-left: 1px black solid}
+#subgroupdiv TABLE  COLGROUP.orthorhombic {border-left: 1px black solid}
+#subgroupdiv TABLE  TBODY TR.hiighlight {background:#FBCADE; }
+#subgroupdiv TABLE  TBODY TR.hiighliight {animation: subgroupani 0.6s; -webkit-animation: subgroupani 0.6s}
+#subgroupdiv TABLE  TD.p, #subgroupdiv TABLE  TD.irrep, #subgroupdiv TABLE  TD.highlight  {transition: background 0.25s linear, box-shadow 0.25s linear, outline 0.25s linear, border 0.4s linear, color 0.25s linear}
+#subgroupdiv TABLE  TD.p#subgroupdiv TABLE TD.irrep, #subgroupdiv TABLE  TD.highlight  {-webkit-transition: background 0.25s linear, box-shadow 0.25s linear, outline 0.25s linear, border 0.4s linear, color 0.25s linear}
+#subgroupdiv TABLE  TD.p:hover, #subgroupdiv TABLE  TD.highlight  {background:#FFB7D5}
+#subgroupdiv TABLE  TBODY TR.unhighlight, #subgroupdiv TABLE  TBODY TR.unhighlight TD {background:none }
+xx#subgroupdiv TABLE  TBODY TR.unhighlight, #subgroupdiv TABLE  TBODY TR.unhighlight TD:first-child {border: none; border-right: 2px black solid}
+#subgroupdiv TABLE  TBODY TR.unhighlight TD.diag {background:#EFBFF4 !important}
+#subgroupdiv TABLE  TBODY TR.unhighlight:hover TD.irrep  {background: none}
+#subgroupdiv TABLE  TBODY TR.unhighlight TD  {border-top: 1px dotted white;  border-bottom: 1px dotted white}
+#subgroupdiv TABLE  TBODY TR:hover {border: 1px dashed black}
+#subgroupdiv TABLE  COL.cg {border-bottom:1px dashed transparent; border-top:1px dashed transparent}
+
+#subgroupdiv TABLE  TBODY TD SPAN.plus {font-size:70%;vertical-align:15%;}
+#subgroupdiv TABLE  TBODY TD SPAN.plus::after {content: "\20"; display:inline-block; width:0; white-space: normal}
+#subgroupdiv TABLE  TBODY TD SPAN.irrep {white-space:nowrap}
+#subgroupdiv TABLE  TBODY TD SPAN.num::after {content: "\2009"; white-space: nowrap}
+#subgroupdiv TABLE  TBODY TD.deg.show {outline: 3px solid #FF9DC6}
+#subgroupdiv TABLE  TBODY TD.deg.show:hover {outline: 3px solid #EF669F}
+#subgroupdiv TABLE  TBODY TD.paradox.show {outline: 3px solid #FFFFFF; }
+#subgroupdiv TABLE  TBODY TD.paradox.show:hover {outline: 3px solid #EEFDFD}
+#subgroupdiv TABLE  TBODY TD.irrep {white-space:nowrap;min-width: 1.8em}
+#subgroupdiv TABLE  TBODY TD.irrep SPAN.xirred {background:lime; width:auto !important}
+#subgroupdiv TABLE  TBODY TD.irrep SPAN.xirred SUB.alone {background:green; width:auto !important}
+#subgroupdiv TABLE  TFOOT TD.redundant SPAN.ast {position:absolute; margin-left:-0.15em; margin-top: -0.15em; cursor: help}
+#subgroupdiv TABLE  THEAD TD SPAN.ast {position:absolute; margin-left:-0.15em; margin-top: -0.15em; cursor: help}
+#subgroupdiv TABLE  TFOOT TD SPAN.diamond {font-size:80%;position:absolute; margin-left:-0.400em; margin-top: -0.35em; font-weight:bold; cursor: help}
+#subgroupdiv TABLE  THEAD TD SPAN.diamond {font-size:80%;position:absolute; margin-left:-0.400em; margin-top: -0.35em; font-weight:bold; cursor: help}
+#subgroupdiv TABLE  TFOOT TD SPAN.hash {position:absolute; margin-left:-0.20em; margin-top: -0.40em; cursor: help}
+#subgroupdiv TABLE  THEAD TD SPAN.hash {position:absolute; margin-left:-0.20em; margin-top: -0.40em; cursor: help}
+#subgroupdiv TABLE .nodiamonds SPAN.hash {display:none}
+#subgroupdiv TABLE .hidediamonds SPAN.diamond {display:none}
+#subgroupdiv TABLE  TBODY TD.paradox {box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0), 0px 0px 0px 0px rgba(255,255,255,0); }
+
+
+@supports (box-shadow: inset 0px 0px 8px 3px #FF9DC6)
+  {
+     #subgroupdiv TABLE  TBODY TD {box-shadow: inset 0px 0px 0px 0px #FF9DC6; transition: background 0.4s linear, box-shadow 0.5s linear, outline 0.4s linear, border 0.4s linear, color 0.4s linear}
+     #subgroupdiv TABLE  TBODY TD:hover * {opacity: 1}
+     #subgroupdiv TABLE  TBODY TD.deg.show {outline:none; box-shadow: inset 0px 0px 8px 3px #FF9DC6}
+     #subgroupdiv TABLE  TBODY TD.deg.deg2.show {outline:none; box-shadow: inset 0px 0px 10px 6px #FF90BE}
+     #subgroupdiv TABLE  TBODY TD.deg.show:hover {outline:3px solid black; box-shadow: inset 0px 0px 8px 3px #EF669F}
+     #subgroupdiv TABLE  TBODY TD.deg.deg2.show:hover {outline:3px solid black; box-shadow: inset 0px 0px 10px 4px #DC3A7D}
+     #subgroupdiv TABLE  TBODY TD.paradox.show {z-index:1; outline:0px solid transparent; box-shadow: inset 0px 0px 10px 3px #FFFFFF, 0px 0px 5px 3px #FFFFFF; border: 1px solid #FFFFFF}
+     #subgroupdiv TABLE  TBODY TR.E TD.paradox.show {z-index:1; outline:0px solid transparent; box-shadow: inset 0px 0px 10px 5px #FFFFE0, 0px 0px 8px 5px #FFFFE0; border: 1px solid #FFFFE0}
+     #subgroupdiv TABLE  TBODY TD.paradox.show:hover {z-index:5;outline:3px solid black; box-shadow: inset 0px 0px 7px 2px #FFFFFF, 0px 0px 15px 13px #FFFFFF; border: 1px solid #FFFFFF}
+     #subgroupdiv TABLE  TBODY.showdistort TD.distorted.paradox.show:hover {z-index:5;outline:3px solid black; box-shadow: inset 0px 0px 5px 1px #FFFFFF, 0px 0px 15px 13px #FFFFFF; border: 1px solid #FFFFFF}
+     #subgroupdiv TABLE  TBODY TR.E TD.paradox.show:hover {z-index:5; outline:3px solid black; box-shadow: inset 0px 0px 12px 3px #FFFFE0, 0px 0px 15px 13px #FFFFE0; border: 1px solid #FFFFE0}
+     #subgroupdiv TABLE  TBODY TR:hover TD.paradox.show {border-top: 1px dashed black; border-bottom: 1px dashed black}
+   }
+
+BODY.ie11 #subgroupdiv TABLE  TBODY TD {box-shadow: inset 0px 0px 0px 0px #FF9DC6; transition: background 0.4s linear, box-shadow 0.5s linear, outline 0.4s linear, border 0.4s linear, color 0.4s linear}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD:hover * {opacity: 1}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD.deg.show {outline:none; box-shadow: inset 0px 0px 8px 3px #FF9DC6}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD.deg.deg2.show {outline:none; box-shadow: inset 0px 0px 10px 6px #FF90BE}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD.deg.show:hover {outline:3px solid black; box-shadow: inset 0px 0px 8px 3px #EF669F}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD.paradox.show {z-index:1; outline:none; box-shadow: inset 0px 0px 10px 3px #FFFFFF, 0px 0px 5px 3px #FFFFFF; border: 1px solid #FFFFFF}
+BODY.ie11 #subgroupdiv TABLE  TBODY TR.E TD.paradox.show {z-index:1; outline:none; box-shadow: inset 0px 0px 10px 5px #FFFFE0, 0px 0px 8px 5px #FFFFE0; border: 1px solid #FFFFE0}
+BODY.ie11 #subgroupdiv TABLE  TBODY TD.paradox.show:hover {z-index:5;outline:3px solid black; box-shadow: inset 0px 0px 12px 3px #FFFFFF, 0px 0px 15px 13px #FFFFFF; border: 1px solid #FFFFFF}
+BODY.ie11 #subgroupdiv TABLE  TBODY TR.E TD.paradox.show:hover {z-index:5;outline:3px solid black; box-shadow: inset 0px 0px 5px 1px #FFFFE0, 0px 0px 15px 13px #FFFFE0; border: 1px solid #FFFFE0}
+BODY.ie11 #subgroupdiv TABLE  TBODY TR:hover TD.paradox.show {border-top: 1px dashed black; border-bottom: 1px dashed black}
+
+FORM#subgroupform {margin-left: 5em; margin-top:1em;}
+FORM#subgroupform P {margin-bottom:0.2em}
+FORM#subgroupform UL {margin:0}
+FORM#subgroupform LI {margin-left: -1em; }
+#subgroupdiv SPAN#dist_warn {margin-left:1em;color:red; -webkit-transition: color 0.25s linear 0s }
+#subgroupdiv TABLE TBODY TR TD {position:relative}
+#subgroupdiv TABLE TBODY TR TD+TD > DIV.content {position:relative}
+#subgroupdiv TABLE TBODY TR TD.distorted DIV.grad {position:absolute; top:0; left:0; background: rgba(0,255,128,0.0); opacity:0; border:0px solid black; height:100%; width:100%; transition: opacity 0.5s linear}
+#subgroupdiv TABLE  TBODY TR.showdistort TD.distorted {xborder: red 1px solid}
+#subgroupdiv TABLE  TBODY.showdistort TD.distorted:hover {border: hidden}
+#subgroupdiv TABLE  TBODY TR TD.distorted DIV.grad.temp {background:#FFEAA8; background: radial-gradient(rgba(255, 255, 100,1), rgba(255, 255, 130,0.8), rgba(255, 255, 200,0))}
+#subgroupdiv TABLE  TBODY    TD.distorted DIV.grad.perm {background:#FFEAA8; background: radial-gradient(rgba(255, 234, 100,1),rgba(255, 234, 100,0.8),rgba(255, 234, 100,0.2),rgba(255,234,168,0))}
+#subgroupdiv TABLE  TBODY    TD.distorted:hover DIV.grad.perm {background: radial-gradient(rgba(255, 234, 100,1),rgba(255, 234, 100,0.74),rgba(255, 234, 100,0),rgba(255,234,100,0))}
+#subgroupdiv TABLE  TBODY TD.distorted {outline: 0px white solid}
+
+#subgroupdiv TABLE  TBODY.showdistort TD.distorted DIV.content {background-color: rgb(255, 234, 100)}
+
+
+@supports (background: radial-gradient(rgb(255, 234, 100),rgb(255, 225, 106),rgb(255, 215, 114),#FF9DC6,#FF9DC6) )
+  { 
+     HTML BODY #subgroupdiv TABLE  TBODY.showdistort TD.distorted DIV.content {background-color: transparent }
+  }
+
+HTML BODY.ie11 #subgroupdiv TABLE  TBODY.showdistort TD.distorted DIV.content {background-color: transparent }
+x#subgroupdiv TABLE  TBODY TR TD:first-child SPAN.irred SUB {display:inline !important}
+x#subgroupdiv TABLE  TBODY TR TD:first-child SPAN.irred {display:inline !important}
+
+#subgroupdiv TABLE  TBODY TR.showdistort TD.distorted DIV.grad.temp {opacity:1; transition: opacity 0s linear 0.2s}
+#subgroupdiv TABLE  TBODY.showdistort TD.distorted DIV.grad.perm {opacity:1}
+#subgroupdiv TABLE  TBODY.showdistort TD.distorted:hover DIV.grad.perm {opacity:1;}
+#subgroupdiv TABLE  TBODY.showdistort TD.paradox.show.distorted:hover DIV.grad.perm {opacity:1; xbox-shadow: inset 0 0 5px 2px white;}
+#subgroupdiv TABLE  TBODY.showdistort TD.deg.paradox.show.distorted:hover DIV.grad.perm {opacity:1; xbox-shadow: inset 0 0 5px 2px #FFFFE0;}
+
+
+
+#subgroupdiv FORM #subgroups_type_list LABEL {margin-left:0.5em}
+#subgroupdiv FORM #subgroups_type_list.disabled LABEL {opacity:0.9; cursor:text; color:gray}
+#subgroupdiv FORM #subgroups_type_list.disabled LABEL:hover {outline:none}
+
+
+ /* #FFDBEA, #FBCADE, #FFB7D5, #FF9DC6 */
+
+LABEL:hover {outline: 2px gray solid; cursor:pointer}
+LABEL.inactive:hover {outline: none; }
+LABEL.inactive {cursor:text; color:gray}
+
+@keyframes subgroupani {
+    0% {background-color: #FBCADE}
+    30% {background-color: #FF9DC6;}
+    100% {background-color: #FBCADE}
+}
+@-webkit-keyframes subgroupani {
+    0% {background-color: #FBCADE}
+    30% {background-color: #FF9DC6}
+    100% {background-color: #FBCADE}
+}
+
+@-webkit-keyframes chartabani {
+    0% {background-color: #BFB;}
+    30% {background-color: #AEA}
+    100% {background-color: #BFB;}
+}
+@keyframes chartabani {
+    0% {background-color: #BFB;}
+    30% {background-color: #63E063;}
+    100% {background-color: #BFB;}
+}
+
+@-webkit-keyframes multitabani {
+    0% {background-color: #FBD8AC;}
+    30% {background-color: #FFBD87}
+    100% {background-color: #FBD8AC;}
+}
+@keyframes multitabani {
+    0% {background-color: #FBD8AC;}
+    30% {background-color: #FFBD87}
+    100% {background-color: #FBD8AC;}
+}
+@-webkit-keyframes prodformflickani {
+    0% {background-color: #DED0F2}
+    30% {background-color: #C9A2FF}
+    100% {background-color: #DED0F2}
+}
+@keyframes prodformflickani {
+    0% {background-color: #DED0F2}
+    30% {background-color: #C9A2FF}
+    100% {background-color: #DED0F2}
+}
+@-webkit-keyframes prodformani {
+    0% {background-color: #C9A2FF}
+    30% {background-color: #AD7EEF}
+    100% {background-color: #C9A2FF}
+}
+@keyframes prodformani {
+    0% {background-color: #C9A2FF}
+    30% {background-color: #AD7EEF}
+    100% {background-color: #C9A2FF}
+}
+@-webkit-keyframes prodtabani {
+    0% {background-color: #E7B7EC}
+    30% {background-color: #E78FF0}
+    100% {background-color: #E7B7EC}
+}
+@keyframes prodtabani {
+    0% {background-color: #E7B7EC}
+    30% {background-color: #E78FF0}
+    100% {background-color: #E7B7EC}
+}
+@-webkit-keyframes reduceani {
+    0% {background-color: #BCC8FF}
+    30% {background-color: #98A9F7}
+    100% {background-color: #BCC8FF}
+}
+@keyframes reduceani {
+    0% {background-color: #BCC8FF}
+    30% {background-color: #98A9F7}
+    100% {background-color: #BCC8FF}
+}
+
+@-webkit-keyframes rottransani {
+    30% {background-color: #FFFF00}
+}
+
+@keyframes rottransani {
+    30% {background-color: #FFFF00}
+}
+
+@-webkit-keyframes rottransani2 {
+    30% {background-color: #E0D483}
+}
+
+@keyframes rottransani2 {
+    30% {background-color: #E0D483}
+}
+
+
+
+SUB.align {width:0; white-space:nowrap; display:inline-block}
+SUB.align + SUP {padding-left:0.1em;white-space:nowrap; vertical-align:55%}
+
+BODY.reallynotransitions #chartabdiv * {transition:none !important}
+BODY.notransitions_sg #subgroupdiv COL {transition:none !important}
+BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover THEAD TD, BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover TFOOT TD {transition:none !important}
+BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover TBODY TR, BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover TBODY TR TD:first-child {transition:none !important}
+BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover TBODY TR TD {transition: none !important}
+BODY.notransitions_sg #subgroupdiv TABLE#subgrouptable:hover TBODY:hover TR TD {transition: none !important}
+
+BODY.notransitions_pt #product_table_wrap COL {transition:none !important}
+BODY.notransitions_pt #product_table_wrap THEAD TD, BODY.notransitions_pt #product_table_wrap TFOOT TD {transition:none !important}
+BODY.notransitions_pt #product_table_wrap TBODY TR, BODY.notransitions_pt #product_table_wrap TBODY TR TD.irrep {transition:none !important}
+BODY.notransitions_pt #product_table_wrap TBODY TR TD {transition: outline 0s, background 0s, box-shadow 0.3s linear !important}
+BODY.notransitions_pt #product_table_wrap TBODY:hover TR TD {transition: outline 0s, background 0s, box-shadow 0s  !important}
+
+TT.code {background: rgb(229, 229, 240); white-space:nowrap; padding:0 0.2em }
+.alert {color:red !important}
+
+x#glance .glance_td1 {border: 1px red dotted}
+x#glance .glance_td2 {border: 1px lime dotted}
+x#glance .glance_td3 {border: 1px blue dotted}
