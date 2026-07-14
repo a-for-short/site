@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone vs Laptop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/png" href="../../favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #60a5fa 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 16px;
+            overflow: hidden;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                        0 0 0 1px rgba(148, 163, 184, 0.1),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .comparison-table thead {
+            background: linear-gradient(90deg, #1e293b 0%, #334155 100%);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        
+        .comparison-table th {
+            padding: 1.5rem 1.25rem;
+            text-align: left;
+            font-weight: 600;
+            color: #f1f5f9;
+            font-size: 1.1rem;
+            position: relative;
+        }
+        
+        .comparison-table th:first-child {
+            width: 25%;
+            background: rgba(30, 41, 59, 0.8);
+        }
+        
+        .comparison-table th:not(:first-child) {
+            text-align: center;
+            position: relative;
+        }
+        
+        .product-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .product-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .phone .product-icon {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+        }
+        
+        .laptop .product-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        .product-type {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+        
+        .comparison-table tbody tr {
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+            transition: background-color 0.2s ease;
+        }
+        
+        .comparison-table tbody tr:hover {
+            background-color: rgba(30, 41, 59, 0.5);
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem 1.25rem;
+            color: #cbd5e1;
+        }
+        
+        .comparison-table td:first-child {
+            font-weight: 600;
+            color: #f1f5f9;
+            background: rgba(30, 41, 59, 0.3);
+        }
+        
+        .comparison-table td:not(:first-child) {
+            text-align: center;
+        }
+        
+        .spec-highlight {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .phone .spec-highlight {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+        }
+        
+        .laptop .spec-highlight {
+            background: rgba(59, 130, 246, 0.15);
+            color: #93c5fd;
+        }
+        
+        .dimension-value {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.95rem;
+        }
+        
+        .dimension-value span {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .new-badge {
+            background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+            color: #064e3b;
+        }
+        
+        .popular-badge {
+            background: linear-gradient(90deg, #8b5cf6 0%, #a78bfa 100%);
+            color: #4c1d95;
+        }
+        
+        .footer-note {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(148, 163, 184, 0.1);
+            max-width: 600px;
+        }
+        
+        .tech-studio-inspiration {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+        }
+        
+        .pulse {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #3b82f6;
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+            
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 1rem 0.75rem;
+            }
+            
+            .product-name {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container article">
+
+    <a class="back-button" href="../../articles.html">
+        ← Back to articles
+    </a>
+
+    <h1 class="article-title">Phone vs Laptop</h1>
+    <div class="article-meta">Written on 2026-02-04</div>
+
+    <p class="lead">
+        Recently I switched to Android and this really is smth.
+    </p>    
+    <p>
+        I always kept an eye on OnePlus, but refrained from buying one for myself because of how gigantic they are. With the release of 13s however I became exceedingly interested in purchasing one for myself as a replacement for my iPhone 12. The price of about $600 seemes surreally low for a phone like that.
+    </p>
+    <p>
+        So I want to compare the specs of OnePlus 13s to my laptop just so you understand how 
+    </p>
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Specifications</th>
+                <th class="phone">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="product-name">OnePlus 13s</div>
+                        <div class="product-type">Flagship Smartphone</div>
+                    </div>
+                </th>
+                <th class="laptop">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="product-name">ThinkBook 15 G2</div>
+                        <div class="product-type">Business Laptop</div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Processor</td>
+                <td class="phone">Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)</td>
+                <td class="laptop">11th Gen Intel® Core™ i7-1165G7</td>
+            </tr>
+            <tr>
+                <td>Internal Memory</td>
+                <td class="phone"><span class="spec-highlight">512 GB</span></td>
+                <td class="laptop"><span class="spec-highlight">256 GB</span></td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td class="phone"><span class="spec-highlight">12 GB</span></td>
+                <td class="laptop"><span class="spec-highlight">8 GB</span></td>
+            </tr>
+            <tr>
+                <td>Battery Capacity</td>
+                <td class="phone"><span class="spec-highlight">5850 mAh</span></td>
+                <td class="laptop"><span class="spec-highlight">3900 mAh</span></td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td class="phone">
+                    <div class="dimension-value">
+                        150.8 x 71.7 x 8.2 mm
+                    </div>
+                </td>
+                <td class="laptop">
+                    <div class="dimension-value">
+                        357 x 235 x 18.9 mm
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td class="phone">6.7" Fluid AMOLED, 120Hz</td>
+                <td class="laptop">15.6" IPS, 60Hz</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td class="phone">185 g</td>
+                <td class="laptop">1.7 kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="article-signature">
+        keep rocking<br>
+        a-for-short
+    </div>
+
+</div>
+</body>
+</html>
