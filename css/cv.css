@@ -1,0 +1,238 @@
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+@page {
+    size: A4;
+    margin: 18mm;
+}
+
+:root {
+    --accent: #285ea8;
+    --accent-light: #eef4ff;
+
+    --text: #222;
+    --text-strong: #111;
+    --text-muted: #666;
+
+    --border: #ddd;
+
+    --space-xs: .3rem;
+    --space-sm: .6rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    --date-width: 110px;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ececec;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text);
+}
+
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.cv {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 50px;
+
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1 {
+    margin: 0;
+
+    font-family: system-ui, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+h2 {
+    margin: var(--space-lg) 0 var(--space-md);
+
+    padding-bottom: .3rem;
+
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+    color: var(--accent);
+
+    border-bottom: 2px solid var(--accent);
+}
+
+.cv-title,
+.cv-item-subtitle {
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact p {
+    margin: .2rem 0;
+}
+
+
+/* =========================================================
+   CV ITEMS (default)
+   ========================================================= */
+
+.cv-item {
+    display: grid;
+    grid-template-columns: var(--date-width) 1fr;
+    column-gap: 24px;
+
+    align-items: start;
+    padding: var(--space-sm) 0;
+}
+
+.cv-item-date {
+    display: flex;
+    flex-direction: column;
+
+    /* Matches the body's line-height so the date's baseline
+       lands on the same line as the title text next to it.
+       (A tighter line-height here was pulling the date up,
+       since less leading is added above the glyph.) */
+    line-height: 1.65;
+
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.cv-item-body {
+    min-width: 0;
+}
+
+.cv-item-title {
+    display: inline;
+    font-weight: 700;
+}
+
+.cv-item-subtitle {
+    margin: .1rem 0 0;
+    font-style: italic;
+}
+
+
+
+.cv-item-full {
+    padding: var(--space-sm) 0;
+}
+
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+ul {
+    margin: .4rem 0 .2rem 1.2rem;
+    padding: 0;
+}
+
+li {
+    margin: .2rem 0;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .cv {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+
+        box-shadow: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width:700px) {
+
+    .cv {
+        padding: 24px;
+    }
+
+    .cv-item {
+        display: block;
+    }
+
+    .cv-item-date {
+        margin-bottom: .3rem;
+        width: auto;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+}
